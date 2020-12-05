@@ -42,9 +42,9 @@ const Sidebar: React.FC<SidebarPropsType> = ({sidebar}) => {
         {sidebar.map(item => {
             return (
 
-                <div className={classes.wrapper}>
+                <div key={item.id} className={classes.wrapper}>
                    {sidebarIcons.map(icon => icon.id === item.id ?
-                        <div className={classes.icon}>{icon.icon}</div> : ""
+                        <div key={icon.id} className={classes.icon}>{icon.icon}</div> : ""
                     )}
                     <div className={classes.name}>{item.name}</div>
                 </div>
