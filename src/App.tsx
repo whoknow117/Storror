@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Route} from 'react-router-dom';
 import './App.css';
+import Header from "./components/Header/Header";
+import Sidebar from "./components/Sidebar/Sidebar";
 
-function App() {
+import {StoreType} from "./redux/store";
+import Content from "./components/Content/Content";
+
+
+type AppPropsType = {
+    store: StoreType
+}
+
+function App(props: AppPropsType) {
+
+    const sidebar = props.store._state.sidebar;
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div className="wrapper">
+          <Sidebar sidebar={sidebar}/>
+          <div className="content">
+              <Route exact path='/' render={ () => <Content/> }/>
+
+          </div>
+      </div>
     </div>
   );
 }

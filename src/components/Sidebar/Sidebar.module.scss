@@ -1,0 +1,57 @@
+@import "src/variables/variables";
+
+
+.sidebar {
+  position: fixed;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  top: 0;
+  width: $sidebarWidth;
+  height: $sidebarHeight;
+  background: $sidebarBackgroundColor;
+  border-right: 1px solid #eaeaea;
+  .wrapper {
+    position: relative;
+    list-style: none;
+    display: flex;
+    width: $sidebarWidth;
+    height: 50px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 10px;
+    &:hover {
+      background: $orangeBackgroundColor;
+      .name {
+        color: #fff;
+
+      }
+      .icon {
+
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+    .icon {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      padding-left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg{
+        width: 34px;
+        height: 34px;
+        fill: $orangeBackgroundColor;
+      }
+    }
+    .name {
+      margin-left: 65px;
+      font-size: 15px;
+      font-weight: 500;
+      padding-right: 4px;
+      color: #565656;
+    }
+  }
+}

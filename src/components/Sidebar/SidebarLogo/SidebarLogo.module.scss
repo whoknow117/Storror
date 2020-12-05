@@ -1,0 +1,74 @@
+@import "src/variables/variables";
+
+
+.headerLogo {
+
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-left: 40px;
+  width:150px;
+  z-index: 140;
+  height: 80px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  &__icon {
+    position: absolute;
+    z-index: 120;
+    left: -36px;
+    top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 17px;
+      background: #fff;
+      right: -10px;
+      bottom: 38%;
+    }
+    svg {
+      width: 64px;
+      height: 64px;
+      fill: $orangeBackgroundColor;
+      background: transparent;
+    }
+  }
+  &__text {
+    position: relative;
+    z-index: 122;
+    font-family: MOntserrat, sans-serif;
+    letter-spacing: 3px;
+    color: $orangeBackgroundColor;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-left: 10px;
+    &:before {
+      content: ' ';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: .4rem;
+      color: rgba(0,0,0,.3);
+      z-index: -1;
+    }
+    &:after {
+      content: 'интернет-магазин стройматериалов';
+      position: absolute;
+      display: block;
+      left: 40px;
+      bottom: -20px;
+      width: 200px;
+      font-size: .59rem;
+      line-height: 10px;
+      color: rgb(97, 97, 97);
+    }
+
+  }
+}

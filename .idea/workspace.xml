@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/storror.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Basket/Basket.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Boiler/Boiler.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Carts/Carts.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Drill/Drill.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Electric/Electric.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Fasteners/Fasteners.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Fasteners/bolt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Garden/Garden.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Gas/Gas.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Heart/Heart.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Hose/Hose.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Logo/Logo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Person/Person.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Pump/Pump.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/SearchIcon/SearchIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Shovel/Shovel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Ventilation/Ventilation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Content/Content.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Content/Content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottom.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottom.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottomNav/HeaderBottomNav.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottomNav/HeaderBottomNav.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderTop/HeaderTop.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderTop/HeaderTop.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarLogo/SidebarLogo.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarLogo/SidebarLogo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/variables/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lFTYxaitEx0gFH65wbrHOIMY5H" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\projects\Magazine\storror\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="" />
+      <created>1607191893537</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607191893537</updated>
+      <workItem from="1607191897664" duration="396000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
