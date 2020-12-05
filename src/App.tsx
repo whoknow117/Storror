@@ -23,7 +23,7 @@ function App(props: AppPropsType) {
       <div className="wrapper">
           <Sidebar sidebar={sidebar}/>
           <div className="content">
-              <Route exact path='/' render={ () => <Content/> }/>
+              <Route exact path='/Storror' render={ () => <Content/> }/>
 
           </div>
       </div>
