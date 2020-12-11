@@ -14,6 +14,9 @@ import Drill from "../../assets/Drill/Drill";
 import Fasteners from "../../assets/Fasteners/Fasteners";
 import {SidebarType} from "../../redux/store";
 import SidebarLogo from "./SidebarLogo/SidebarLogo";
+import Sale from "../../assets/Sale/Sale";
+import Discount from "../../assets/Discount/Discount.";
+
 
 
 const sidebarIcons = [
@@ -28,6 +31,8 @@ const sidebarIcons = [
     {id: 9, icon: <Ventilation/>},
     {id: 10, icon: <Carts/>},
     {id: 11, icon: <Fasteners/>},
+    {id: 12, icon: <Sale/>},
+    {id: 13, icon: <Discount/>},
 ]
 
 

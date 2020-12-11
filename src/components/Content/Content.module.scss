@@ -2,5 +2,50 @@
 
 .content {
   padding-top: 4px;
+  width: 100%;
+  padding-top: 10px;
+  .info {
+    margin-top: 40px  ;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px 20px;
+
+    padding: 0 10px;
+
+    .info__item {
+      background: $orangeBackgroundColor;
+      display: flex;
+      height: 140px;
+      align-items: center;
+      border-radius: 4px;
+      .itemImg {
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 90%;
+
+
+
+
+        }
+      }
+      .txt {
+        flex-basis: 50%;
+        color: #fff;
+        font-size: 16px;
+        text-align: left;
+
+
+        .text {}
+        .span{}
+      }
+    }
+
+  }
 
 }
+

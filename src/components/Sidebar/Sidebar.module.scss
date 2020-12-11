@@ -2,11 +2,12 @@
 
 
 .sidebar {
+  font-family: $mainFont;
   position: fixed;
   box-shadow: 0 2px 5px rgba(0,0,0,.1);
   top: 0;
   width: $sidebarWidth;
-  height: $sidebarHeight;
+  height: 100vh;
   background: $sidebarBackgroundColor;
   border-right: 1px solid #eaeaea;
   .wrapper {
@@ -17,8 +18,26 @@
     height: 50px;
     align-items: center;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
     padding-left: 10px;
+    &:nth-child(13) {
+      
+      margin-top: 44px;
+      .icon {
+        svg {
+          fill: blue;
+        }
+      }
+    }
+    &:nth-child(14) {
+
+
+      .icon {
+        svg {
+          fill: blue;
+        }
+      }
+    }
     &:hover {
       background: $orangeBackgroundColor;
       .name {
@@ -36,22 +55,23 @@
       position: absolute;
       width: 40px;
       height: 40px;
-      padding-left: 10px;
+      padding-left: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
       svg{
-        width: 34px;
-        height: 34px;
+        width: 29px;
+        height: 29px;
         fill: $orangeBackgroundColor;
       }
     }
     .name {
-      margin-left: 65px;
-      font-size: 15px;
-      font-weight: 400;
-      padding-right: 4px;
-      color: #565656;
+      margin-left: 53px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      line-height: 18px;
+      padding: 0 11px;
+
     }
   }
 }

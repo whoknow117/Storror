@@ -32,7 +32,7 @@ const SliderShow: React.FC<SliderShowPropsType> = () => {
 
     return <div className={classes.slideShow}>
         <img src={imageState[slide].img} alt="#"/>
-        <button onClick={addSlide} >next </button>
+
     </div>
 }
 export default SliderShow;

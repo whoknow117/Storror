@@ -1,16 +1,16 @@
 //main
-$sidebarWidth: 260px;
+$sidebarWidth: 240px;
 $sidebarHeight: 100vh;
 $sidebarBackgroundColor: #ffffff;
 
-$headerWidth: calc(100% - 260px);
+$headerWidth: calc(100% - 240px);
 $headerHeight: 50px;
 $headerBackground: #fff;
 
 
-$contentWidth: calc( 100% - 260px);
+$contentWidth: calc( 100% - 240px);
 $contentHeight: calc(100% - 80px);
 
+$mainFont: Montserrat, Arial, sans-serif;
 
-
-$orangeBackgroundColor: #ff5100;
+$orangeBackgroundColor: rgb(250, 120, 33);
