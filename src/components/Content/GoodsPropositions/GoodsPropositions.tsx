@@ -15,7 +15,7 @@ export type GoodsType = {
 const goods: Array<GoodsType> = [
     {
         id: '1',
-        title: "Шуруповерт Makita rx321",
+        title: "Шуруповерт Makita rx321 32/21 e1.25123551",
         price: '1 250 грн',
         img: 'https://megatool.com.ua/image/cache/catalog/products/elektroinstrumenty/akkumulyatornaya-drel-shurupovert-makita-ddf453sfx7-700x700.jpg',
         group: 'electro-tools',
@@ -83,8 +83,10 @@ const GoodsPropositions: React.FC<GoodsPropositionsPropsType> = () => {
                                <img src={g.img} alt="#"/>
 
                            </div>
-                           <span>{g.title}</span>
-                           <span>{g.price}</span>
+                           <div className={classes.spanWrap}>
+                               <span className={classes.spanTitle}>{g.title}</span>
+                               <span className={classes.price}>{g.price}</span>
+                           </div>
                            <button className={classes.btn}>купить</button>
 
                        </div>
