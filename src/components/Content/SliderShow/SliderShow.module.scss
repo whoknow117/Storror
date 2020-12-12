@@ -51,14 +51,16 @@
   opacity: 1;
   visibility: visible;
   position: absolute;
-  transition: .4s ease;
+  transform: scale(1);
+  transition: .3s ease;
 
 }
 
 .slide {
   position: absolute;
   opacity: 0;
+  transform: scale(.94);
   visibility: hidden;
-  transition: .4s ease;
+  transition: .3s ease;
 
 }

@@ -8,9 +8,12 @@ const HeaderBottomNav = () => {
     return (
 
             <ul className={classes.menuIcon}>
-                <li className={classes.iconItems}><Person/></li>
-                <li className={classes.iconItems}><Heart/></li>
-                <li className={classes.iconItems}><Basket/></li>
+                <li className={classes.iconItems}><Person/>
+                Войти</li>
+                <li className={classes.iconItems}><Heart/>
+                Избранное</li>
+                <li className={classes.iconItems}><Basket/>
+                Корзина</li>
             </ul>
 
     )

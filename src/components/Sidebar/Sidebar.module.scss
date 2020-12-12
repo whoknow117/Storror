@@ -12,6 +12,7 @@
   background: $sidebarBackgroundColor;
   border-right: 1px solid #eaeaea;
   transition: all .3s ease ;
+
   .wrapper {
     position: relative;
     list-style: none;
@@ -23,7 +24,7 @@
     font-size: 13px;
     padding-left: 10px;
 
-    &:nth-child(13) {
+    &:nth-child(14) {
       
       margin-top: 44px;
       .icon {
@@ -32,7 +33,7 @@
         }
       }
     }
-    &:nth-child(14) {
+    &:nth-child(15) {
 
 
       .icon {

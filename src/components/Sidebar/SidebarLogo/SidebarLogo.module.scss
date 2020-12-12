@@ -6,23 +6,69 @@
   display: flex;
   position: relative;
   align-items: center;
-  margin-left: 40px;
-  width:150px;
+
+  width: 100%;
+
   z-index: 140;
   height: 80px;
   margin-bottom: 8px;
   cursor: pointer;
   text-decoration: none;
+
+  .menuBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    border: 1px solid silver;
+    margin-left: 10px;
+    span
+     {
+      position: absolute;
+      top: 50%;
+      margin-top: -1px;
+      margin-left: -10px;
+      left: 50%;
+      width: 20px;
+      height: 2px;
+      background: #000;
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        margin-left: -10px;
+        left: 50%;
+        width: 20px;
+        height: 2px;
+        background: #000;
+        transition: .5s ease-in-out;
+      }
+      &::before {
+        transform: translateY(-5px);
+      }
+      &::after {
+        transform: translateY(5px);
+      }
+    }
+
+  }
+
   &__icon {
     position: absolute;
     z-index: 120;
-    left: -36px;
+    left: 40px;
     top: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 70px;
+    flex-basis: 70%;
     height: 70px;
+
     &:before {
       content: '';
       display: block;
@@ -33,6 +79,7 @@
       right: -10px;
       bottom: 38%;
     }
+
     svg {
       width: 64px;
       height: 64px;
@@ -40,6 +87,7 @@
       background: transparent;
     }
   }
+
   &__text {
     position: relative;
     z-index: 122;
@@ -48,27 +96,29 @@
     color: $orangeBackgroundColor;
     font-weight: 700;
     font-size: 0.9rem;
-    margin-left: 10px;
+    margin-left: 36px;
+
     &:before {
       content: ' ';
       position: absolute;
       left: 0;
       top: 0;
       font-size: .4rem;
-      color: rgba(0,0,0,.3);
+      color: rgba(0, 0, 0, .3);
       z-index: -1;
     }
-    &:after {
-      content: 'интернет-магазин стройматериалов';
-      position: absolute;
-      display: block;
-      left: 40px;
-      bottom: -20px;
-      width: 200px;
-      font-size: .59rem;
-      line-height: 10px;
-      color: rgb(97, 97, 97);
-    }
+
 
   }
+}
+
+.menuBtnActive {
+  span{
+    &:before {
+      transform: rotate(35deg);
+    }
+  }
+}
+.collapsed {
+  background: #000;
 }

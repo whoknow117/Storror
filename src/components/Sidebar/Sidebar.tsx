@@ -43,8 +43,9 @@ type SidebarPropsType = {
 }
 
 const Sidebar: React.FC<SidebarPropsType> = ({sidebar,setCollapsedCallback,collapsed}) => {
-    return <div className={`${classes.sidebar} ${collapsed ? classes.collapsed : ""}`}>
-        <SidebarLogo/>
+    return <div className={!collapsed  ? classes.sidebar : classes.collapsed}>
+        <SidebarLogo setCollapsed={setCollapsedCallback} collapsed={collapsed}/>
+        <span className={classes.toggle}></span>
         {sidebar.map(item => {
             return (
 
