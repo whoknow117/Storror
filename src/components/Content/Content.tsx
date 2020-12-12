@@ -5,6 +5,7 @@ import Proposal from "./Proposal/Proposal";
 import GoodsPropositions from "./GoodsPropositions/GoodsPropositions";
 import {ContentType} from "../../redux/store";
 import Popular from "./Popular/Popular";
+import GoodsAssembly from "./GoodsAssembly/GoodsAssembly";
 
 type ContentPropsType = {
     setCollapsedCallback: () => void
@@ -64,9 +65,11 @@ const Content: React.FC<ContentPropsType> = ({content,collapsed, setCollapsedCal
         <Popular
             popular={content.popular}
         />
+        <GoodsAssembly/>
         <GoodsPropositions
 
         />
+
     </div>
 }
 export default Content;

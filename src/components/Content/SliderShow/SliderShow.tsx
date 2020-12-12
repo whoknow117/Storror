@@ -31,6 +31,7 @@ const SliderShow: React.FC<SliderShowPropsType> = () => {
      }
      else setSlide(slide + 1)
  }
+
  const decrementSlide = () => {
      if(slide) {
          setSlide(slide - 1);
