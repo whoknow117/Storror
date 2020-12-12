@@ -1,17 +1,25 @@
 import React from 'react';
 import classes from './Content.module.scss';
 import SliderShow from "./SliderShow/SliderShow";
+import Proposal from "./Proposal/Proposal";
+import GoodsPropositions from "./GoodsPropositions/GoodsPropositions";
+import {ContentType} from "../../redux/store";
+import Popular from "./Popular/Popular";
 
-type ContentPropsType = {}
+type ContentPropsType = {
+    setCollapsedCallback: () => void
+    collapsed: boolean
+    content: ContentType
+}
 
-const Content: React.FC<ContentPropsType> = () => {
+const Content: React.FC<ContentPropsType> = ({content,collapsed, setCollapsedCallback}) => {
 
     return <div className={classes.content}>
         <SliderShow/>
         <div className={classes.info}>
             <div className={classes.info__item}>
                 <div className={classes.itemImg}>
-                    <img
+                    <img alt="#"
                         src=" https://www.motortrend.com/uploads/sites/10/2015/11/2014-mercedes-benz-sprinter-passenger-van-angular-front.png?fit=around%7C875:492.1875"/>
                 </div>
 
@@ -22,7 +30,7 @@ const Content: React.FC<ContentPropsType> = () => {
             </div>
             <div className={classes.info__item}>
                 <div className={classes.itemImg}>
-                    <img src="https://clipart-db.ru/file_content/rastr/alarm-clock_007.png"/>
+                    <img alt="#" src="https://clipart-db.ru/file_content/rastr/alarm-clock_007.png"/>
                 </div>
                 <div className={classes.txt}>
                     <span className={classes.text}>Актуальные режимы работы пунктов выдачи  </span>
@@ -32,7 +40,7 @@ const Content: React.FC<ContentPropsType> = () => {
             <div className={classes.info__item}>
 
                 <div className={classes.itemImg}>
-                    <img src="https://pngimg.com/uploads/credit_card/credit_card_PNG207.png"/>
+                    <img  alt="#" src="https://pngimg.com/uploads/credit_card/credit_card_PNG207.png"/>
                 </div>
                 <div className={classes.txt}>
                     <span className={classes.text}>Используйте безопасные методы оплаты  </span>
@@ -42,7 +50,7 @@ const Content: React.FC<ContentPropsType> = () => {
 
             <div className={classes.info__item}>
                 <div className={classes.itemImg}>
-                    <img src="https://www.pngmart.com/files/7/Mobile-Phone-PNG-Photos.png"/>
+                    <img  alt="#" src="https://www.pngmart.com/files/7/Mobile-Phone-PNG-Photos.png"/>
 
                 </div>
                 <div className={classes.txt}>
@@ -52,7 +60,13 @@ const Content: React.FC<ContentPropsType> = () => {
             </div>
 
         </div>
-        <div></div>
+        <Proposal/>
+        <Popular
+            popular={content.popular}
+        />
+        <GoodsPropositions
+
+        />
     </div>
 }
 export default Content;

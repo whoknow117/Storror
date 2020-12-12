@@ -40,8 +40,17 @@
         text-align: left;
 
 
-        .text {}
-        .span{}
+        .text {
+
+
+        }
+        .linkSpan{
+          display: block;
+          font-size: 13px;
+          margin-top: 10px;
+          text-decoration: underline solid;
+          cursor: pointer;
+        }
       }
     }
 

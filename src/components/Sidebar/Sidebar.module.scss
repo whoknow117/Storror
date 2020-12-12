@@ -6,10 +6,12 @@
   position: fixed;
   box-shadow: 0 2px 5px rgba(0,0,0,.1);
   top: 0;
+  overflow: hidden;
   width: $sidebarWidth;
   height: 100vh;
   background: $sidebarBackgroundColor;
   border-right: 1px solid #eaeaea;
+  transition: all .3s ease ;
   .wrapper {
     position: relative;
     list-style: none;
@@ -20,6 +22,7 @@
     cursor: pointer;
     font-size: 13px;
     padding-left: 10px;
+
     &:nth-child(13) {
       
       margin-top: 44px;
@@ -74,4 +77,9 @@
 
     }
   }
+}
+
+.collapsed {
+  width: 70px;
+  transition: .3s ease-in-out;
 }

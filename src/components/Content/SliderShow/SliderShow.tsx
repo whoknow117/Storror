@@ -1,5 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import classes from './SliderShow.module.scss';
+import slider1Img from '../../../assets/k1.jpg';
+import slider2Img from '../../../assets/k2.jpg';
+import slider3Img from '../../../assets/k3.jpg';
+import slider4Img from '../../../assets/k4.jpg';
+import slider5Img from '../../../assets/k5.jpg';
 
 type SliderShowPropsType = {
 
@@ -9,9 +14,9 @@ type ImageStateType = {
     img: string
 }
 const imageState: Array<ImageStateType> = [
-    {id: 1, img: 'https://www.minimum-price.ru/upload/iblock/ba5/banner_2_7683.jpg',},
-    {id: 2, img: 'https://www.ecosum.ru/wp-content/uploads/ejednevnie-promokody-24-august-2020.jpg',},
-    {id: 3, img: 'https://st.overclockers.ru/images/soft/2020/04/10/citi-ulet-sale.jpg',},
+    {id: 1, img: slider2Img,},
+    {id: 2, img: slider3Img,},
+    {id: 3, img: slider4Img,},
 ]
 
 const SliderShow: React.FC<SliderShowPropsType> = () => {

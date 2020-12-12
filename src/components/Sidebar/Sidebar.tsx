@@ -38,16 +38,17 @@ const sidebarIcons = [
 
 type SidebarPropsType = {
     sidebar: SidebarType
-
+    setCollapsedCallback: () => void
+    collapsed: boolean
 }
 
-const Sidebar: React.FC<SidebarPropsType> = ({sidebar}) => {
-    return <div className={classes.sidebar}>
+const Sidebar: React.FC<SidebarPropsType> = ({sidebar,setCollapsedCallback,collapsed}) => {
+    return <div className={`${classes.sidebar} ${collapsed ? classes.collapsed : ""}`}>
         <SidebarLogo/>
         {sidebar.map(item => {
             return (
 
-                <div key={item.id} className={classes.wrapper}>
+                <div key={item.id} className={ classes.wrapper }>
                    {sidebarIcons.map(icon => icon.id === item.id ?
                         <div key={icon.id} className={classes.icon}>{icon.icon}</div> : ""
                     )}

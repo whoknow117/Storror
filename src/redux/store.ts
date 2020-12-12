@@ -31,8 +31,14 @@ export type SliderType = {
 
 export type ContentType = {
     slider: Array<SliderType>
+    popular: Array<PopularType>
 }
 
+export type PopularType = {
+    id: string
+    title: string
+    img: string
+}
 
 export type RootStateType = {
     header: HeaderType
@@ -117,6 +123,17 @@ const store = {
                 {id: '1', img: 'https://www.minimum-price.ru/upload/iblock/ba5/banner_2_7683.jpg',},
                 {id: '2', img: 'https://www.ecosum.ru/wp-content/uploads/ejednevnie-promokody-24-august-2020.jpg',},
                 {id: '3', img: 'https://st.overclockers.ru/images/soft/2020/04/10/citi-ulet-sale.jpg',},
+            ],
+            popular: [
+                {id: '1', title: 'Смесители', img: 'https://sanevv.com.ua/image/cache/catalog/imprese/grafiky-ZMK041807040-black-nikel-cherniy-imprese-smesitel-dlya-vanni-2-600x600.jpg'},
+                {id: '2', title: 'Бойлеры', img: 'https://cdn.comfy.ua/media/catalog/product/cache/4/image/1440x1080/62defc7f46f3fbfc8afcd112227d1181/a/r/ariston_reg_80_v_1.5k_eu21.jpg'},
+                {id: '3', title: 'Трубы', img: 'https://aqua-therm.org/images/catalog/thumb/7d63a2bce300584aea39e790b908dbc2.jpg'},
+                {id: '4', title: 'Электроинструмент', img: 'https://e-altsest.com/image/cache/catalog/perf/boschgbh4-32dfr-500x500.jpeg'},
+                {id: '5', title: 'Лаки и краски', img: 'https://lh3.googleusercontent.com/proxy/qXfP0ZMVg5IyngEGqM4ucPP4qAX-49GcPFVF0tZtDVJclAvj6TYvl9rd6gSUAtWjVoyGjBEvoziJXOkKYtRLuIYXqoJNShhr57ulH3F6Kvd2LRThRHAeTLdf0HPgg3XdcDuHZqWDdDYQGmxNq2yZJPxomwRSRPc'},
+                {id: '6', title: 'Саморезы', img: 'https://fenixcentr.kiev.ua/image/cache/catalog/obschestroj/metizy/1478798093_samorezi-simferopol-sevastopol-krim-1000x1000.jpg'},
+                {id: '7', title: 'Насосы', img: 'https://images.ua.prom.st/2571332144_w200_h200_stantsiya-035kvt-hmax.jpg'},
+                {id: '8', title: 'Ручной инструмент', img: 'https://intertool.ua/catalog/avtoinstrument/nabori-instrumentov/intertool-et-8056-photo-1.jpg'},
+
             ],
         },
 

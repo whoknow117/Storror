@@ -6,10 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import store from './redux/store';
 import {BrowserRouter} from "react-router-dom";
 
+const state = store.getState();
+
 ReactDOM.render(
     <BrowserRouter>
   <React.StrictMode>
-    <App store={store} />
+    <App store={store} state={state}   />
   </React.StrictMode>
     </BrowserRouter>,
   document.getElementById('root')
