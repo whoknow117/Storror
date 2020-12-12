@@ -2,28 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/k1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/k2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/k3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/k4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/k5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content/Popular/Popular.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content/Popular/Popular.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content/Proposal/Proposal.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content/Proposal/Proposal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Content/ReadySetup/ReadySetup.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Content/ReadySetup/ReadySetup.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Popular/Popular.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Popular/Popular.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Popular/Popular.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Popular/Popular.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +59,7 @@
       <workItem from="1607682217585" duration="919000" />
       <workItem from="1607702574260" duration="2387000" />
       <workItem from="1607709128345" duration="7820000" />
-      <workItem from="1607754605778" duration="8806000" />
+      <workItem from="1607754605778" duration="12335000" />
     </task>
     <servers />
   </component>

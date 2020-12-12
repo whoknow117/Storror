@@ -14,29 +14,39 @@ type ImageStateType = {
     img: string
 }
 const imageState: Array<ImageStateType> = [
-    {id: 1, img: slider2Img,},
-    {id: 2, img: slider3Img,},
-    {id: 3, img: slider4Img,},
+    {id: 0, img: slider2Img,},
+    {id: 1, img: slider3Img,},
+    {id: 2, img: slider4Img,},
 ]
 
 const SliderShow: React.FC<SliderShowPropsType> = () => {
 
-    const [slide, setSlide] = useState<number>(0)
 
-    const incrementSlide = () => {
-         setSlide(slide + 1)
+ const [slide, setSlide] = useState<number>(0);
 
-    }
-    const addSlide = () => {
-        if( slide <= imageState.length - 2 ) {
-            incrementSlide()
-        }
-        else setSlide(0)
-        console.log(slide)
-    }
+ const incrementSlide = () => {
+     if(slide ===  imageState.length - 1) {
+
+         setSlide(0)
+     }
+     else setSlide(slide + 1)
+ }
+ const decrementSlide = () => {
+     if(slide) {
+         setSlide(slide - 1);
+     }
+     else setSlide(imageState.length - 1)
+ }
+
+
 
     return <div className={classes.slideShow}>
-        <img src={imageState[slide].img} alt="#"/>
+         <div className={`${classes.sliderImage}${slide === imageState[slide].id ? classes.active : ''} `}>
+             <img src={imageState[slide].img} alt=""/>
+         </div>
+            <button onClick={incrementSlide}>prev</button>
+            <button onClick={decrementSlide}>next</button>
+
 
     </div>
 }

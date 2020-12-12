@@ -21,7 +21,7 @@ const Popular: React.FC<PopularPropsType> = ({popular}) => {
                             <div className={classes.image}>
                                 <img src={p.img} alt="#"/>
                             </div>
-                            <div>
+                            <div className={classes.title}>
                                 {p.title}
                             </div>
                         </div>
