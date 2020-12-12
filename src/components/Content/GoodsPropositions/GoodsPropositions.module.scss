@@ -11,19 +11,38 @@
   margin-top: 20px;
   justify-content: space-around;
 
+
   .goodsItem {
     text-decoration: none;
-    .wrap {
-      width: 300px;
 
-      border: 1px solid silver;
-      .sticker {}
+    .wrap {
+      width: 230px;
+      box-shadow: 0 21px 14px rgba(0,0,0,.1);
+      padding: 20px;
+      padding-top: 30px;
+      border-radius: 4px;
+
+
+      .sticker {
+        font-size: 11px;
+        background: #ff450d;
+        color: #fff;
+        padding: 4px;
+
+
+      }
       .image {
-        width: 280px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        margin: 10px auto;
+
         img {
-          width: 100%;
-          height: 100%;
+          width: 90%;
+          height:90%;
         }
       }
       .spanWrap {
@@ -32,13 +51,26 @@
         .spanTitle {
           display: block;
           color: #000;
+          height: 60px;
         }
         .price {
+          margin-top: 10px;
+          color: #ff450d;
+          font-size: 24px;
           display: block;
         }
       }
 
-      .btn {}
+      .btn {
+        border: none;
+        background: #983dd9;
+        color: #fff;
+        padding: 6px 20px;
+        margin-top: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0,0,0,.2);
+      }
     }
   }
 }

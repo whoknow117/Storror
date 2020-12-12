@@ -21,7 +21,7 @@
     border-radius: 50%;
     background: #fff;
     position: relative;
-    border: 1px solid silver;
+    border: 1px solid $burgerColor;
     margin-left: 10px;
     span
      {
@@ -32,7 +32,7 @@
       left: 50%;
       width: 20px;
       height: 2px;
-      background: #000;
+      background:  $burgerColor;
       &::before,
       &::after {
         content: '';
@@ -44,7 +44,7 @@
         left: 50%;
         width: 20px;
         height: 2px;
-        background: #000;
+        background: $burgerColor;
         transition: .5s ease-in-out;
       }
       &::before {

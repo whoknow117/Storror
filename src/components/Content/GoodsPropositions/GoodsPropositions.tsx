@@ -16,7 +16,7 @@ const goods: Array<GoodsType> = [
     {
         id: '1',
         title: "Шуруповерт Makita rx321 32/21 e1.25123551",
-        price: '1 250 грн',
+        price: '2 350 ₴',
         img: 'https://megatool.com.ua/image/cache/catalog/products/elektroinstrumenty/akkumulyatornaya-drel-shurupovert-makita-ddf453sfx7-700x700.jpg',
         group: 'electro-tools',
         made: 'Japan',
@@ -24,35 +24,35 @@ const goods: Array<GoodsType> = [
     },
     {
         id: '2',
-        title: "Шуруповерт Makita rx321",
-        price: '1 250 грн',
-        img: 'https://images.ua.prom.st/2212077534_w640_h640_akkumulyatornyj-shurupovert-makita.jpg',
+        title: "Змішувач для раковини F70A02100 AM.PM Spirit 2.0",
+        price: '1 940 ₴',
+        img: 'https://ceramroom.com.ua/content/images/14/70764548561237.jpeg',
         group: 'electro-tools',
         made: 'Japan',
         path: '/'
     },
     {
         id: '3',
-        title: "Шуруповерт Makita rx321",
-        price: '1 250 грн',
-        img: 'https://toolsup.com.ua/image/cache/catalog/makita/mktnxfd11zb-700x700.jpg',
+        title: "Водонагреватель ATLANTIC Atlantic Opro Classic VM 80 N4 (1200W)",
+        price: '2 199 ₴',
+        img: 'https://i1.foxtrot.com.ua/product/MediumImages/6377012_0.jpg',
         group: 'electro-tools',
         made: 'Japan',
         path: '/'
     },
     {
         id: '4',
-        title: "Шуруповерт Makita rx321",
-        price: '1 250 грн',
-        img: 'https://tdp.com.ua/images/catalog/b97a7d7631/1524653419_eaaf0cef0dad0a3e94e42bf8e4bbbeb3.jpg',
+        title: "Универсальный Насос LEO 3.0 776150 0.37кВт (APSm37AE)2 ",
+        price: '1 250 ₴',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHVDAh-57QKUoos97FAc8ivr17QjDyVDJ6tw&usqp=CAU',
         group: 'electro-tools',
         made: 'Japan',
         path: '/'
     }, {
         id: '5',
-        title: "Шуруповерт Makita rx321",
-        price: '1 250 грн',
-        img: 'https://www.motoblok.biz/uploads/processed/87/cf/2f1990276e08c457ce0af0714f38cf87-415x415.jpg',
+        title: "Мойка высокого давления Karcher K 5 Full Control",
+        price: '1 630 ₴',
+        img: 'https://www.tradebox.dn.ua/img/catalog/o1528376236.jpg',
         group: 'electro-tools',
         made: 'Japan',
         path: '/'
@@ -75,7 +75,7 @@ const GoodsPropositions: React.FC<GoodsPropositionsPropsType> = () => {
 
             {goods.map(g => {
 
-               if (g.id <= '4') {
+               if (g.id <= '5') {
                    return <NavLink to={g.path} className={classes.goodsItem}>
                        <div className={classes.wrap}>
                            <span className={classes.sticker}>новинка</span>

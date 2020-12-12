@@ -5,16 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/Content.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottom.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottom.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottomNav/HeaderBottomNav.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottomNav/HeaderBottomNav.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottomNav/HeaderBottomNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottomNav/HeaderBottomNav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SidebarLogo/SidebarLogo.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarLogo/SidebarLogo.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SidebarLogo/SidebarLogo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarLogo/SidebarLogo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/variables/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +58,8 @@
       <workItem from="1607709128345" duration="7820000" />
       <workItem from="1607754605778" duration="12868000" />
       <workItem from="1607776662642" duration="10041000" />
-      <workItem from="1607793390797" duration="6720000" />
+      <workItem from="1607793390797" duration="6889000" />
+      <workItem from="1607803455491" duration="2944000" />
     </task>
     <servers />
   </component>
