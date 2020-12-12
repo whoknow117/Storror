@@ -22,7 +22,9 @@ const imageState: Array<ImageStateType> = [
 const SliderShow: React.FC<SliderShowPropsType> = () => {
 
 
- const [slide, setSlide] = useState<number>(0);
+ const [slide, setSlide] = useState<number>(2);
+
+
 
  const incrementSlide = () => {
      if(slide ===  imageState.length - 1) {
@@ -42,11 +44,21 @@ const SliderShow: React.FC<SliderShowPropsType> = () => {
 
 
     return <div className={classes.slideShow}>
-         <div className={`${classes.sliderImage}${slide === imageState[slide].id ? classes.active : ''} `}>
-             <img src={imageState[slide].img} alt=""/>
-         </div>
-            <button onClick={incrementSlide}>prev</button>
-            <button onClick={decrementSlide}>next</button>
+
+        {imageState.map((im, idx)=> {
+            return (
+                <div key={idx} className={ idx === slide ? classes.active : classes.slide}>
+                    <img src={im.img} alt="#"/>
+                </div>
+            )
+        })}
+
+        <button className={classes.btn} onClick={decrementSlide}>
+            <span className={classes.prev}>prev</span>
+        </button>
+        <button className={classes.btn} onClick={incrementSlide}>
+            <span className={classes.next}>next</span>
+        </button>
 
 
     </div>

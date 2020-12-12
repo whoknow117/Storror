@@ -4,9 +4,8 @@
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/GoodsAssembly/GoodsAssembly.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodsAssembly/GoodsAssembly.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,7 @@
       <workItem from="1607702574260" duration="2387000" />
       <workItem from="1607709128345" duration="7820000" />
       <workItem from="1607754605778" duration="12868000" />
-      <workItem from="1607776662642" duration="5879000" />
+      <workItem from="1607776662642" duration="9942000" />
     </task>
     <servers />
   </component>
