@@ -16,7 +16,8 @@ const GoodCard:React.FC<GoodCardPropsType> = ({id,title,
                                                   price,img,
                                                   group,made,path}) => {
     return  <div className={classes.goodCard}>
-        <img src={img} alt=""/>
+        <div className={classes.left}></div>
+        <div className={classes.right}></div>
     </div>
 
 
