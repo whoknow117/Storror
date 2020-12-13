@@ -11,7 +11,7 @@ type SidebarLogoType = {
 const SidebarLogo:React.FC<SidebarLogoType> = ({collapsed,setCollapsed}) => {
 
     return (
-        <div  className={classes.headerLogo}>
+        <NavLink to={'/Storror'} className={classes.headerLogo}>
             <div onClick={setCollapsed} className={classes.menuBtn}>
                 <span className={collapsed ? classes.collapsed : classes.span}></span>
             </div>
@@ -25,7 +25,7 @@ const SidebarLogo:React.FC<SidebarLogoType> = ({collapsed,setCollapsed}) => {
             </div>
             <h3 className={classes.headerLogo__text}>НАБЖЕНЕЦ</h3>
 
-        </div>
+        </NavLink>
     )
 }
 

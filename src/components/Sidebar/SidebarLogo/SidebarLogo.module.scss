@@ -16,13 +16,13 @@
   text-decoration: none;
 
   .menuBtn {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background: #fff;
     position: relative;
     border: 1px solid $burgerColor;
-    margin-left: 10px;
+    margin-left: 15px;
     span
      {
       position: absolute;
@@ -96,7 +96,7 @@
     color: $orangeBackgroundColor;
     font-weight: 700;
     font-size: 0.9rem;
-    margin-left: 36px;
+    margin-left: 40px;
 
     &:before {
       content: ' ';

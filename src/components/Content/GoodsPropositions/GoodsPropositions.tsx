@@ -20,7 +20,7 @@ const goods: Array<GoodsType> = [
         img: 'https://megatool.com.ua/image/cache/catalog/products/elektroinstrumenty/akkumulyatornaya-drel-shurupovert-makita-ddf453sfx7-700x700.jpg',
         group: 'electro-tools',
         made: 'Japan',
-        path: '/'
+        path: '/tovar/123151'
     },
     {
         id: '2',
@@ -29,7 +29,7 @@ const goods: Array<GoodsType> = [
         img: 'https://ceramroom.com.ua/content/images/14/70764548561237.jpeg',
         group: 'electro-tools',
         made: 'Japan',
-        path: '/'
+        path: '/tovar/123152'
     },
     {
         id: '3',
@@ -38,7 +38,7 @@ const goods: Array<GoodsType> = [
         img: 'https://i1.foxtrot.com.ua/product/MediumImages/6377012_0.jpg',
         group: 'electro-tools',
         made: 'Japan',
-        path: '/'
+        path: '/tovar/123154'
     },
     {
         id: '4',
@@ -47,7 +47,7 @@ const goods: Array<GoodsType> = [
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHVDAh-57QKUoos97FAc8ivr17QjDyVDJ6tw&usqp=CAU',
         group: 'electro-tools',
         made: 'Japan',
-        path: '/'
+        path: '/tovar/123156'
     }, {
         id: '5',
         title: "Мойка высокого давления Karcher K 5 Full Control",
@@ -55,7 +55,7 @@ const goods: Array<GoodsType> = [
         img: 'https://www.tradebox.dn.ua/img/catalog/o1528376236.jpg',
         group: 'electro-tools',
         made: 'Japan',
-        path: '/'
+        path: '/tovar/123159'
     },
 
 ]
