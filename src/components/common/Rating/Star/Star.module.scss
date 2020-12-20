@@ -1,0 +1,19 @@
+.common {
+  cursor: pointer;
+  svg {
+    fill:none;
+    stroke: black;
+    stroke-width: 5px;
+    transition: .3s ease-in-out;
+  }
+}
+
+.active {
+  color: #61dafb;
+  svg {
+    stroke-width: 5px;
+    fill: orangered;
+    transition: .3s ease-in-out;
+
+  }
+}

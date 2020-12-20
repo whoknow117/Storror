@@ -7,6 +7,7 @@ import {RootStateType, StoreType} from "./redux/store";
 import Content from "./components/Content/Content";
 import GoodCard from "./components/GoodCard/GoodCard";
 
+export type ValuesType = 0 | 1 | 2 | 3 | 4 | 5
 
 export type GoodsArrayType = {
     id: string
@@ -78,6 +79,7 @@ function App(props: AppPropsType) {
     const sidebar = props.state.sidebar;
     const content = props.state.content;
 
+    const [value, setValue] = useState<ValuesType>(0);
 
     const [collapsed, setCollapsed] = useState<boolean>(false);
 
@@ -103,6 +105,9 @@ function App(props: AppPropsType) {
                     {goodsArray.map((good,idx) => {
                         return <Route key={idx} path={good.path}
                                       render={() => <GoodCard id={good.id}
+
+                                           onClick={setValue}
+                                           value={value}
                                           title={good.title}
                                           price={good.price}
                                           img={good.img}
