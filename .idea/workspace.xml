@@ -4,14 +4,9 @@
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/GoodsAssembly/GoodsAssembly.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodsAssembly/GoodsAssembly.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/Proposal/Proposal.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Proposal/Proposal.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +73,7 @@
       <workItem from="1608465606264" duration="4522000" />
       <workItem from="1608472978408" duration="4000" />
       <workItem from="1608476181482" duration="4850000" />
-      <workItem from="1608481292986" duration="709000" />
+      <workItem from="1608481292986" duration="1176000" />
     </task>
     <servers />
   </component>
