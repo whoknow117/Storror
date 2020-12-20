@@ -1,6 +1,7 @@
 import React  from 'react';
 import classes from './GoodsPropositions.module.scss';
 import {NavLink} from "react-router-dom";
+import Rating from "../../common/Rating/Rating";
 
 export type GoodsType = {
     id: string
@@ -83,10 +84,15 @@ const GoodsPropositions: React.FC<GoodsPropositionsPropsType> = () => {
 
             {goods.map(g => {
 
-               if (g.id <= '6') {
+               if (g.id <= '5') {
                    return <NavLink to={g.path} className={classes.goodsItem}>
                        <div className={classes.wrap}>
-                           <span className={classes.sticker}>новинка</span>
+                          <div className={classes.separate}>
+                              <span className={classes.sticker}>новинка</span>
+                              <div className={classes.rating}>
+                                  <Rating value={3} onClick={x=>x}/>
+                              </div>
+                          </div>
                            <div className={classes.image}>
                                <img src={g.img} alt="#"/>
 
