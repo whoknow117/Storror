@@ -12,9 +12,9 @@ const SidebarLogo:React.FC<SidebarLogoType> = ({collapsed,setCollapsed}) => {
 
     return (
         <NavLink to={'/Storror'} className={classes.headerLogo}>
-            <div onClick={setCollapsed} className={classes.menuBtn}>
-                <span className={collapsed ? classes.collapsed : classes.span}></span>
-            </div>
+            {/*<div onClick={setCollapsed} className={classes.menuBtn}>*/}
+            {/*    <span className={collapsed ? classes.collapsed : classes.span}></span>*/}
+            {/*</div>*/}
 
             <div className={classes.headerLogo__icon}>
 

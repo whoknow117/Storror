@@ -2,32 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/StarIcon/StarIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/AdditionalInformation/AdditionalInformation.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/AdditionalInformation/AdditionalInformation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/BreadCrumbs/BreadCrumbs.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/BreadCrumbs/BreadCrumbs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/GoodCardTitle/GoodCardTitle.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/GoodCardTitle/GoodCardTitle.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/GoodsSlider/GoodsSlider.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/GoodsSlider/GoodsSlider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/InformationBoard/InformationBoard.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/InformationBoard/InformationBoard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/MainInformation.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/MainInformation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Rating/Rating.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Rating/Rating.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Rating/Star/Star.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Rating/Star/Star.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/GoodsAssembly/GoodsAssembly.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodsAssembly/GoodsAssembly.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Popular/Popular.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Popular/Popular.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SidebarLogo/SidebarLogo.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarLogo/SidebarLogo.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SidebarLogo/SidebarLogo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarLogo/SidebarLogo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/variables/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +73,8 @@
       <workItem from="1607889660108" duration="1688000" />
       <workItem from="1607969701310" duration="1427000" />
       <workItem from="1608051907138" duration="871000" />
-      <workItem from="1608449243265" duration="2173000" />
+      <workItem from="1608449243265" duration="4818000" />
+      <workItem from="1608455859470" duration="4589000" />
     </task>
     <servers />
   </component>
@@ -110,5 +95,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/store.ts</url>
+          <line>80</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

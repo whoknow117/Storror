@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import classes from './Sidebar.module.scss';
 import {NavLink} from "react-router-dom";
 import Boiler from "../../assets/Boiler/Boiler";
@@ -17,22 +17,25 @@ import SidebarLogo from "./SidebarLogo/SidebarLogo";
 import Sale from "../../assets/Sale/Sale";
 import Discount from "../../assets/Discount/Discount.";
 
-
+export type SideBarIconsType = {
+    id: string
+    icon: JSX.Element
+}
 
 const sidebarIcons = [
-    {id: 1, icon: <Drill/>},
-    {id: 2, icon: <Boiler/>},
-    {id: 3, icon: <Electric/>},
-    {id: 4, icon: <Garden/>},
-    {id: 5, icon: <Gas/>},
-    {id: 6, icon: <Hose/>},
-    {id: 7, icon: <Pump/>},
-    {id: 8, icon: <Shovel/>},
-    {id: 9, icon: <Ventilation/>},
-    {id: 10, icon: <Carts/>},
-    {id: 11, icon: <Fasteners/>},
-    {id: 12, icon: <Sale/>},
-    {id: 13, icon: <Discount/>},
+    {id: '1', icon: <Drill/>},
+    {id: '2', icon: <Boiler/>},
+    {id: '3', icon: <Electric/>},
+    {id: '4', icon: <Garden/>},
+    {id: '5', icon: <Gas/>},
+    {id: '6', icon: <Hose/>},
+    {id: '7', icon: <Pump/>},
+    {id: '8', icon: <Shovel/>},
+    {id: '9', icon: <Ventilation/>},
+    {id: '10', icon: <Carts/>},
+    {id: '11', icon: <Fasteners/>},
+    {id: '12', icon: <Sale/>},
+    {id: '13', icon: <Discount/>},
 ]
 
 
@@ -43,20 +46,36 @@ type SidebarPropsType = {
 }
 
 const Sidebar: React.FC<SidebarPropsType> = ({sidebar,setCollapsedCallback,collapsed}) => {
+
+    const [toggle, setToggle] = useState<boolean>(false);
+
+    const activeMenu = () => {
+        setToggle(true);
+        console.log(toggle)
+    }
+    const deactivateMenu = () => {
+        setToggle(false)
+        console.log(toggle)
+    }
+
     return <div className={!collapsed  ? classes.sidebar : classes.collapsed}>
         <SidebarLogo setCollapsed={setCollapsedCallback} collapsed={collapsed}/>
-        <span className={classes.toggle}></span>
+        {/*<span className={classes.toggle}></span>*/}
         {sidebar.map(item => {
             return (
 
-                <div key={item.id} className={ classes.wrapper }>
+                <div onMouseLeave={deactivateMenu} onMouseEnter={activeMenu} key={item.id} className={ classes.wrapper }>
                    {sidebarIcons.map(icon => icon.id === item.id ?
                         <div key={icon.id} className={classes.icon}>{icon.icon}</div> : ""
                     )}
                     <div className={classes.name}>{item.name}</div>
+
                 </div>
             )
         })}
+        <div className={toggle ? classes.dropDown : classes.toggle}>
+
+        </div>
     </div>
 }
 

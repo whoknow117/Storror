@@ -4,14 +4,23 @@
 .sidebar {
   font-family: $mainFont;
   position: fixed;
-
   top: 0;
-  overflow: hidden;
+  z-index: 1001;
   width: $sidebarWidth;
   height: 100vh;
   background: $sidebarBackgroundColor;
   border-right: 1px solid #eaeaea;
   transition: all .3s ease ;
+  .dropDown {
+    position: absolute;
+    width:  700px;
+    height:  100%;
+    background: #fff;
+    top: 0;
+    left: $dropDownLeft;
+
+    z-index: 1001;
+  }
 
   .wrapper {
     position: relative;
@@ -23,22 +32,26 @@
     cursor: pointer;
     font-size: 13px;
     padding-left: 10px;
+    svg {
+      fill:none;
 
-    &:nth-child(14) {
+    }
+
+    &:nth-child(13) {
       
       margin-top: 44px;
       .icon {
         svg {
-          fill: blue;
+          fill: #7e7eff;
         }
       }
     }
-    &:nth-child(15) {
+    &:nth-child(14) {
 
 
       .icon {
         svg {
-          fill: blue;
+          fill: #7e7eff;
         }
       }
     }
@@ -59,7 +72,7 @@
       position: absolute;
       width: 40px;
       height: 40px;
-      padding-left: 8px;
+      padding-left: 4px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -70,7 +83,7 @@
       }
     }
     .name {
-      margin-left: 50px;
+      margin-left: 48px;
       font-size: 0.82rem;
       font-weight: 420;
       color: #000000;

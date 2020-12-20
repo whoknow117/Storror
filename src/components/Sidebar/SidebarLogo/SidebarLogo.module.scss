@@ -2,66 +2,20 @@
 
 
 .headerLogo {
-
   display: flex;
   position: relative;
   align-items: center;
-
   width: 100%;
-
   z-index: 140;
   height: 80px;
   margin-bottom: 8px;
   cursor: pointer;
   text-decoration: none;
-
-  .menuBtn {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #fff;
-    position: relative;
-    border: 1px solid $burgerColor;
-    margin-left: 15px;
-    span
-     {
-      position: absolute;
-      top: 50%;
-      margin-top: -1px;
-      margin-left: -10px;
-      left: 50%;
-      width: 20px;
-      height: 2px;
-      background:  $burgerColor;
-      &::before,
-      &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 50%;
-        margin-top: -1px;
-        margin-left: -10px;
-        left: 50%;
-        width: 20px;
-        height: 2px;
-        background: $burgerColor;
-        transition: .5s ease-in-out;
-      }
-      &::before {
-        transform: translateY(-5px);
-      }
-      &::after {
-        transform: translateY(5px);
-      }
-    }
-
-  }
-
   &__icon {
     position: absolute;
     z-index: 120;
-    left: 40px;
-    top: 4px;
+    left: 0;
+    top: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,12 +28,11 @@
       display: block;
       position: absolute;
       width: 30px;
-      height: 17px;
+      height: 18px;
       background: #fff;
       right: -10px;
       bottom: 38%;
     }
-
     svg {
       width: 64px;
       height: 64px;
@@ -89,22 +42,30 @@
   }
 
   &__text {
-    position: relative;
+
     z-index: 122;
     font-family: MOntserrat, sans-serif;
     letter-spacing: 3px;
     color: $orangeBackgroundColor;
     font-weight: 700;
-    font-size: 0.9rem;
-    margin-left: 40px;
+    font-size: 1.2rem;
+    margin-left: 50px;
+
+
 
     &:before {
-      content: ' ';
+      content: 'интернет магазин строительных материалов';
       position: absolute;
-      left: 0;
-      top: 0;
+      display: block;
+      width:65%;
+
+
+      color: #303030;
+
+      right: 0;
+      top: 66%;
       font-size: .4rem;
-      color: rgba(0, 0, 0, .3);
+
       z-index: -1;
     }
 
