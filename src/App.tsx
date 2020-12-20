@@ -100,7 +100,8 @@ function App(props: AppPropsType) {
                         collapsed={collapsed}
                         content={content}
                         setCollapsedCallback={setCollapsedCallback}
-
+                        value={value}
+                        onClick={setValue}
                     />}/>
                     {goodsArray.map((good,idx) => {
                         return <Route key={idx} path={good.path}

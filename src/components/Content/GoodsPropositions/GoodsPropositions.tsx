@@ -1,7 +1,8 @@
-import React  from 'react';
+import React, {useState}  from 'react';
 import classes from './GoodsPropositions.module.scss';
 import {NavLink} from "react-router-dom";
 import Rating from "../../common/Rating/Rating";
+import {ValuesType} from "../../../App";
 
 export type GoodsType = {
     id: string
@@ -70,11 +71,13 @@ const goods: Array<GoodsType> = [
 ]
 
 type GoodsPropositionsPropsType = {
-
+    onClick:(value: ValuesType) => void
+    value: ValuesType
 }
 
 
-const GoodsPropositions: React.FC<GoodsPropositionsPropsType> = () => {
+const GoodsPropositions: React.FC<GoodsPropositionsPropsType> = ({onClick, value}) => {
+
 
 
     return <div>
@@ -85,26 +88,30 @@ const GoodsPropositions: React.FC<GoodsPropositionsPropsType> = () => {
             {goods.map(g => {
 
                if (g.id <= '5') {
-                   return <NavLink to={g.path} className={classes.goodsItem}>
+                   return <div   className={classes.goodsItem}>
                        <div className={classes.wrap}>
                           <div className={classes.separate}>
                               <span className={classes.sticker}>новинка</span>
                               <div className={classes.rating}>
-                                  <Rating value={3} onClick={x=>x}/>
+                                  <Rating value={value} onClick={onClick}/>
                               </div>
                           </div>
-                           <div className={classes.image}>
-                               <img src={g.img} alt="#"/>
+                           <NavLink to={g.path}>
+                               <div className={classes.image}>
+                                   <img src={g.img} alt="#"/>
 
-                           </div>
-                           <div className={classes.spanWrap}>
-                               <span className={classes.spanTitle}>{g.title}</span>
-                               <span className={classes.price}>{g.price}</span>
-                           </div>
+                               </div>
+                               <div className={classes.spanWrap}>
+                                   <span className={classes.spanTitle}>{g.title}</span>
+                                   <span className={classes.price}>{g.price}</span>
+                               </div>
+                           </NavLink>
+
+
                            <button className={classes.btn}>купить</button>
 
                        </div>
-                   </NavLink>
+                   </div>
                 }
 
             })}

@@ -40,12 +40,19 @@ export type PopularType = {
     img: string
 }
 
-
+export type DropDownMenuType = {
+    title: string
+    item1: string
+}
+export type DropDownType = {
+    [key:string]: Array<DropDownMenuType>
+}
 
 export type RootStateType = {
     header: HeaderType
     sidebar: SidebarType
     content: ContentType
+    dropDown: DropDownType
 }
 
 
@@ -123,7 +130,14 @@ const store = {
         dropDown: {
             '1': [
                 {title: 'Смесители', item1: 'Смесители для ванной' },
+                {title: 'Смесители', item1: 'Смесители для ванной' },
+                {title: 'Смесители', item1: 'Смесители для ванной' },
+                {title: 'Смесители', item1: 'Смесители для ванной' },
                 {title: 'Шланги', item1: 'Смесители для ванной' },
+                {title: 'Шланги', item1: 'Смесители для ванной' },
+                {title: 'Шланги', item1: 'Смесители для ванной' },
+                {title: 'Краны', item1: 'Смесители для ванной' },
+                {title: 'Краны', item1: 'Смесители для кухни' },
                 {title: 'Краны', item1: 'Смесители для ванной' },
             ],
             '2': [

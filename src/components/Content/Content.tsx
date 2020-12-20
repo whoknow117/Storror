@@ -6,14 +6,17 @@ import GoodsPropositions from "./GoodsPropositions/GoodsPropositions";
 import {ContentType} from "../../redux/store";
 import Popular from "./Popular/Popular";
 import GoodsAssembly from "./GoodsAssembly/GoodsAssembly";
+import {ValuesType} from "../../App";
 
 type ContentPropsType = {
     setCollapsedCallback: () => void
     collapsed: boolean
     content: ContentType
+    onClick: (value: ValuesType) => void
+    value: ValuesType
 }
 
-const Content: React.FC<ContentPropsType> = ({content,collapsed, setCollapsedCallback}) => {
+const Content: React.FC<ContentPropsType> = ({value,onClick, content,collapsed, setCollapsedCallback}) => {
 
     return <div className={classes.content}>
         <SliderShow/>
@@ -62,12 +65,13 @@ const Content: React.FC<ContentPropsType> = ({content,collapsed, setCollapsedCal
 
         </div>
         <Proposal/>
-        <Popular
-            popular={content.popular}
-        />
+        {/*<Popular*/}
+        {/*    popular={content.popular}*/}
+        {/*/>*/}
         <GoodsAssembly/>
         <GoodsPropositions
-
+            onClick={onClick}
+            value={value}
         />
 
     </div>
