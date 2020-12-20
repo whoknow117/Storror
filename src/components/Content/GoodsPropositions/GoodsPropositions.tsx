@@ -56,6 +56,14 @@ const goods: Array<GoodsType> = [
         group: 'electro-tools',
         made: 'Japan',
         path: '/tovar/123159'
+    }, {
+        id: '6',
+        title: "Мойка высокого давления Karcher K 5 Full Control",
+        price: '1 630 ₴',
+        img: 'https://www.tradebox.dn.ua/img/catalog/o1528376236.jpg',
+        group: 'electro-tools',
+        made: 'Japan',
+        path: '/tovar/123159'
     },
 
 ]
@@ -75,7 +83,7 @@ const GoodsPropositions: React.FC<GoodsPropositionsPropsType> = () => {
 
             {goods.map(g => {
 
-               if (g.id <= '5') {
+               if (g.id <= '6') {
                    return <NavLink to={g.path} className={classes.goodsItem}>
                        <div className={classes.wrap}>
                            <span className={classes.sticker}>новинка</span>
