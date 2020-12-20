@@ -6,6 +6,19 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import {RootStateType, StoreType} from "./redux/store";
 import Content from "./components/Content/Content";
 import GoodCard from "./components/GoodCard/GoodCard";
+import Drill from "./assets/Drill/Drill";
+import Boiler from "./assets/Boiler/Boiler";
+import Electric from "./assets/Electric/Electric";
+import Garden from "./assets/Garden/Garden";
+import Gas from "./assets/Gas/Gas";
+import Hose from "./assets/Hose/Hose";
+import Pump from "./assets/Pump/Pump";
+import Shovel from "./assets/Shovel/Shovel";
+import Ventilation from "./assets/Ventilation/Ventilation";
+import Carts from "./assets/Carts/Carts";
+import Fasteners from "./assets/Fasteners/Fasteners";
+import Sale from "./assets/Sale/Sale";
+import Discount from "./assets/Discount/Discount.";
 
 export type ValuesType = 0 | 1 | 2 | 3 | 4 | 5
 
@@ -67,6 +80,22 @@ const goodsArray: Array<GoodsArrayType> = [
 
 ]
 
+const sidebarIcons = [
+    {id: '1', icon: <Drill/>},
+    {id: '2', icon: <Boiler/>},
+    {id: '3', icon: <Electric/>},
+    {id: '4', icon: <Garden/>},
+    {id: '5', icon: <Gas/>},
+    {id: '6', icon: <Hose/>},
+    {id: '7', icon: <Pump/>},
+    {id: '8', icon: <Shovel/>},
+    {id: '9', icon: <Ventilation/>},
+    {id: '10', icon: <Carts/>},
+    {id: '11', icon: <Fasteners/>},
+    {id: '12', icon: <Sale/>},
+    {id: '13', icon: <Discount/>},
+]
+
 
 type AppPropsType = {
     store: StoreType
@@ -91,10 +120,12 @@ function App(props: AppPropsType) {
         <div className="App">
             <Header/>
             <div className="wrapper">
-                <Sidebar
-                    collapsed={collapsed}
-                    setCollapsedCallback={setCollapsedCallback}
-                    sidebar={sidebar}/>
+                {sidebar.map( el => {
+                   return  <Sidebar
+                        collapsed={collapsed}
+                        setCollapsedCallback={setCollapsedCallback}
+                        sidebar={sidebar}/>
+                })}
                 <div className="content">
                     <Route exact path='/storror' render={() => <Content
                         collapsed={collapsed}
@@ -103,18 +134,18 @@ function App(props: AppPropsType) {
                         value={value}
                         onClick={setValue}
                     />}/>
-                    {goodsArray.map((good,idx) => {
+                    {goodsArray.map((good, idx) => {
                         return <Route key={idx} path={good.path}
                                       render={() => <GoodCard id={good.id}
 
-                                           onClick={setValue}
-                                           value={value}
-                                          title={good.title}
-                                          price={good.price}
-                                          img={good.img}
-                                          group={good.group}
-                                          made={good.made}
-                                          path={good.path}
+                                                              onClick={setValue}
+                                                              value={value}
+                                                              title={good.title}
+                                                              price={good.price}
+                                                              img={good.img}
+                                                              group={good.group}
+                                                              made={good.made}
+                                                              path={good.path}
 
 
                                       />}

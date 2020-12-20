@@ -38,6 +38,7 @@ const sidebarIcons = [
     {id: '13', icon: <Discount/>},
 ]
 
+// надо сделать так чтоб данные выгружилась корректные
 
 type SidebarPropsType = {
     sidebar: SidebarType
@@ -58,25 +59,30 @@ const Sidebar: React.FC<SidebarPropsType> = ({sidebar,setCollapsedCallback,colla
         console.log(toggle)
     }
 
-    return <div className={!collapsed  ? classes.sidebar : classes.collapsed}>
-        <SidebarLogo setCollapsed={setCollapsedCallback} collapsed={collapsed}/>
-        {/*<span className={classes.toggle}></span>*/}
-        {sidebar.map(item => {
-            return (
+    return (
 
-                <div onMouseLeave={deactivateMenu} onMouseEnter={activeMenu} key={item.id} className={ classes.wrapper }>
-                   {sidebarIcons.map(icon => icon.id === item.id ?
-                        <div key={icon.id} className={classes.icon}>{icon.icon}</div> : ""
-                    )}
-                    <div className={classes.name}>{item.name}</div>
+        <div className={!collapsed  ? classes.sidebar : classes.collapsed}>
+            <SidebarLogo setCollapsed={setCollapsedCallback} collapsed={collapsed}/>
+            {/*<span className={classes.toggle}></span>*/}
+            {sidebar.map(item => {
+                return (
 
-                </div>
-            )
-        })}
-        <div className={toggle ? classes.dropDown : classes.toggle}>
+                    <div onMouseLeave={deactivateMenu} onMouseEnter={activeMenu} key={item.id} className={ classes.wrapper }>
+                        {sidebarIcons.map(icon => icon.id === item.id ?
+                            <div key={icon.id} className={classes.icon}>{icon.icon}</div> : ""
+                        )}
+                        <div className={classes.name}>{item.name}</div>
+
+                    </div>
+
+                )
+            })}<div className={toggle ? classes.toggle : classes.dropDown}>
 
         </div>
-    </div>
+
+        </div>
+    )
 }
 
 export default Sidebar;
+

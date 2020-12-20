@@ -11,17 +11,33 @@
   background: $sidebarBackgroundColor;
   border-right: 1px solid #eaeaea;
   transition: all .3s ease ;
+  @media (max-width: 800px) {
+    left: -240px;
+  }
   .dropDown {
     position: absolute;
+    width:  700px;
+    height:  100%;
+    background: #fff;
+    top: 10vh;
+    left: $dropDownLeft;
+    transition: .2s ease-in-out;
+    z-index: 1001;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .toggle {
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+    transition: .2s ease-in-out;
     width:  700px;
     height:  100%;
     background: #fff;
     top: 0;
     left: $dropDownLeft;
 
-    z-index: 1001;
   }
-
   .wrapper {
     position: relative;
     list-style: none;
