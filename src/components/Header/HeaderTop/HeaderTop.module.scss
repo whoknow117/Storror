@@ -2,9 +2,71 @@
 
 .top {
   height: 50%;
-  border-bottom: 1px solid #e4e3e3;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
   display: flex;
   align-items: center;
+  @media (max-width: 800px) {
+    height: 50px;
+  }
+  .menuBtn {
+    margin-left: 14px;
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    position: relative;
+
+    display: none;
+    @media (max-width: 800px) {
+        display: block;
+
+    }
+    .span,
+    {
+      display: block;
+      position: absolute;
+      top: calc(50% - 1px);
+      left: calc(50% - 9px);
+      width: 18px;
+      height: 2px;
+      background: #222;
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+
+        top: calc(50% - 1px);
+        left: calc(50% - 9px);
+        width: 18px;
+        height: 2px;
+        background: #222;
+        transition: .2s;
+      }
+      &::before {
+        transform: translateY(-5px);
+
+      }
+      &::after {
+        transform: translateY( 5px);
+
+      }
+
+
+    }
+    .toggle {
+      height: 0;
+       &::before {
+         transform: rotate(35deg);
+         border-radius: 50%;
+       }
+      &::after {
+        transform: rotate(-35deg);
+        border-radius: 50%;
+      }
+    }
+
+  }
   .phone {
     margin-left: 20px;
     border-bottom: 2px dashed $orangeBackgroundColor;

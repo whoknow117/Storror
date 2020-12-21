@@ -1,8 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import classes from './HeaderTop.module.scss';
+import {NavLink} from "react-router-dom";
 
 const HeaderTop = () => {
-    return  <div className={classes.top}>
+
+
+    const [toggle, setToggle] = useState<boolean>(false);
+
+
+
+
+    return <div className={classes.top}>
+        <NavLink to={'/Storror'} onClick={() => {setToggle(!toggle)}} className={classes.menuBtn}>
+            <span className={`${classes.span} ${toggle && classes.toggle}`}></span>
+        </NavLink>
         <div className={classes.phone}>
             +38(099)-777-77-77
         </div>
@@ -16,8 +27,6 @@ const HeaderTop = () => {
             </ul>
         </nav>
     </div>
-
-
 
 
 }
