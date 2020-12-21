@@ -7,15 +7,16 @@
   align-items: center;
   @media (max-width: 800px) {
     height: 50px;
+    background: #fafafa;
   }
   .menuBtn {
     margin-left: 14px;
-    width: 32px;
-    height: 32px;
-
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
+    user-select: none;
     position: relative;
-
+    box-shadow: $boxShadowNeuroUp;
     display: none;
     @media (max-width: 800px) {
         display: block;

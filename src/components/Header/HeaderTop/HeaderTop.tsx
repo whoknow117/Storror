@@ -11,9 +11,9 @@ const HeaderTop = () => {
 
 
     return <div className={classes.top}>
-        <NavLink to={'/Storror'} onClick={() => {setToggle(!toggle)}} className={classes.menuBtn}>
+        <div onClick={() => {setToggle(!toggle)}} className={classes.menuBtn}>
             <span className={`${classes.span} ${toggle && classes.toggle}`}></span>
-        </NavLink>
+        </div>
         <div className={classes.phone}>
             +38(099)-777-77-77
         </div>
