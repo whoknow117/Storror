@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import classes from './HeaderTop.module.scss';
 import {NavLink} from "react-router-dom";
+import SidebarLogo from "../../Sidebar/SidebarLogo/SidebarLogo";
 
 const HeaderTop = () => {
 
@@ -11,8 +12,11 @@ const HeaderTop = () => {
 
 
     return <div className={classes.top}>
-        <div onClick={() => {setToggle(!toggle)}} className={classes.menuBtn}>
+        <button onClick={() => {setToggle(!toggle)}} className={classes.menuBtn}>
             <span className={`${classes.span} ${toggle && classes.toggle}`}></span>
+        </button>
+        <div className={classes.logo}>
+            <SidebarLogo />
         </div>
         <div className={classes.phone}>
             +38(099)-777-77-77

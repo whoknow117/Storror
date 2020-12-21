@@ -4,11 +4,10 @@ import Logo from '../../../assets/Logo/Logo';
 import {NavLink} from "react-router-dom";
 
 type SidebarLogoType = {
-    collapsed: boolean
-    setCollapsed: () => void
+
 }
 
-const SidebarLogo:React.FC<SidebarLogoType> = ({collapsed,setCollapsed}) => {
+const SidebarLogo:React.FC<SidebarLogoType> = ( ) => {
 
     return (
         <NavLink to={'/Storror'} className={classes.headerLogo}>

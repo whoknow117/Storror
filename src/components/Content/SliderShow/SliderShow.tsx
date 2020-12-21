@@ -53,12 +53,14 @@ const SliderShow: React.FC<SliderShowPropsType> = () => {
             )
         })}
 
-        <button className={classes.btn} onClick={decrementSlide}>
-            <span className={classes.prev}>prev</span>
-        </button>
-        <button className={classes.btn} onClick={incrementSlide}>
-            <span className={classes.next}>next</span>
-        </button>
+         <div className={classes.btns}>
+             <button className={classes.btn} onClick={decrementSlide}>
+                 <span className={classes.prev}>prev</span>
+             </button>
+             <button className={classes.btn} onClick={incrementSlide}>
+                 <span className={classes.next}>next</span>
+             </button>
+         </div>
 
 
     </div>
