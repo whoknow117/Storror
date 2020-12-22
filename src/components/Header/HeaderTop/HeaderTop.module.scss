@@ -29,7 +29,7 @@
     }
 
     input {
-      background: rgba(255,255,255,.3);
+      background: rgba(200, 200, 200, 0.3);
       border: none;
       outline: none;
       padding-left: 10px;
@@ -52,7 +52,7 @@
   }
   @media (max-width: 800px) {
     height: 70px;
-    background: linear-gradient(90deg, $orangeBackgroundColor, #ff6f00);
+    background: linear-gradient(90deg, $orangeBackgroundColor, #f8f8f8);
 
   }
   .menuBtn {
