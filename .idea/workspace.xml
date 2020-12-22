@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/Bookmark/BookMark.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Heart/Heart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Heart/Heart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottomNav/HeaderBottomNav.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottomNav/HeaderBottomNav.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottomNav/HeaderBottomNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottomNav/HeaderBottomNav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottom.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottom.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderTop/HeaderTop.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderTop/HeaderTop.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderTop/HeaderTop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderTop/HeaderTop.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/variables/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +81,7 @@
       <workItem from="1608581095977" duration="213000" />
       <workItem from="1608655847261" duration="1278000" />
       <workItem from="1608661991095" duration="760000" />
+      <workItem from="1608662984552" duration="2654000" />
     </task>
     <servers />
   </component>
