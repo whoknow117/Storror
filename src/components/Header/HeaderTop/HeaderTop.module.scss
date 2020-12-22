@@ -45,14 +45,14 @@
         border-radius: 5px;
       }
       @media (max-width: 420px) {
-        width: 200px;
+        width: 230px;
         height: 34px;
       }
     }
   }
   @media (max-width: 800px) {
     height: 70px;
-    background: linear-gradient(90deg, $orangeBackgroundColor, #f8f8f8);
+    background: linear-gradient(90deg,  #fff, #f8f8f8);
 
   }
   .menuBtn {
@@ -62,7 +62,7 @@
     border-radius: 50%;
     user-select: none;
     position: relative;
-    background: #fff;
+    background: #f6f6f6;
     display: none;
     border: none;
     outline: none;
