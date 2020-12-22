@@ -4,10 +4,12 @@
   height: 50%;
   box-shadow: 0 2px 4px rgba(0,0,0,.1);
   display: flex;
+  border-bottom: 1px solid #e3e3e3;
   align-items: center;
   .logo {
     margin: 0 auto;
     display: none;
+
     @media(max-width: 800px)  {
       display: block;
     }
