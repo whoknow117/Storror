@@ -65,10 +65,11 @@ const Content: React.FC<ContentPropsType> = ({value,onClick, content,collapsed, 
 
         </div>
         <Proposal/>
-        {/*<Popular*/}
-        {/*    popular={content.popular}*/}
-        {/*/>*/}
+        <Popular
+            popular={content.popular}
+        />
         <GoodsAssembly/>
+        <div className={classes.goodsTitle}> Специально для Вас</div>
         <GoodsPropositions
             onClick={onClick}
             value={value}
