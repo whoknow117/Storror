@@ -4,12 +4,7 @@
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Bookmark/BookMark.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Bookmark/BookMark.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Heart/Heart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Heart/Heart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Popular/Popular.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Popular/Popular.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottomNav/HeaderBottomNav.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottomNav/HeaderBottomNav.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +80,7 @@
       <workItem from="1608661991095" duration="760000" />
       <workItem from="1608662984552" duration="3451000" />
       <workItem from="1608739648226" duration="3013000" />
-      <workItem from="1608744080568" duration="4562000" />
+      <workItem from="1608744080568" duration="4762000" />
     </task>
     <servers />
   </component>

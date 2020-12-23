@@ -1,6 +1,7 @@
 @import "src/variables/variables";
 
 .list {
+  margin-bottom: 140px ;
  @media(max-width: 420px) {
    width: 400px;
    overflow-x: scroll;
