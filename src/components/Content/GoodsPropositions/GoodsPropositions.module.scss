@@ -1,9 +1,11 @@
 @import "src/variables/variables";
 
 .list {
-  width: 400px;
-  overflow-x: scroll;
-  overflow-y: hidden ;
+ @media(max-width: 420px) {
+   width: 400px;
+   overflow-x: scroll;
+   overflow-y: hidden ;
+ }
 }
 .title {
   font-size: 30px;
@@ -28,10 +30,10 @@
     align-self:center;
 
     .wrap {
-      width: 230px;
+
       box-shadow: 0 21px 14px rgba(0,0,0,.1);
       padding: 20px;
-
+      width: 240px;
       border-radius: 4px;
 
       .separate {
