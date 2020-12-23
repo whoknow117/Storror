@@ -17,7 +17,7 @@ const HeaderTop = () => {
             <span className={`${classes.span} ${toggle && classes.toggle}`}></span>
         </button>
         <div className={classes.hiddenSearch}>
-            <input type="text"/>
+            <input type="text" placeholder="Я ищу ..."/>
             <div className={classes.icon}>
                 <SearchIcon/>
             </div>

@@ -2,14 +2,31 @@
 
 
 .slideShow {
-  width: 600px;
+  width:800px;
   height: 200px;
   position: relative;
+  overflow: hidden;
+  @media (max-width: 800px) {
+    width: 700px;
+  }
+  @media (max-width: 420px) {
+    width: 420px;
+  }
+  img{
+    @media (max-width: 800px){
+      width: 700px;
+    }
+    @media (max-width: 420px){
+      width: 420px;
+    }
+
+  }
 
   @media (max-width: 400px) {
     width: 400px;
   }
   .btns {
+
     .btn {
       display: block;
       width: 40px;
@@ -20,12 +37,15 @@
       cursor: pointer;
       background: #4a4a4a;
       right: 550px;
-      bottom: 80px;
+      bottom: 40px;
       color: #fff;
       border: 1px solid rgba(255,255,255,.67);
 
       &:last-child {
-        right: -160px;
+        right: 60px;
+      }
+      &:first-child {
+        right: 100px;
       }
       z-index: 101;
       .prev {
