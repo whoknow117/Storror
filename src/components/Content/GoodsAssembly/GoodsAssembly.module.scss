@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   min-height: 90px;
-  margin-right: 20px;
+
   padding: 0 20px;
 
   @media (max-width: 800px) {
@@ -34,7 +34,14 @@
     list-style: none;
     justify-content: space-around;
     height: 80px;
-
+    @media (max-width: 420px) {
+      height: auto;
+      margin-top: 20px;
+      padding-bottom: 20px;
+    }
+    @media (max-width: 420px) {
+      flex-direction: column;
+    }
     .item {
       display: flex;
       align-items: center;

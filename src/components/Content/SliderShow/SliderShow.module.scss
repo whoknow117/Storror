@@ -11,6 +11,7 @@
   }
   @media (max-width: 420px) {
     width: 420px;
+    height: 100px;
   }
   img{
     @media (max-width: 800px){
@@ -40,12 +41,17 @@
       bottom: 40px;
       color: #fff;
       border: 1px solid rgba(255,255,255,.67);
-
+      @media (max-width: 420px) {
+        top: 65px;
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
+      }
       &:last-child {
         right: 60px;
       }
       &:first-child {
-        right: 100px;
+        right: 90px;
       }
       z-index: 101;
       .prev {

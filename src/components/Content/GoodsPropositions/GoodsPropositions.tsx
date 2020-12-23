@@ -80,7 +80,7 @@ const GoodsPropositions: React.FC<GoodsPropositionsPropsType> = ({onClick, value
 
 
 
-    return <div>
+    return <div className={classes.list}>
         <div className={classes.title}> Специально для Вас</div>
         <div className={classes.goodsPropositions}>
 
