@@ -23,6 +23,7 @@ const Popular: React.FC<PopularPropsType> = ({popular}) => {
                             </div>
                             <div className={classes.title}>
                                 {p.title}
+                                <span className={classes.span}></span>
                             </div>
                         </div>
                     )

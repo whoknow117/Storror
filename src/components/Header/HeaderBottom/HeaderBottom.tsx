@@ -11,7 +11,7 @@ const HeaderBottom = () => {
                 <SearchIcon/>
             </button>
             <div className={classes.input}>
-                <input type="text"/>
+                <input type="text" placeholder="Поиск по товарам"/>
             </div>
         </div>
         <HeaderBottomNav/>

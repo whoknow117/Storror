@@ -221,7 +221,7 @@ const store = {
                 {id: '3', img: 'https://st.overclockers.ru/images/soft/2020/04/10/citi-ulet-sale.jpg',},
             ],
             popular: [
-                {id: '1', title: 'Смесители', img: 'https://sanevv.com.ua/image/cache/catalog/imprese/grafiky-ZMK041807040-black-nikel-cherniy-imprese-smesitel-dlya-vanni-2-600x600.jpg'},
+                {id: '1', title: 'Смесители', img: ' https://sanroom.com.ua/files/thumbnail/5de683865b6cf126112M-797x797.jpg'},
                 {id: '2', title: 'Бойлеры', img: 'https://cdn.comfy.ua/media/catalog/product/cache/4/image/1440x1080/62defc7f46f3fbfc8afcd112227d1181/a/r/ariston_reg_80_v_1.5k_eu21.jpg'},
                 {id: '3', title: 'Трубы', img: ' https://i2.rozetka.ua/goods/2036932/copy_fado_mp01_20m_59301a8aee4dc_images_2036932308.jpg'},
                 {id: '4', title: 'Электроинструмент', img: 'https://e-altsest.com/image/cache/catalog/perf/boschgbh4-32dfr-500x500.jpeg'},

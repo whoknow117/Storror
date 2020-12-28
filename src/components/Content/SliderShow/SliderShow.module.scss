@@ -2,7 +2,7 @@
 
 
 .slideShow {
-  width:1100px;
+  width:1080px;
   height: 360px;
   position: relative;
   box-shadow: 0 2px 4px rgba(0,0,0,.1);
@@ -102,14 +102,14 @@
   visibility: visible;
   position: absolute;
   transform: scale(1);
-  transition: .3s ease;
+  transition: .2s ease;
 
 
 
   img {
     width: 100%;
     height: 100%;
-
+    object-fit: cover;
   }
 
 }
@@ -117,12 +117,12 @@
 .slide {
   position: absolute;
   opacity: 0;
-  transform: scale(.99);
+
   visibility: hidden;
   transition: .3s ease;
   img {
     width: 100%;
     height: 100%;
-
+    object-fit: cover;
   }
 }
