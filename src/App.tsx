@@ -118,44 +118,46 @@ function App(props: AppPropsType) {
     console.log(collapsed);
     return (
         <div className="App">
-            <Header/>
-            <div className="wrapper">
-                {sidebar.map( el => {
-                   return  <Sidebar
-                        collapsed={collapsed}
-                        setCollapsedCallback={setCollapsedCallback}
-                        sidebar={sidebar}/>
-                })}
-                <div className="content">
-                    <Route exact path='/storror' render={() => <Content
-                        collapsed={collapsed}
-                        content={content}
-                        setCollapsedCallback={setCollapsedCallback}
-                        value={value}
-                        onClick={setValue}
-                    />}/>
-                    {goodsArray.map((good, idx) => {
-                        return <Route key={idx} path={good.path}
-                                      render={() => <GoodCard id={good.id}
+           <div className="container">
+               <Header/>
+               <div className="wrapper">
+                   {sidebar.map( el => {
+                       return  <Sidebar
+                           collapsed={collapsed}
+                           setCollapsedCallback={setCollapsedCallback}
+                           sidebar={sidebar}/>
+                   })}
+                   <div className="content">
+                       <Route exact path='/storror' render={() => <Content
+                           collapsed={collapsed}
+                           content={content}
+                           setCollapsedCallback={setCollapsedCallback}
+                           value={value}
+                           onClick={setValue}
+                       />}/>
+                       {goodsArray.map((good, idx) => {
+                           return <Route key={idx} path={good.path}
+                                         render={() => <GoodCard id={good.id}
 
-                                                              onClick={setValue}
-                                                              value={value}
-                                                              title={good.title}
-                                                              price={good.price}
-                                                              img={good.img}
-                                                              group={good.group}
-                                                              made={good.made}
-                                                              path={good.path}
-
-
-                                      />}
-
-                        />
-                    })}
+                                                                 onClick={setValue}
+                                                                 value={value}
+                                                                 title={good.title}
+                                                                 price={good.price}
+                                                                 img={good.img}
+                                                                 group={good.group}
+                                                                 made={good.made}
+                                                                 path={good.path}
 
 
-                </div>
-            </div>
+                                         />}
+
+                           />
+                       })}
+
+
+                   </div>
+               </div>
+           </div>
         </div>
     );
 }

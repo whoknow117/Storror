@@ -5,12 +5,13 @@
   display: flex;
   position: relative;
   align-items: center;
-  width: 100%;
+  width: 200px;
   z-index: 140;
   height: 80px;
   margin-bottom: 8px;
   cursor: pointer;
   text-decoration: none;
+  margin-top: 12px;
   &__icon {
     position: absolute;
     z-index: 120;
@@ -36,8 +37,9 @@
     .image {
       width: 38px;
       position: absolute;
-      transform: rotate(-45deg);
-      top: 0;
+      transform: rotate(-435deg);
+      top: 8px;
+      left: 4px;
       height: 30px;
       img {
         width: 100%;
@@ -64,7 +66,7 @@
 
 
     &:before {
-      content: 'интернет магазин строительных материалов';
+      content: '';
       position: absolute;
       display: block;
       width:65%;

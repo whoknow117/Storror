@@ -22,10 +22,11 @@ const HeaderTop = () => {
                 <SearchIcon/>
             </div>
         </div>
+        <SidebarLogo/>
+        <div className={classes.city}>г.Северодонецк</div>
         <div className={classes.phone}>
             +38(099)-777-77-77
         </div>
-        <div className={classes.city}>г.Северодонецк</div>
         <nav className={classes.nav}>
             <ul>
                 <li>Акции</li>

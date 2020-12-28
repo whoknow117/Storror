@@ -15,7 +15,7 @@ const HeaderBottomNav = () => {
                 <button className={classes.iconItems}><House/>
                     Главная</button>
                 <button className={classes.iconItems}><BookMark/>
-                     </button>
+                     Закладки</button>
                 <button className={classes.iconItems}><Person/>
                 Войти</button>
                 <button className={classes.iconItems}><Heart/>

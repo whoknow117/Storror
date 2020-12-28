@@ -1,16 +1,16 @@
 //main
-$sidebarWidth: 234px;
+$sidebarWidth: 0;
 $sidebarHeight: 100vh;
 $sidebarBackgroundColor: #ffffff;
 
-$headerWidth: calc(100% - 234px);
+$headerWidth: 100%;
 $headerHeight: 50px;
 $headerBackground: #fff;
 
 $dropDownLeft: 234px;
 
-$contentWidth: calc( 100% - 234px);
-$contentHeight: calc(100% - 90px);
+$contentWidth: 100%;
+$contentHeight: calc(100% - 160px);
 
 $mainFont: Montserrat, Arial, sans-serif;
 

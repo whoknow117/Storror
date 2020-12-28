@@ -6,9 +6,9 @@
   position: fixed;
   left: $sidebarWidth;
   top: 0;
-  height: 90px;
+  height: 160px;
   background: $headerBackground;
-  border-bottom: 1px solid #e3e3e3;
+  padding: 0 60px;
   display: flex;
   flex-direction: column;
   z-index: 1001;
