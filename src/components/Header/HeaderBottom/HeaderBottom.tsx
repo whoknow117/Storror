@@ -5,7 +5,7 @@ import HeaderBottomNav from "./HeaderBottomNav/HeaderBottomNav";
 
 const HeaderBottom = () => {
     return <div className={classes.bottom}>
-        <button className={classes.goodsBtn}>Каталог товаров</button>
+        <button className={classes.goodsBtn}><span className={classes.span}></span>Каталог товаров</button>
         <div className={classes.inputWrapper}>
             <button className={classes.btn}>
                 <SearchIcon/>
