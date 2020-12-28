@@ -121,10 +121,14 @@
   .phone {
     margin-left: 20px;
     border-bottom: 1px dashed #4e4e4e;
-
     font-weight: 350;
     color: #000;
     font-size: 1rem;
+
+    &:hover {
+      border-bottom: 1px solid #2f2f2f;
+      transition: .3s;
+    }
     @media (max-width: 800px) {
       display: none;
     }
@@ -148,10 +152,14 @@
       }
       li {
         display: block;
-        margin-right: 20px;
+        margin-left: 24px;
+        margin-right: 14px;
         cursor: pointer;
         font-size: 0.9rem;
         font-weight: 340;
+        &:hover {
+          color: orangered;
+        }
       }
     }
   }

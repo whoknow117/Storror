@@ -29,10 +29,12 @@
       flex-direction: column;
       cursor: pointer;
       position: relative;
-      font-size: 12px;
+      font-size: 0.80rem;
+      font-family: Montserrat,sans-serif;
+      font-weight: 440;
       align-items: center;
       margin-left: 30px;
-
+      color: $headerIconsColor;
       background: #fff;
       &:first-child {
         display: none;
@@ -50,15 +52,14 @@
         font-size: 0;
       }
       svg {
-        width: 24px;
-
-        height:24px;
+        width: 22px;
+        height: 22px;
         padding: 0;
-        margin: 0 auto;
-        border-radius: 50%;
+        margin: 4px auto;
+
         display: block;
 
-        fill: #3b3b3b;
+        fill: $headerIconsColor;
 
       }
     }

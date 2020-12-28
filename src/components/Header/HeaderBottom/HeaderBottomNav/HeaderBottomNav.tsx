@@ -14,12 +14,15 @@ const HeaderBottomNav = () => {
                 </button>
                 <button className={classes.iconItems}><House/>
                     Главная</button>
+                <button className={classes.iconItems}><Person/>
+                    Войти</button>
+                <button className={classes.iconItems}><Heart/>
+                    Избранное</button>
                 <button className={classes.iconItems}><BookMark/>
                      Закладки</button>
-                <button className={classes.iconItems}><Person/>
-                Войти</button>
-                <button className={classes.iconItems}><Heart/>
-                Избранное</button>
+
+
+
                 <button className={classes.iconItems}><Basket/>
                 Корзина</button>
             </ul>

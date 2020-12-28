@@ -19,7 +19,12 @@ type ContentPropsType = {
 const Content: React.FC<ContentPropsType> = ({value,onClick, content,collapsed, setCollapsedCallback}) => {
 
     return <div className={classes.content}>
-        <SliderShow/>
+        <div className={classes.slider}>
+            <SliderShow/>
+            <div className={classes.propositions}>
+
+            </div>
+        </div>
         <div className={classes.info}>
             <div className={classes.info__item}>
                 <div className={classes.itemImg}>
