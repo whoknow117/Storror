@@ -109,17 +109,20 @@ function App(props: AppPropsType) {
     const content = props.state.content;
 
     const [value, setValue] = useState<ValuesType>(0);
-
     const [collapsed, setCollapsed] = useState<boolean>(false);
 
     const setCollapsedCallback = () => {
-        setCollapsed(!collapsed);
+        if(collapsed === false) {
+            setCollapsed(true)
+        } else if (collapsed === true)
+            setCollapsed(false)
+
     }
     console.log(collapsed);
     return (
         <div className="App">
            <div className="container">
-               <Header/>
+               <Header toggle={collapsed} setToggle={setCollapsedCallback}/>
                <div className="wrapper">
                    {sidebar.map( el => {
                        return  <Sidebar

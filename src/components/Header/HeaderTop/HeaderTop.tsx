@@ -4,16 +4,22 @@ import {NavLink} from "react-router-dom";
 import SidebarLogo from "../../Sidebar/SidebarLogo/SidebarLogo";
 import SearchIcon from "../../../assets/SearchIcon/SearchIcon";
 
-const HeaderTop = () => {
+
+export type HeaderTopPropsType = {
+    setToggle: () => void
+    toggle: boolean
+}
+
+const HeaderTop: React.FC<HeaderTopPropsType> = ({setToggle, toggle}) => {
 
 
-    const [toggle, setToggle] = useState<boolean>(false);
+
 
 
 
 
     return <div className={classes.top}>
-        <button onClick={() => {setToggle(!toggle)}} className={classes.menuBtn}>
+        <button   className={classes.menuBtn}>
             <span className={`${classes.span} ${toggle && classes.toggle}`}></span>
         </button>
         <div className={classes.hiddenSearch}>

@@ -36,14 +36,61 @@
     position: relative;
     transition: .1s ease-in-out;
     border: 1px solid #e9e9e9;
+
+    &:hover {
+      .title {
+        .span {
+          width: 14px;
+          right: -20px;
+          visibility: visible;
+          opacity: 1;
+          &:before {
+            transform: rotate(45deg);
+            transition: .2s ease-in-out;
+          }
+          &:after {
+            transform: rotate(-45deg);
+            transition: .2s ease-in-out;
+          }
+        }
+      }
+
+    }
     .title {
       position: absolute;
       font-size: 1rem;
       bottom:  15px;
+
       .span {
+        display: block;
+        width: 0;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        background: $orangeBackgroundColor;
+        transition: .2s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
         &:before,
         &:after {
-
+          content: '';
+          display: block;
+          width: 6px;
+          height: 1px;
+          position: absolute;
+          top: 50%;
+          right: 0px;
+          background: inherit;
+          transition: .2s ease-in-out;
+        }
+        &:before {
+          transform-origin: right;
+          transform:rotate(0deg);
+        }
+        &:after {
+          transform-origin: right;
+          transform:rotate(0deg);
         }
       }
     }
