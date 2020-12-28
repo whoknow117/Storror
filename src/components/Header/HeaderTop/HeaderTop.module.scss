@@ -134,7 +134,7 @@
     }
   }
   .city {
-    margin-left: 70px;
+    margin-left: 40px;
     font-weight: 350;
     color: #000;
     @media (max-width: 800px) {
@@ -152,10 +152,10 @@
       }
       li {
         display: block;
-        margin-left: 24px;
+        margin-left: 21px;
         margin-right: 14px;
         cursor: pointer;
-        font-size: 0.9rem;
+        font-size: 0.92rem;
         font-weight: 340;
         &:hover {
           color: orangered;

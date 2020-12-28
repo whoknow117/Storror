@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import classes from './SidebarLogo.module.scss';
 import Logo from '../../../assets/Logo/Logo';
 import {NavLink} from "react-router-dom";
@@ -9,8 +9,17 @@ type SidebarLogoType = {
 
 const SidebarLogo:React.FC<SidebarLogoType> = ( ) => {
 
+    const [mode, setMode] = useState<boolean>(false);
+
+    const modeOn = () => {
+        setMode(true)
+    }
+    const modeOff = () => {
+        setMode(false)
+    }
+
     return (
-        <NavLink to={'/Storror'} className={classes.headerLogo}>
+        <NavLink onMouseEnter={modeOn} onBlur={modeOff} to={'/Storror'} className={classes.headerLogo}>
 
 
             <div className={classes.headerLogo__icon}>
@@ -22,7 +31,7 @@ const SidebarLogo:React.FC<SidebarLogoType> = ( ) => {
 
 
             </div>
-            <h3 className={classes.headerLogo__text}>НАБЖ  <span className={classes.eSpan}>   </span>  НЕЦ</h3>
+            <h3 className={classes.headerLogo__text}>НАБЖ  <span className={classes.eSpan}>   </span>  <span className={classes.txt}>НЕЦ</span></h3>
 
         </NavLink>
     )

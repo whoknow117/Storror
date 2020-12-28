@@ -5,7 +5,7 @@
   display: flex;
   position: relative;
   align-items: center;
-  width: 200px;
+  width: 240px;
   z-index: 140;
   height: 80px;
   margin-bottom: 8px;
@@ -57,21 +57,22 @@
 
     z-index: 122;
     font-family: Monserrat, sans-serif;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     color: #242424;
     font-weight: 500;
     font-size: 1.2rem;
     margin-left: 50px;
-
+    .txt {
+      margin-left:5px;
+    }
     .eSpan{
       display: block;
       position: absolute;
       width: 12px;
-
       height: 2px;
       background:$orangeBackgroundColor;
       top: calc(49% - 1px);
-      right: 68px;
+      left:calc(50% - 2px);
       &::before,
       &::after{
         content: '';
@@ -90,6 +91,7 @@
         transform: translateY(6px);
       }
     }
+
 
     &:before {
       content: '';
