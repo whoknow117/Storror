@@ -22,7 +22,7 @@ const SidebarLogo:React.FC<SidebarLogoType> = ( ) => {
 
 
             </div>
-            <h3 className={classes.headerLogo__text}>НАБЖЕНЕЦ</h3>
+            <h3 className={classes.headerLogo__text}>НАБЖ  <span className={classes.eSpan}>   </span>  НЕЦ</h3>
 
         </NavLink>
     )

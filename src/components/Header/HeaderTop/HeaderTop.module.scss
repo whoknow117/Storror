@@ -2,7 +2,7 @@
 
 .top {
   height: 80px;
-
+  margin-top: 10px;
   display: flex;
 
   align-items: center;
@@ -121,8 +121,9 @@
   .phone {
     margin-left: 20px;
     border-bottom: 1px dashed #4e4e4e;
-    color: #4e4e4e;
-    font-weight: 340;
+
+    font-weight: 350;
+    color: #000;
     font-size: 1rem;
     @media (max-width: 800px) {
       display: none;
@@ -130,7 +131,8 @@
   }
   .city {
     margin-left: 80px;
-    font-weight: 340;
+    font-weight: 350;
+    color: #000;
     @media (max-width: 800px) {
       display: none;
     }
@@ -148,7 +150,8 @@
         display: block;
         margin-right: 20px;
         cursor: pointer;
-        font-size: 13px;
+        font-size: 0.9rem;
+        font-weight: 340;
       }
     }
   }

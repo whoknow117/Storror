@@ -32,6 +32,7 @@ const HeaderTop = () => {
                 <li>Акции</li>
                 <li>Организациям</li>
                 <li>Контакты</li>
+                <li>Магазины</li>
                 <li>О нас</li>
             </ul>
         </nav>
