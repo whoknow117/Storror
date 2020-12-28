@@ -11,14 +11,25 @@
     display: flex;
 
     .propositions {
-      width: 310px;
+      width: 269px;
       height: 360px;
+      overflow: hidden;;
       margin-left: 20px;
       border: 1px solid silver;
       box-shadow: 0 2px 4px rgba(0,0,0,.1);
-
-
       padding: 0;
+      transition: .2s ease-in-out;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        transition: .2s ease-in-out;
+        &:hover {
+          transition: .2s ease-in-out;
+          transform: scale(1.1);
+        }
+        object-fit: contain;
+      }
     }
   }
   .info {

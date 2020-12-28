@@ -2,38 +2,46 @@
 
 
 .slideShow {
-  width:1040px;
-
+  width:1100px;
   height: 360px;
   position: relative;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,.2);
-  border: 1px solid #f5f5f5;
-  background: #000;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  border: 1px solid #e5e5e5;
+  z-index: 10;
+  &::before,
+  &::after{
+    content:'';
 
-  @media (max-width: 800px) {
-    width: 700px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height:92%;
+    left: 13px;
+    top: 9px;
+    background: #acacac;
   }
-  @media (max-width: 420px) {
-    width: 420px;
-    height: 100px;
+
+  &::after{
+    left: 6px;
+    background: #6b6a6a;
+    z-index: -1;
+    height:95%;
   }
-  img{
+  &::before{
+    top: 14px;
+    z-index: -1;
+  }
+  .slide {
     width: 100%;
     height: 100%;
-    object-fit: cover ;
-    @media (max-width: 800px){
-      width: 700px;
-    }
-    @media (max-width: 420px){
-      width: 420px;
-    }
-
+    background: #000;
   }
 
-  @media (max-width: 400px) {
-    width: 400px;
-  }
+
+
+
+
+
   .btns {
 
     .btn {
@@ -89,18 +97,32 @@
 }
 .active {
   opacity: 1;
+  width: 100%;
+  height: 100%;
   visibility: visible;
   position: absolute;
   transform: scale(1);
   transition: .3s ease;
+
+
+
+  img {
+    width: 100%;
+    height: 100%;
+
+  }
 
 }
 
 .slide {
   position: absolute;
   opacity: 0;
-  transform: scale(.94);
+  transform: scale(.99);
   visibility: hidden;
   transition: .3s ease;
+  img {
+    width: 100%;
+    height: 100%;
 
+  }
 }

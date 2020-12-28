@@ -7,6 +7,7 @@ import {ContentType} from "../../redux/store";
 import Popular from "./Popular/Popular";
 import GoodsAssembly from "./GoodsAssembly/GoodsAssembly";
 import {ValuesType} from "../../App";
+import k1 from '../../assets/right.jpg'
 
 type ContentPropsType = {
     setCollapsedCallback: () => void
@@ -22,7 +23,7 @@ const Content: React.FC<ContentPropsType> = ({value,onClick, content,collapsed, 
         <div className={classes.slider}>
             <SliderShow/>
             <div className={classes.propositions}>
-
+                <img src={k1} alt=""/>
             </div>
         </div>
         <div className={classes.info}>
