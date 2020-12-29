@@ -6,11 +6,11 @@ import SearchIcon from "../../../assets/SearchIcon/SearchIcon";
 
 
 export type HeaderTopPropsType = {
-    setToggle: () => void
-    toggle: boolean
+    setCollapse: () => void
+    collapsed: boolean
 }
 
-const HeaderTop: React.FC<HeaderTopPropsType> = ({setToggle, toggle}) => {
+const HeaderTop: React.FC<HeaderTopPropsType> = ({setCollapse, collapsed}) => {
 
 
 
@@ -20,7 +20,7 @@ const HeaderTop: React.FC<HeaderTopPropsType> = ({setToggle, toggle}) => {
 
     return <div className={classes.top}>
         <button   className={classes.menuBtn}>
-            <span className={`${classes.span} ${toggle && classes.toggle}`}></span>
+            <span className={`${classes.span} ${collapsed && classes.toggle}`}></span>
         </button>
         <div className={classes.hiddenSearch}>
             <input type="text" placeholder="Я ищу ..."/>
@@ -28,7 +28,7 @@ const HeaderTop: React.FC<HeaderTopPropsType> = ({setToggle, toggle}) => {
                 <SearchIcon/>
             </div>
         </div>
-        <SidebarLogo/>
+        <SidebarLogo />
         <div className={classes.city}>г.Северодонецк</div>
         <div className={classes.phone}>
             +38(099)-777-77-77

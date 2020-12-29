@@ -2,122 +2,85 @@
 
 
 .sidebar {
-  font-family: $mainFont;
-  position: fixed;
-  top: 0;
-  display: none;
-  z-index: 1001;
-  width: $sidebarWidth;
+  width: 360px;
   height: 100vh;
-  left: -240px;
-  background: $sidebarBackgroundColor;
-  border-right: 1px solid #eaeaea;
-  transition: all .3s ease ;
-  @media (max-width: 800px) {
-    left: -240px;
-  }
-  @media (max-width: 420px) {
+  position: fixed;
+  z-index: 99999 !important;
+  background: #fff;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
 
-  }
-  .dropDown {
-    display: none;
-    position: absolute;
-    width:  700px;
-    height:  100%;
-    background: #fff;
-    top: 10vh;
-    left: $dropDownLeft;
-    transition: .2s ease-in-out;
-    z-index: 1001;
-    visibility: hidden;
-    opacity: 0;
-  }
-  .toggle {
-    position: absolute;
-    visibility: visible;
-    opacity: 1;
-    transition: .2s ease-in-out;
-    width:  700px;
-    height:  100%;
-    background: #fff;
-    top: 0;
-    left: $dropDownLeft;
 
+
+  .logo {
+    margin-left: 40px;
+  }
+
+  .navTitle {
+    margin: 20px;
+  }
+
+  .close {
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 17px;
+    outline: none;
+    top: 17px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+
+
+    img {
+      width: 100%;
+
+    }
   }
   .wrapper {
-    position: relative;
-    list-style: none;
     display: flex;
-    width: $sidebarWidth;
-    height: 50px;
-
+    height: 46px;
     align-items: center;
     cursor: pointer;
-    font-size: 13px;
-    padding-left: 10px;
-    svg {
-      fill:none;
-
-    }
-
-    &:nth-child(13) {
-      
-      margin-top: 44px;
-      .icon {
-        svg {
-          fill: #7e7eff;
-        }
-      }
-    }
-    &:nth-child(14) {
-
-
-      .icon {
-        svg {
-          fill: #7e7eff;
-        }
-      }
-    }
-    &:hover {
-      background: $orangeBackgroundColor;
-      .name {
-        color: #fff;
-
-      }
-      .icon {
-
-        svg {
-          fill: #fff;
-        }
-      }
-    }
+    padding-right: 10px;
     .icon {
-      position: absolute;
       width: 40px;
       height: 40px;
-      padding-left: 4px;
+      left: 14px;
+      position: absolute;
       display: flex;
       align-items: center;
       justify-content: center;
-      svg{
-        width: 29px;
-        height: 29px;
-        fill: $orangeBackgroundColor;
+      svg {
+        width: 27px;
+        height: 27px;
+        fill:$orangeBackgroundColor
       }
     }
     .name {
-      margin-left: 48px;
-      font-size: 0.82rem;
-      font-weight: 420;
-      color: #000000;
-      line-height: 18px;
-      padding: 0 11px;
-
+      display: block;
+      color: #000;
+      font-family: Montserrat,sans-serif;
+      margin-left: 65px;
+      font-size: 0.92rem;
+      font-weight: 400;
+      line-height: 1.4rem;
     }
   }
 }
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgb(153, 153, 153);
 
-.collapsed {
-  width: 70px;
-  transition: .3s ease-in-out;
+  border-radius: 10px;
+}
+.sidebar::-webkit-scrollbar {
+  position: absolute;
+  width: 3px;
+  background-color: rgba(226, 77, 0,.1);
+
 }

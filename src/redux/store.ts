@@ -1,6 +1,3 @@
-
-
-
 export type SidebarType = Array<SidebarItemType>;
 
 export type SidebarItemType = {
@@ -41,11 +38,20 @@ export type PopularType = {
 }
 
 export type DropDownMenuType = {
-    title: string
-    item1: string
+    head: string
+    path: string
+    item1?: string
+    item2?: string
+    item3?: string
+    item4?: string
+    item5?:string
+    item6?:string
+    item7?:string
+    item8?:string
+    item9?:string
 }
 export type DropDownType = {
-    [key:string]: Array<DropDownMenuType>
+    [key: string]: Array<DropDownMenuType>
 }
 
 export type RootStateType = {
@@ -129,88 +135,152 @@ const store = {
         ],
         dropDown: {
             '1': [
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Краны', item1: 'Смесители для ванной' },
-                {title: 'Краны', item1: 'Смесители для кухни' },
-                {title: 'Краны', item1: 'Смесители для ванной' },
+                {
+                    head: 'Смесители',
+                    path: '/santehnika',
+                    item1: 'Смесители для ванной',
+                    item2: 'Смесители для кухни',
+                    item3: 'Смесители для кухни',
+                    item4: 'Смесители для Душ-кабин',
+
+                },
+
             ],
             '2': [
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Краны', item1: 'Смесители для ванной' },
+                {
+                    head: 'Инструмент',
+                    path: '/santehnika',
+                    item1: 'Смесители для ванной',
+                    item2: 'Смесители для кухни',
+                    item3: 'Смесители для кухни',
+                    item4: 'Смесители для Душ-кабин',
+                },
+
             ],
 
             '3': [
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Краны', item1: 'Смесители для ванной' },
+                {
+                    head: 'Инструмент',
+                    path: '/santehnika',
+                    item1: 'Смесители для ванной',
+                    item2: 'Смесители для кухни',
+                    item3: 'Смесители для кухни',
+                    item4: 'Смесители для Душ-кабин',
+                },
             ],
 
             '4': [
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Краны', item1: 'Смесители для ванной' },
+                {
+                    head: 'Инструмент',
+                    path: '/santehnika',
+                    item1: 'Смесители для ванной',
+                    item2: 'Смесители для кухни',
+                    item3: 'Смесители для кухни',
+                    item4: 'Смесители для Душ-кабин',
+                },
             ],
 
             '5': [
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Краны', item1: 'Смесители для ванной' },
+                {
+                    head: 'Инструмент',
+                    path: '/santehnika',
+                    item1: 'Смесители для ванной',
+                    item2: 'Смесители для кухни',
+                    item3: 'Смесители для кухни',
+                    item4: 'Смесители для Душ-кабин',
+                },
             ],
             '6': [
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Краны', item1: 'Смесители для ванной' },
+                {
+                    head: 'Инструмент',
+                    path: '/santehnika',
+                    item1: 'Смесители для ванной',
+                    item2: 'Смесители для кухни',
+                    item3: 'Смесители для кухни',
+                    item4: 'Смесители для Душ-кабин',
+                },
             ],
 
             '7': [
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Краны', item1: 'Смесители для ванной' },
+                {
+                    head: 'Инструмент',
+                    path: '/santehnika',
+                    item1: 'Смесители для ванной',
+                    item2: 'Смесители для кухни',
+                    item3: 'Смесители для кухни',
+                    item4: 'Смесители для Душ-кабин',
+                },
             ],
             '8': [
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Краны', item1: 'Смесители для ванной' },
+                {
+                    head: 'Инструмент',
+                    path: '/santehnika',
+                    item1: 'Смесители для ванной',
+                    item2: 'Смесители для кухни',
+                    item3: 'Смесители для кухни',
+                    item4: 'Смесители для Душ-кабин',
+                },
             ],
             '9': [
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Краны', item1: 'Смесители для ванной' },
+                {
+                    head: 'Инструмент',
+                    path: '/santehnika',
+                    item1: 'Смесители для ванной',
+                    item2: 'Смесители для кухни',
+                    item3: 'Смесители для кухни',
+                    item4: 'Смесители для Душ-кабин',
+                },
             ],
             '10': [
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Краны', item1: 'Смесители для ванной' },
+                {
+                    head: 'Инструмент',
+                    path: '/santehnika',
+                    item1: 'Смесители для ванной',
+                    item2: 'Смесители для кухни',
+                    item3: 'Смесители для кухни',
+                    item4: 'Смесители для Душ-кабин',
+                },
             ],
             '11': [
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Краны', item1: 'Смесители для ванной' },
+                {
+                    head: 'Инструмент',
+                    path: '/santehnika',
+                    item1: 'Смесители для ванной',
+                    item2: 'Смесители для кухни',
+                    item3: 'Смесители для кухни',
+                    item4: 'Смесители для Душ-кабин',
+                },
             ],
             '12': [
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Краны', item1: 'Смесители для ванной' },
+                {
+                    head: 'Инструмент',
+                    path: '/santehnika',
+                    item1: 'Смесители для ванной',
+                    item2: 'Смесители для кухни',
+                    item3: 'Смесители для кухни',
+                    item4: 'Смесители для Душ-кабин',
+                },
             ],
             '13': [
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Краны', item1: 'Смесители для ванной' },
+                {
+                    head: 'Инструмент',
+                    path: '/santehnika',
+                    item1: 'Смесители для ванной',
+                    item2: 'Смесители для кухни',
+                    item3: 'Смесители для кухни',
+                    item4: 'Смесители для Душ-кабин',
+                },
             ],
             '14': [
-                {title: 'Смесители', item1: 'Смесители для ванной' },
-                {title: 'Шланги', item1: 'Смесители для ванной' },
-                {title: 'Краны', item1: 'Смесители для ванной' },
+                {
+                    head: 'Инструмент',
+                    path: '/santehnika',
+                    item1: 'Смесители для ванной',
+                    item2: 'Смесители для кухни',
+                    item3: 'Смесители для кухни',
+                    item4: 'Смесители для Душ-кабин',
+                },
             ],
-
-
 
 
         },
@@ -221,14 +291,46 @@ const store = {
                 {id: '3', img: 'https://st.overclockers.ru/images/soft/2020/04/10/citi-ulet-sale.jpg',},
             ],
             popular: [
-                {id: '1', title: 'Смесители', img: ' https://sanroom.com.ua/files/thumbnail/5de683865b6cf126112M-797x797.jpg'},
-                {id: '2', title: 'Бойлеры', img: 'https://cdn.comfy.ua/media/catalog/product/cache/4/image/1440x1080/62defc7f46f3fbfc8afcd112227d1181/a/r/ariston_reg_80_v_1.5k_eu21.jpg'},
-                {id: '3', title: 'Трубы', img: ' https://i2.rozetka.ua/goods/2036932/copy_fado_mp01_20m_59301a8aee4dc_images_2036932308.jpg'},
-                {id: '4', title: 'Электроинструмент', img: 'https://e-altsest.com/image/cache/catalog/perf/boschgbh4-32dfr-500x500.jpeg'},
-                {id: '5', title: 'Лаки и краски', img: ' https://prorabmarket.com.ua/uploads/shop/products/medium/0305cc97ba0de9cd7415183c38a7e524.jpg'},
-                {id: '6', title: 'Саморезы', img: 'https://fenixcentr.kiev.ua/image/cache/catalog/obschestroj/metizy/1478798093_samorezi-simferopol-sevastopol-krim-1000x1000.jpg'},
-                {id: '7', title: 'Насосы', img: 'https://images.ua.prom.st/2571332144_w200_h200_stantsiya-035kvt-hmax.jpg'},
-                {id: '8', title: 'Ручной инструмент', img: 'https://intertool.ua/catalog/avtoinstrument/nabori-instrumentov/intertool-et-8056-photo-1.jpg'},
+                {
+                    id: '1',
+                    title: 'Смесители',
+                    img: ' https://sanroom.com.ua/files/thumbnail/5de683865b6cf126112M-797x797.jpg'
+                },
+                {
+                    id: '2',
+                    title: 'Бойлеры',
+                    img: 'https://cdn.comfy.ua/media/catalog/product/cache/4/image/1440x1080/62defc7f46f3fbfc8afcd112227d1181/a/r/ariston_reg_80_v_1.5k_eu21.jpg'
+                },
+                {
+                    id: '3',
+                    title: 'Трубы',
+                    img: ' https://i2.rozetka.ua/goods/2036932/copy_fado_mp01_20m_59301a8aee4dc_images_2036932308.jpg'
+                },
+                {
+                    id: '4',
+                    title: 'Электроинструмент',
+                    img: 'https://e-altsest.com/image/cache/catalog/perf/boschgbh4-32dfr-500x500.jpeg'
+                },
+                {
+                    id: '5',
+                    title: 'Лаки и краски',
+                    img: ' https://prorabmarket.com.ua/uploads/shop/products/medium/0305cc97ba0de9cd7415183c38a7e524.jpg'
+                },
+                {
+                    id: '6',
+                    title: 'Саморезы',
+                    img: 'https://fenixcentr.kiev.ua/image/cache/catalog/obschestroj/metizy/1478798093_samorezi-simferopol-sevastopol-krim-1000x1000.jpg'
+                },
+                {
+                    id: '7',
+                    title: 'Насосы',
+                    img: 'https://images.ua.prom.st/2571332144_w200_h200_stantsiya-035kvt-hmax.jpg'
+                },
+                {
+                    id: '8',
+                    title: 'Ручной инструмент',
+                    img: 'https://intertool.ua/catalog/avtoinstrument/nabori-instrumentov/intertool-et-8056-photo-1.jpg'
+                },
 
             ],
         },

@@ -5,15 +5,15 @@ import HeaderBottom from "./HeaderBottom/HeaderBottom";
 
 
 export type HeaderPropsType = {
-    setToggle: () => void
-    toggle: boolean
+    setCollapse: () => void
+    collapsed: boolean
 }
 
-const Header: React.FC<HeaderPropsType> = ({setToggle,toggle}) => {
+const Header: React.FC<HeaderPropsType> = ({setCollapse,collapsed}) => {
     return <header className={classes.header}>
-       <HeaderTop setToggle={setToggle} toggle={toggle}/>
+       <HeaderTop setCollapse={setCollapse} collapsed={collapsed}/>
         <div className={classes.bottom}>
-            <HeaderBottom/>
+            <HeaderBottom setCollapse={setCollapse}/>
         </div>
 
     </header>

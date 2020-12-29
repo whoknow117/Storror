@@ -7,7 +7,7 @@ type SidebarLogoType = {
 
 }
 
-const SidebarLogo:React.FC<SidebarLogoType> = ( ) => {
+const SidebarLogo:React.FC<SidebarLogoType> = () => {
 
     const [mode, setMode] = useState<boolean>(false);
 

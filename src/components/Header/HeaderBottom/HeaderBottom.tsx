@@ -3,9 +3,13 @@ import classes from './HeaderBottom.module.scss';
 import SearchIcon from "../../../assets/SearchIcon/SearchIcon";
 import HeaderBottomNav from "./HeaderBottomNav/HeaderBottomNav";
 
-const HeaderBottom = () => {
+export type HeaderBottomPropsType = {
+    setCollapse: () => void
+}
+
+const HeaderBottom:React.FC<HeaderBottomPropsType>= ({setCollapse}) => {
     return <div className={classes.bottom}>
-        <button className={classes.goodsBtn}><span className={classes.span}></span>Каталог товаров</button>
+        <button onClick={setCollapse} className={classes.goodsBtn}><span className={classes.span}></span>Каталог товаров</button>
         <div className={classes.inputWrapper}>
             <button className={classes.btn}>
                 <SearchIcon/>

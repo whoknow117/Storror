@@ -12,7 +12,7 @@ import Ventilation from "../../assets/Ventilation/Ventilation";
 import Carts from "../../assets/Carts/Carts";
 import Drill from "../../assets/Drill/Drill";
 import Fasteners from "../../assets/Fasteners/Fasteners";
-import {SidebarType} from "../../redux/store";
+import {RootStateType, SidebarType} from "../../redux/store";
 import SidebarLogo from "./SidebarLogo/SidebarLogo";
 import Sale from "../../assets/Sale/Sale";
 import Discount from "../../assets/Discount/Discount.";
@@ -44,9 +44,10 @@ type SidebarPropsType = {
     sidebar: SidebarType
     setCollapsedCallback: () => void
     collapsed: boolean
+    state: RootStateType
 }
 
-const Sidebar: React.FC<SidebarPropsType> = ({sidebar,setCollapsedCallback,collapsed}) => {
+const Sidebar: React.FC<SidebarPropsType> = ({state,sidebar,setCollapsedCallback,collapsed}) => {
 
     const [toggle, setToggle] = useState<boolean>(false);
 
@@ -61,17 +62,24 @@ const Sidebar: React.FC<SidebarPropsType> = ({sidebar,setCollapsedCallback,colla
 
     return (
 
-        <div className={!collapsed  ? classes.sidebar : classes.collapsed}>
-            <SidebarLogo  />
-
+        <div className={classes.sidebar}>
+            <div className={classes.logo}>
+                <SidebarLogo  />
+            </div>
+            <button onClick={setCollapsedCallback} className={classes.close}>
+                <img src="https://www.flaticon.com/svg/static/icons/svg/61/61155.svg" alt=""/>
+            </button>
+            <h3 className={classes.navTitle}>Каталог</h3>
             {sidebar.map(item => {
                 return (
 
-                    <div onMouseLeave={deactivateMenu} onMouseEnter={activeMenu} key={item.id} className={ classes.wrapper }>
+                    <div  key={item.id} className={ classes.wrapper }>
                         {sidebarIcons.map(icon => icon.id === item.id ?
                             <div key={icon.id} className={classes.icon}>{icon.icon}</div> : ""
                         )}
-                        <div className={classes.name}>{item.name}</div>
+                        <div className={classes.name}>{item.name}
+
+                        </div>
 
                     </div>
 

@@ -109,27 +109,27 @@ function App(props: AppPropsType) {
     const content = props.state.content;
 
     const [value, setValue] = useState<ValuesType>(0);
-    const [collapsed, setCollapsed] = useState<boolean>(false);
+    const [collapsed, setCollapsed] = useState<boolean>(true);
 
     const setCollapsedCallback = () => {
-        if(collapsed === false) {
-            setCollapsed(true)
-        } else if (collapsed === true)
-            setCollapsed(false)
+
+            setCollapsed(!collapsed)
 
     }
     console.log(collapsed);
     return (
         <div className="App">
            <div className="container">
-               <Header toggle={collapsed} setToggle={setCollapsedCallback}/>
+               <Header collapsed={collapsed} setCollapse={setCollapsedCallback}/>
                <div className="wrapper">
-                   {sidebar.map( el => {
-                       return  <Sidebar
-                           collapsed={collapsed}
-                           setCollapsedCallback={setCollapsedCallback}
-                           sidebar={sidebar}/>
-                   })}
+                   {collapsed ? "" :  <Sidebar
+                       collapsed={collapsed}
+                       setCollapsedCallback={setCollapsedCallback}
+                       sidebar={sidebar}
+                       state={props.state}
+
+                   />}
+
                    <div className="content">
                        <Route exact path='/storror' render={() => <Content
                            collapsed={collapsed}
