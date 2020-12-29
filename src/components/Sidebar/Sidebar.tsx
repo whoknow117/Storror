@@ -49,16 +49,16 @@ type SidebarPropsType = {
 
 const Sidebar: React.FC<SidebarPropsType> = ({state,sidebar,setCollapsedCallback,collapsed}) => {
 
-    const [toggle, setToggle] = useState<boolean>(false);
-
-    const activeMenu = () => {
-        setToggle(true);
-        console.log(toggle)
-    }
-    const deactivateMenu = () => {
-        setToggle(false)
-        console.log(toggle)
-    }
+    // const [toggle, setToggle] = useState<boolean>(false);
+    //
+    // const activeMenu = () => {
+    //     setToggle(true);
+    //     console.log(toggle)
+    // }
+    // const deactivateMenu = () => {
+    //     setToggle(false)
+    //     console.log(toggle)
+    // }
 
     return (
 
@@ -84,9 +84,7 @@ const Sidebar: React.FC<SidebarPropsType> = ({state,sidebar,setCollapsedCallback
                     </div>
 
                 )
-            })}<div className={toggle ? classes.toggle : classes.dropDown}>
-
-        </div>
+            })}
 
         </div>
     )

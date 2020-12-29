@@ -1,0 +1,29 @@
+
+
+.menuWrapper {
+  width: 360px;
+  height: 100%;
+  position: fixed;
+  z-index: 99999 !important;
+  background: #fff;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.menuWrapper::-webkit-scrollbar-thumb {
+  background: rgb(153, 153, 153);
+
+  border-radius: 10px;
+}
+.menuWrapper::-webkit-scrollbar {
+  position: absolute;
+  width: 3px;
+  background-color: rgba(226, 77, 0,.1);
+
+}
+
+.active {
+  background: #000;
+}

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Route} from 'react-router-dom';
 import './App.css';
+import classes from './App.module.scss';
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
 import {RootStateType, StoreType} from "./redux/store";
@@ -109,7 +110,7 @@ function App(props: AppPropsType) {
     const content = props.state.content;
 
     const [value, setValue] = useState<ValuesType>(0);
-    const [collapsed, setCollapsed] = useState<boolean>(true);
+    const [collapsed, setCollapsed] = useState<boolean>(false);
 
     const setCollapsedCallback = () => {
 
@@ -122,13 +123,15 @@ function App(props: AppPropsType) {
            <div className="container">
                <Header collapsed={collapsed} setCollapse={setCollapsedCallback}/>
                <div className="wrapper">
-                   {collapsed ? "" :  <Sidebar
-                       collapsed={collapsed}
-                       setCollapsedCallback={setCollapsedCallback}
-                       sidebar={sidebar}
-                       state={props.state}
 
-                   />}
+                        {collapsed ? "" :  <Sidebar
+                            collapsed={collapsed}
+                            setCollapsedCallback={setCollapsedCallback}
+                            sidebar={sidebar}
+                            state={props.state}
+
+                        />}
+
 
                    <div className="content">
                        <Route exact path='/storror' render={() => <Content
