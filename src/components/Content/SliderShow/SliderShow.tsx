@@ -32,17 +32,32 @@ const SliderShow: React.FC<SliderShowPropsType> = () => {
      if(slide ===  imageState.length - 1) {
 
          setSlide(0)
+
      }
      else setSlide(slide + 1)
  }
 
+
+
  const decrementSlide = () => {
+
      if(slide) {
          setSlide(slide - 1);
      }
      else setSlide(imageState.length - 1)
  }
 
+ useEffect(()=> {
+     const interval = setInterval( ()=> {
+         setSlide((current) =>
+             current === imageState.length - 1 ? 0 : current + 1
+
+         )
+
+
+     },5000)
+     return () => clearInterval();
+     },[])
 
 
     return <div className={classes.slideShow}>

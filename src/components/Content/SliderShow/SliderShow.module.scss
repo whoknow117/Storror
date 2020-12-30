@@ -14,15 +14,15 @@
 
     display: block;
     position: absolute;
-    width: 100%;
+    width: 6px;
     height:92%;
-    left: 13px;
+    right: -11px;
     top: 9px;
     background: #acacac;
   }
 
   &::after{
-    left: 6px;
+    right: -6px;
     background: #6b6a6a;
     z-index: -1;
     height:95%;
@@ -36,12 +36,6 @@
     height: 100%;
     background: #000;
   }
-
-
-
-
-
-
   .btns {
 
     .btn {
@@ -102,7 +96,7 @@
   visibility: visible;
   position: absolute;
   transform: scale(1);
-  transition: .2s ease;
+  transition: .3s ease;
 
 
 

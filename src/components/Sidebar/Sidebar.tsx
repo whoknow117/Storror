@@ -62,7 +62,7 @@ const Sidebar: React.FC<SidebarPropsType> = ({state,sidebar,setCollapsedCallback
 
     return (
 
-        <div className={classes.sidebar}>
+        <div className={`${classes.sidebar} ${collapsed ? classes.active : ""}`}>
             <div className={classes.logo}>
                 <SidebarLogo  />
             </div>

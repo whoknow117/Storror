@@ -124,13 +124,13 @@ function App(props: AppPropsType) {
                <Header collapsed={collapsed} setCollapse={setCollapsedCallback}/>
                <div className="wrapper">
 
-                        {collapsed ? "" :  <Sidebar
+                        <Sidebar
                             collapsed={collapsed}
                             setCollapsedCallback={setCollapsedCallback}
                             sidebar={sidebar}
                             state={props.state}
+/>
 
-                        />}
 
 
                    <div className="content">
