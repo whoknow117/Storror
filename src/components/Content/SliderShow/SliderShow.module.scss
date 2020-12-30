@@ -39,18 +39,24 @@
   .btns {
 
     .btn {
-      display: block;
       width: 40px;
       height: 40px;
       border-radius: 50%;
       outline: none;
       position: absolute;
       cursor: pointer;
-      background: #4a4a4a;
-      right: 550px;
+      background: rgba(0,0,0,.3);
       bottom: 40px;
       color: #fff;
       border: 1px solid rgba(255,255,255,.67);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        width: 20px;
+        fill: #fff;
+
+      }
       @media (max-width: 420px) {
         top: 65px;
         width: 30px;
@@ -61,25 +67,10 @@
         right: 60px;
       }
       &:first-child {
-        right: 90px;
+        right: 160px;
       }
       z-index: 101;
-      .prev {
-        content: '<';
-        display: block;
 
-
-      }
-      .next {
-        content: '>';
-
-        color: #fff;
-
-        display: block;
-
-
-
-      }
     }
   }
 

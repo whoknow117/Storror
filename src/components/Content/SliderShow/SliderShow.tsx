@@ -5,6 +5,8 @@ import slider1Img from '../../../assets/k1.jpg';
 import slider3Img from '../../../assets/k3.jpg';
 import slider4Img from '../../../assets/k4.jpg';
 import slider5Img from '../../../assets/k5.jpg';
+import ArrowLeft from "../../../assets/ArrowLeftIcon/ArrowLeftIcon";
+import ArrowRight from "../../../assets/ArrowRightIcon/ArrowRightIcon";
 
 type SliderShowPropsType = {
 
@@ -72,10 +74,10 @@ const SliderShow: React.FC<SliderShowPropsType> = () => {
 
          <div className={classes.btns}>
              <button className={classes.btn} onClick={decrementSlide}>
-                 <span className={classes.prev}>prev</span>
+                <ArrowLeft/>
              </button>
              <button className={classes.btn} onClick={incrementSlide}>
-                 <span className={classes.next}>next</span>
+                <ArrowRight/>
              </button>
          </div>
 

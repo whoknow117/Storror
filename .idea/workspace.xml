@@ -2,13 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/ArrowLeftIcon/ArrowLeftIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/ArrowRightIcon/ArrowRightIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTRootUI-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Popular/Popular.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Popular/Popular.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/SliderShow/SliderShow.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +113,9 @@
       <workItem from="1609184851763" duration="830000" />
       <workItem from="1609261331302" duration="7041000" />
       <workItem from="1609272233001" duration="2528000" />
-      <workItem from="1609344451800" duration="5925000" />
+      <workItem from="1609344451800" duration="6677000" />
+      <workItem from="1609352488566" duration="5097000" />
+      <workItem from="1609357624938" duration="653000" />
     </task>
     <servers />
   </component>
