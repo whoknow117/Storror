@@ -7,13 +7,14 @@ import HeaderBottom from "./HeaderBottom/HeaderBottom";
 export type HeaderPropsType = {
     setCollapse: () => void
     collapsed: boolean
+    headerCollapsed: boolean
 }
 
-const Header: React.FC<HeaderPropsType> = ({setCollapse,collapsed}) => {
+const Header: React.FC<HeaderPropsType> = ({setCollapse,collapsed,headerCollapsed}) => {
     return <header className={classes.header}>
-       <HeaderTop setCollapse={setCollapse} collapsed={collapsed}/>
+        {!headerCollapsed ?  <HeaderTop headerCollapsed={headerCollapsed} setCollapse={setCollapse} collapsed={collapsed}/> : ""}
         <div className={classes.bottom}>
-            <HeaderBottom setCollapse={setCollapse}/>
+            <HeaderBottom headerCollapsed={headerCollapsed} setCollapse={setCollapse}/>
         </div>
 
     </header>

@@ -8,9 +8,10 @@ import SearchIcon from "../../../assets/SearchIcon/SearchIcon";
 export type HeaderTopPropsType = {
     setCollapse: () => void
     collapsed: boolean
+    headerCollapsed: boolean
 }
 
-const HeaderTop: React.FC<HeaderTopPropsType> = ({setCollapse, collapsed}) => {
+const HeaderTop: React.FC<HeaderTopPropsType> = ({setCollapse, collapsed,headerCollapsed}) => {
 
 
 
@@ -18,7 +19,7 @@ const HeaderTop: React.FC<HeaderTopPropsType> = ({setCollapse, collapsed}) => {
 
 
 
-    return <div className={classes.top}>
+    return <div className={`${classes.top}`}>
         <button   className={classes.menuBtn}>
             <span className={`${classes.span} ${collapsed && classes.toggle}`}></span>
         </button>

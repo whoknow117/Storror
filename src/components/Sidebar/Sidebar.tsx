@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {HTMLAttributes, RefObject, useState} from 'react';
 import classes from './Sidebar.module.scss';
 import {NavLink} from "react-router-dom";
 import Boiler from "../../assets/Boiler/Boiler";
@@ -48,17 +48,20 @@ type SidebarPropsType = {
 }
 
 const Sidebar: React.FC<SidebarPropsType> = ({state,sidebar,setCollapsedCallback,collapsed}) => {
+        const [drop, setDrop] = useState<boolean>(false)
 
-    // const [toggle, setToggle] = useState<boolean>(false);
-    //
-    // const activeMenu = () => {
-    //     setToggle(true);
-    //     console.log(toggle)
-    // }
-    // const deactivateMenu = () => {
-    //     setToggle(false)
-    //     console.log(toggle)
-    // }
+
+
+    let dropDown = React.createRef<HTMLDivElement>();
+
+    const DropOn = () => {
+        if (dropDown.current) {
+            dropDown.current.style.left = " 390px";
+        }
+    }
+    const DropOff = () => {
+        setDrop(false);
+    }
 
     return (
 
@@ -73,13 +76,24 @@ const Sidebar: React.FC<SidebarPropsType> = ({state,sidebar,setCollapsedCallback
             {sidebar.map(item => {
                 return (
 
-                    <div  key={item.id} className={ classes.wrapper }>
+                    <div onMouseEnter={DropOn} onBlur={DropOff}  key={item.id} className={ classes.wrapper }>
                         {sidebarIcons.map(icon => icon.id === item.id ?
                             <div key={icon.id} className={classes.icon}>{icon.icon}</div> : ""
                         )}
                         <div className={classes.name}>{item.name}
 
                         </div>
+
+                        {/*<div className={classes.itemWrapper}>*/}
+                           {/*    {state.dropDown[item.id].map(drop => {*/}
+                        {/*        return  <div className={classes.item}>*/}
+                        {/*            <div>{drop.head}</div>*/}
+                        {/*            {drop.items.map( el => {*/}
+                        {/*                return <div>{el.title}</div>*/}
+                        {/*            })}*/}
+                        {/*        </div>*/}
+                        {/*    })}*/}
+                        {/*</div>*/}
 
                     </div>
 

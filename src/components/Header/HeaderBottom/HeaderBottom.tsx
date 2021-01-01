@@ -5,10 +5,11 @@ import HeaderBottomNav from "./HeaderBottomNav/HeaderBottomNav";
 
 export type HeaderBottomPropsType = {
     setCollapse: () => void
+    headerCollapsed: boolean
 }
 
-const HeaderBottom:React.FC<HeaderBottomPropsType>= ({setCollapse}) => {
-    return <div className={classes.bottom}>
+const HeaderBottom:React.FC<HeaderBottomPropsType>= ({setCollapse,headerCollapsed}) => {
+    return <div className={`${classes.bottom}`}>
         <button onClick={setCollapse} className={classes.goodsBtn}><span className={classes.span}></span>Каталог товаров</button>
         <div className={classes.inputWrapper}>
             <button className={classes.btn}>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Route} from 'react-router-dom';
 import './App.css';
 import classes from './App.module.scss';
@@ -20,6 +20,7 @@ import Carts from "./assets/Carts/Carts";
 import Fasteners from "./assets/Fasteners/Fasteners";
 import Sale from "./assets/Sale/Sale";
 import Discount from "./assets/Discount/Discount.";
+
 
 export type ValuesType = 0 | 1 | 2 | 3 | 4 | 5
 
@@ -112,6 +113,16 @@ function App(props: AppPropsType) {
     const [value, setValue] = useState<ValuesType>(0);
     const [collapsed, setCollapsed] = useState<boolean>(false);
 
+    const [headerCollapsed, setHeaderCollapsed] = useState<boolean>(false);
+
+
+        window.addEventListener('scroll',(event) => {
+            (window.pageYOffset >= 100 ? setHeaderCollapsed(true) : setHeaderCollapsed(false))
+
+        })
+
+
+
     const setCollapsedCallback = () => {
 
             setCollapsed(!collapsed)
@@ -121,7 +132,7 @@ function App(props: AppPropsType) {
     return (
         <div className="App">
            <div className="container">
-               <Header collapsed={collapsed} setCollapse={setCollapsedCallback}/>
+               <Header headerCollapsed={headerCollapsed} collapsed={collapsed} setCollapse={setCollapsedCallback}/>
                <div className="wrapper">
 
                         <Sidebar
