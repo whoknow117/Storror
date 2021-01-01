@@ -117,37 +117,54 @@
           text-decoration: none;
 
         }
-        .price {
-          font-family: 'PT Root UI';
-          margin-top: 30px;
-          color: #000000;
-          font-size: 2rem;
-          font-weight: 300;
-
-          display: block;
-        }
-      }
-
-      .btn {
-        border: none;
-        background: #983dd9;
-        color: #fff;
-        visibility: hidden;
-        transition: 0.3s;
-        opacity: 0;
-        padding: 6px 20px;
-        margin-top: 10px;
-        border-radius: 4px;
-        cursor: pointer;
-        box-shadow: 0 2px 4px rgba(0,0,0,.2);
 
       }
+
+
       &:hover {
         .btn {
           visibility: visible;
           opacity: 1;
+          bottom: 0;
         }
       }
     }
+  }
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  .price {
+    font-family: 'PT Root UI';
+    margin-top: 30px;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 300;
+    flex-wrap: nowrap;
+    width: 200px;
+    display: block;
+  }
+  .btn {
+    border: none;
+    background: #cba2dd;
+    color: #fff;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    position: relative;
+    bottom: -3px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    &:hover {
+      background: #5e2d79;
+    }
+    svg {
+      fill: #fff;
+
+    }
+
   }
 }

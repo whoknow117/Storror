@@ -3,6 +3,7 @@ import classes from './GoodsPropositions.module.scss';
 import {NavLink} from "react-router-dom";
 import Rating from "../../common/Rating/Rating";
 import {GoodsType, ValuesType} from "../../../App";
+import Basket from "../../../assets/Basket/Basket";
 
 
 
@@ -42,12 +43,14 @@ const GoodsPropositions: React.FC<GoodsPropositionsPropsType> = ({onClick, value
                                </div>
                                <div className={classes.spanWrap}>
                                    <span className={classes.spanTitle}>{g.title}</span>
-                                   <span className={classes.price}>{g.price}</span>
+
                                </div>
                            </NavLink>
+                           <div className={classes.bottom}>
+                               <span className={classes.price}>{g.price}</span>
 
-
-                           <button className={classes.btn}>купить</button>
+                               <button className={classes.btn}><Basket/></button>
+                           </div>
 
                        </div>
                    </div>

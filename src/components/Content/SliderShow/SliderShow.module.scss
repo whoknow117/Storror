@@ -37,7 +37,31 @@
     background: #000;
   }
   .btns {
+    .spanWrapper {
+      position: absolute;
+      right: 110px;
+      bottom: 70px;
+      width: 40px;
+      height: 20px;
+      background: rgba(0,0,0,.1);
+      display: flex;
+      .span {
+        display: block;
+        color: #fff;
+      }
+    }
+    .sliderLength {
+      width: 60px;
+      height: 2px;
+      background: #d2d2d2;
+      position: absolute;
+      box-shadow: 0 2px 2px rgba(0,0,0,.6);
+      bottom: 50px;
+      right:114px;
+      .lengthSpan {
 
+      }
+    }
     .btn {
       width: 40px;
       height: 40px;
@@ -67,7 +91,7 @@
         right: 60px;
       }
       &:first-child {
-        right: 160px;
+        right: 190px;
       }
       z-index: 101;
 
