@@ -33,25 +33,58 @@
     .wrap {
 
 
-      padding: 20px;
-      width: 240px;
+      padding: 20px 24px;
+      max-width: 240px;
       border-radius: 4px;
-
+      &:hover {
+        box-shadow: 0 2px 14px rgba(0,0,0,.2);
+      }
       .separate {
         display: flex;
         align-items: center;
 
-        .sticker {
+        position: absolute;
+
+
+        .stickerNew {
+          font-family: 'PT Root UI';
           font-size: 11px;
-          background: #ff450d;
+          font-weight: 500;
+          background: #9bcd57;
+          color: #fff;
+          padding: 6px 10px;
+          border-radius: 3px;
+
+
+
+
+        }
+        .stickerSale   {
+          font-size: 11px;
+          font-family: 'PT Root UI';
+          background:coral;
           color: #fff;
           padding: 4px;
-          margin-right: 40px;
+          margin-right: 20px;
+
+
+          border-radius: 4px;
+          font-weight: 500;
+        }
+        .stickerHit   {
+          font-family: 'PT Root UI';
+          font-size: 11px;
+          background: tomato;
+          color: #fff;
+          padding: 4px 14px;
+          border-radius: 4px;
+          font-weight: 500;
+
 
 
         }
         .rating {
-
+          display: none;
         }
 
 
@@ -85,9 +118,12 @@
 
         }
         .price {
-          margin-top: 10px;
-          color: #ff450d;
-          font-size: 24px;
+          font-family: 'PT Root UI';
+          margin-top: 30px;
+          color: #000000;
+          font-size: 2rem;
+          font-weight: 300;
+
           display: block;
         }
       }
@@ -96,11 +132,21 @@
         border: none;
         background: #983dd9;
         color: #fff;
+        visibility: hidden;
+        transition: 0.3s;
+        opacity: 0;
         padding: 6px 20px;
         margin-top: 10px;
         border-radius: 4px;
         cursor: pointer;
         box-shadow: 0 2px 4px rgba(0,0,0,.2);
+
+      }
+      &:hover {
+        .btn {
+          visibility: visible;
+          opacity: 1;
+        }
       }
     }
   }

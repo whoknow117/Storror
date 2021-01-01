@@ -24,23 +24,29 @@ import Discount from "./assets/Discount/Discount.";
 
 export type ValuesType = 0 | 1 | 2 | 3 | 4 | 5
 
-export type GoodsArrayType = {
+export type GoodsType = {
     id: string
     title: string
     price: string
     img: string
     group: string
     made: string
+    new: boolean
+    sale: boolean
     path: string
+    hit: boolean
 
 }
-const goodsArray: Array<GoodsArrayType> = [
+const goods: Array<GoodsType> = [
     {
         id: '1',
         title: "Шуруповерт Makita rx321 32/21 e1.25123551",
         price: '2 350 ₴',
         img: 'https://megatool.com.ua/image/cache/catalog/products/elektroinstrumenty/akkumulyatornaya-drel-shurupovert-makita-ddf453sfx7-700x700.jpg',
         group: 'electro-tools',
+        new: true,
+        sale: false,
+        hit: false,
         made: 'Japan',
         path: '/tovar/123151'
     },
@@ -50,6 +56,9 @@ const goodsArray: Array<GoodsArrayType> = [
         price: '1 940 ₴',
         img: 'https://ceramroom.com.ua/content/images/14/70764548561237.jpeg',
         group: 'electro-tools',
+        new: true,
+        sale: false,
+        hit: false,
         made: 'Japan',
         path: '/tovar/123152'
     },
@@ -60,7 +69,10 @@ const goodsArray: Array<GoodsArrayType> = [
         img: 'https://i1.foxtrot.com.ua/product/MediumImages/6377012_0.jpg',
         group: 'electro-tools',
         made: 'Japan',
-        path: '/tovar/123153'
+        new: true,
+        sale: false,
+        hit: false,
+        path: '/tovar/123154'
     },
     {
         id: '4',
@@ -69,7 +81,10 @@ const goodsArray: Array<GoodsArrayType> = [
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHVDAh-57QKUoos97FAc8ivr17QjDyVDJ6tw&usqp=CAU',
         group: 'electro-tools',
         made: 'Japan',
-        path: '/tovar/123154'
+        new: true,
+        sale: false,
+        hit: false,
+        path: '/tovar/123156'
     }, {
         id: '5',
         title: "Мойка высокого давления Karcher K 5 Full Control",
@@ -77,7 +92,167 @@ const goodsArray: Array<GoodsArrayType> = [
         img: 'https://www.tradebox.dn.ua/img/catalog/o1528376236.jpg',
         group: 'electro-tools',
         made: 'Japan',
+        new: true,
+        sale: false,
+        hit: false,
+        path: '/tovar/123159'
+    }, {
+        id: '6',
+        title: "Мойка высокого давления Karcher K 5 Full Control",
+        price: '1 630 ₴',
+        img: 'https://www.tradebox.dn.ua/img/catalog/o1528376236.jpg',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: true,
+        sale: false,
+        hit: false,
+        path: '/tovar/123159'
+    },
+
+]
+const goods2: Array<GoodsType> = [
+    {
+        id: '1',
+        title: "Смеситель кухонный Grohe Auqa clear stick AB 1280",
+        price: '2 450 ₴',
+        img: 'https://stevian.com.ua/media/catalog/product/cache/1/image/650x650/1f39608415b261262179a2ad116c74b9/2/3/23739002.jpg',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: false,
+        sale: false,
+        hit: true,
+        path: '/tovar/123151'
+    },
+    {
+        id: '2',
+        title: "Генератор Forte FGD6500E3 (30750)\n",
+        price: '14 940 ₴',
+        img: 'https://220volt.com.ua/uploads/gallery_photo/photo/0593/23.png',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: false,
+        sale: false,
+        hit: true,
+        path: '/tovar/123152'
+    },
+    {
+        id: '3',
+        title: "Набор пилок DEWALT DT2163 (5 шт)",
+        price: '199 ₴',
+        img: 'https://i1.foxtrot.com.ua/product/MediumImages/6306110_0.jpg',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: false,
+        sale: false,
+        hit: true,
+        path: '/tovar/123154'
+    },
+    {
+        id: '4',
+        title: "Стабилизатор напряжения FORTE TDR-2000VA (22650 ",
+        price: '1 440 ₴',
+        img: 'https://i1.foxtrot.com.ua/product/MediumImages/6134264_0.jpg',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: false,
+        sale: false,
+        hit: true,
         path: '/tovar/123156'
+    }, {
+        id: '5',
+        title: "Прожектор V-TAC SKU-5954 E-series 30W 6400К (3800157625470)",
+        price: '330 ₴',
+        img: 'https://i1.foxtrot.com.ua/product/MediumImages/6563996_0.jpg',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: false,
+        sale: false,
+        hit: true,
+        path: '/tovar/123159'
+    }, {
+        id: '6',
+        title: "Мойка высокого давления Karcher K 5 Full Control",
+        price: '1 630 ₴',
+        img: 'https://www.tradebox.dn.ua/img/catalog/o1528376236.jpg',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: false,
+        sale: false,
+        hit: true,
+        path: '/tovar/123159'
+    },
+
+]
+const goods3: Array<GoodsType> = [
+    {
+        id: '1',
+        title: "Сетка рабица 40х40х120",
+        price: '24 ₴',
+        img: 'https://www.materik-m.ru/upload/iblock/e02/e028e2a423fe8436e0e48e045eeb53d8.jpg',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: false,
+        sale: true,
+        hit: true,
+        path: '/tovar/123151'
+    },
+    {
+        id: '2',
+        title: "Колено канализация 50/90",
+        price: '8 ₴',
+        img: 'https://ostendorf.ru/storage/photo/resized/xy_800x600/f/athf0cg8z14vm0x_343282e4.jpg',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: false,
+        sale: true,
+        hit: false,
+        path: '/tovar/123152'
+    },
+    {
+        id: '3',
+        title: "Пистолет для полива Presto AB123-34",
+        price: '130 ₴',
+        img: 'https://s1.topchina.guru/item_image_plitka/ae01.alicdn.com/kf/HTB15OqtkfBNTKJjSszcq6zO2VXaE/8-Mutifunctional.jpg_640x640.jpg',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: false,
+        sale: true,
+        hit: true,
+        path: '/tovar/123154'
+    },
+    {
+        id: '4',
+        title: "Шланг Presto Euro Yellow 3/4",
+        price: '1 250 ₴',
+        img: 'https://vist.market/storage/uploads/thumbs/store/subproduct/453x453_72-724.jpg',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: false,
+        sale: true,
+        hit: true,
+        path: '/tovar/123156'
+    }, {
+        id: '5',
+        title: "ДРЕЛЬ MAKITA УДАРНАЯ HP1640 (HP1640)",
+        price: '2 630 ₴',
+        img: 'https://brain.com.ua/static/images/prod_img/3/9/U0285239_big.jpg',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: false,
+        sale: true,
+        hit: true,
+        path: '/tovar/123159'
+    }, {
+        id: '6',
+        title: "Мойка высокого давления Karcher K 5 Full Control",
+        price: '1 630 ₴',
+        img: 'https://www.tradebox.dn.ua/img/catalog/o1528376236.jpg',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: false,
+        sale: true,
+        hit: false,
+        path: '/tovar/123159'
     },
 
 ]
@@ -151,8 +326,11 @@ function App(props: AppPropsType) {
                            setCollapsedCallback={setCollapsedCallback}
                            value={value}
                            onClick={setValue}
+                           goods={goods}
+                           goods2={goods2}
+                           goods3={goods3}
                        />}/>
-                       {goodsArray.map((good, idx) => {
+                       {goods.map((good, idx) => {
                            return <Route key={idx} path={good.path}
                                          render={() => <GoodCard id={good.id}
 
