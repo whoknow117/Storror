@@ -10,8 +10,14 @@ export type HeaderPropsType = {
     headerCollapsed: boolean
 }
 
+
 const Header: React.FC<HeaderPropsType> = ({setCollapse,collapsed,headerCollapsed}) => {
-    return <header className={classes.header}>
+
+    const borderStyle = {
+        borderBottom : `${headerCollapsed ? '1px solid #e7e7e7' : ""}`
+    }
+
+    return <header style={borderStyle} className={classes.header}>
         {!headerCollapsed ?  <HeaderTop headerCollapsed={headerCollapsed} setCollapse={setCollapse} collapsed={collapsed}/> : ""}
         <div className={classes.bottom}>
             <HeaderBottom headerCollapsed={headerCollapsed} setCollapse={setCollapse}/>

@@ -2,10 +2,11 @@
 
 
 .header {
-  width: $headerWidth;
+  width: 100%;
   position: fixed;
-  left: calc(50% - (calc((100% - 154px)/2)));
-  background: silver;
+
+
+  padding: 0 72px;
   top: 0;
   background: $headerBackground;
   margin: 0 auto;

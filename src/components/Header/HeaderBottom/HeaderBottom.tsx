@@ -8,8 +8,13 @@ export type HeaderBottomPropsType = {
     headerCollapsed: boolean
 }
 
+
+
 const HeaderBottom:React.FC<HeaderBottomPropsType>= ({setCollapse,headerCollapsed}) => {
-    return <div className={`${classes.bottom}`}>
+
+
+
+    return <div   className={`${classes.bottom}`}>
         <button onClick={setCollapse} className={classes.goodsBtn}><span className={classes.span}></span>Каталог товаров</button>
         <div className={classes.inputWrapper}>
             <button className={classes.btn}>

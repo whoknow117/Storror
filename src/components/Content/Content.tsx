@@ -8,6 +8,7 @@ import Popular from "./Popular/Popular";
 import GoodsAssembly from "./GoodsAssembly/GoodsAssembly";
 import {GoodsType, ValuesType} from "../../App";
 import k1 from '../../assets/right.jpg'
+import {Footer} from "../Footer/Footer";
 
 type ContentPropsType = {
     setCollapsedCallback: () => void
@@ -66,7 +67,7 @@ const Content: React.FC<ContentPropsType> = ({value,onClick, content,collapsed, 
                 goods={goods3}
             />
         </div>
-
+        <Footer/>
     </div>
 }
 export default Content;
