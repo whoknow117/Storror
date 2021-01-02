@@ -4,17 +4,8 @@
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/GoodsAssembly/GoodsAssembly.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodsAssembly/GoodsAssembly.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Popular/Popular.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Popular/Popular.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Proposal/Proposal.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Proposal/Proposal.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottom.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottom.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottomNav/HeaderBottomNav.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottomNav/HeaderBottomNav.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderTop/HeaderTop.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderTop/HeaderTop.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/variables/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/variables/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +97,7 @@
       <workItem from="1609497416271" duration="11406000" />
       <workItem from="1609524141506" duration="2447000" />
       <workItem from="1609526784832" duration="924000" />
-      <workItem from="1609588626635" duration="5338000" />
+      <workItem from="1609588626635" duration="7007000" />
     </task>
     <servers />
   </component>

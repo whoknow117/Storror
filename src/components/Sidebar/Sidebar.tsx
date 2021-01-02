@@ -52,16 +52,16 @@ const Sidebar: React.FC<SidebarPropsType> = ({state,sidebar,setCollapsedCallback
 
 
 
-    let dropDown = React.createRef<HTMLDivElement>();
 
-    const DropOn = () => {
-        if (dropDown.current) {
-            dropDown.current.style.left = " 390px";
-        }
+
+    const dropOn = () => {
+        setDrop(true)
     }
-    const DropOff = () => {
-        setDrop(false);
+
+    const dropOff = () => {
+        setDrop(false)
     }
+
 
     return (
 
@@ -76,7 +76,7 @@ const Sidebar: React.FC<SidebarPropsType> = ({state,sidebar,setCollapsedCallback
             {sidebar.map(item => {
                 return (
 
-                    <div onMouseEnter={DropOn} onBlur={DropOff}  key={item.id} className={ classes.wrapper }>
+                    <div onMouseEnter={dropOn} onMouseLeave={dropOff} key={item.id} className={ classes.wrapper }>
                         {sidebarIcons.map(icon => icon.id === item.id ?
                             <div key={icon.id} className={classes.icon}>{icon.icon}</div> : ""
                         )}
@@ -84,13 +84,10 @@ const Sidebar: React.FC<SidebarPropsType> = ({state,sidebar,setCollapsedCallback
 
                         </div>
 
-                        {/*<div className={classes.itemWrapper}>*/}
-                           {/*    {state.dropDown[item.id].map(drop => {*/}
-                        {/*        return  <div className={classes.item}>*/}
-                        {/*            <div>{drop.head}</div>*/}
-                        {/*            {drop.items.map( el => {*/}
-                        {/*                return <div>{el.title}</div>*/}
-                        {/*            })}*/}
+                        {/*<div onMouseEnter={dropOn} onMouseLeave={dropOff}  className={drop ? classes.drop : ''}>*/}
+                        {/*    {state.dropDown[item.id].map(el => {*/}
+                        {/*        return <div>*/}
+                        {/*            <div>{el.head}</div>*/}
                         {/*        </div>*/}
                         {/*    })}*/}
                         {/*</div>*/}
@@ -106,3 +103,15 @@ const Sidebar: React.FC<SidebarPropsType> = ({state,sidebar,setCollapsedCallback
 
 export default Sidebar;
 
+
+
+{/*<div className={classes.itemWrapper}>*/}
+{/*    {state.dropDown[item.id].map(drop => {*/}
+{/*        return  <div className={classes.item}>*/}
+{/*            <div>{drop.head}</div>*/}
+{/*            {drop.items.map( el => {*/}
+{/*                return <div>{el.title}</div>*/}
+{/*            })}*/}
+{/*        </div>*/}
+{/*    })}*/}
+{/*</div>*/}
