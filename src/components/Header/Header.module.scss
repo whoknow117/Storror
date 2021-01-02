@@ -4,11 +4,11 @@
 .header {
   width: $headerWidth;
   position: fixed;
-  left: $sidebarWidth;
+  left: calc(50% - (calc((100% - 154px)/2)));
+  background: silver;
   top: 0;
   background: $headerBackground;
-  padding-left: 80px;
-  padding-right: 40px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   z-index: 101;

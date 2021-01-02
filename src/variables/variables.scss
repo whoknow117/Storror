@@ -3,7 +3,7 @@ $sidebarWidth: 0;
 $sidebarHeight: 100vh;
 $sidebarBackgroundColor: #ffffff;
 
-$headerWidth: 100%;
+$headerWidth: calc(100% - 154px);
 $headerHeight: 50px;
 $headerBackground: #fff;
 
@@ -12,7 +12,8 @@ $dropDownLeft: 234px;
 $contentWidth: 100%;
 $contentHeight: calc(100% - 160px);
 
-$mainFont: Montserrat, Arial, sans-serif;
+$mainFont: 'PT Root UI';
+$secondFont: Montserrat, Arial, sans-serif;
 
 $orangeBackgroundColor: rgb(255, 119, 28);
 

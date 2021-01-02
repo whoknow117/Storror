@@ -5,7 +5,8 @@
 }
 
 .App .wrapper {
-    width: 1370px;
+    width: calc(100% - 160px);
+    background: #fff;
     margin: 0 auto;
 
 

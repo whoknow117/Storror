@@ -92,18 +92,20 @@
  }
 }
 
-.goodsTitle {
-  font-family: 'PT Root UI';
-  font-size: 2rem;
-  margin-top: 20px;
-  margin-left: 20px;
-  font-weight: 400;
-  width: 240px;
-}
+
 
 
 .goodsWrap {
   height: 360px;
-  margin-top: 70px;
+  margin-top: 20px;
   display: flex;
+  .goodsTitle {
+    font-family: 'PT Root UI';
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 200px;
+    h3 {
+      margin-top: 20px;
+    }
+  }
 }

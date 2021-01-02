@@ -36,7 +36,9 @@ const Content: React.FC<ContentPropsType> = ({value,onClick, content,collapsed, 
         />
         <GoodsAssembly/>
        <div className={classes.goodsWrap}>
-           <div className={classes.goodsTitle}> Специально для Вас</div>
+           <div className={classes.goodsTitle}>
+               <h3>Специально для Вас</h3>
+           </div>
            <GoodsPropositions
                onClick={onClick}
                value={value}
@@ -45,7 +47,9 @@ const Content: React.FC<ContentPropsType> = ({value,onClick, content,collapsed, 
            />
        </div>
         <div className={classes.goodsWrap}>
-            <div className={classes.goodsTitle}> Лучшие новинки</div>
+            <div className={classes.goodsTitle}>
+                <h3>Лучшие новинки</h3>
+            </div>
             <GoodsPropositions
                 onClick={onClick}
                 value={value}
@@ -53,7 +57,9 @@ const Content: React.FC<ContentPropsType> = ({value,onClick, content,collapsed, 
             />
         </div>
         <div className={classes.goodsWrap}>
-            <div className={classes.goodsTitle}> Успей купить</div>
+            <div className={classes.goodsTitle}>
+                <h3> Успей купить</h3>
+            </div>
             <GoodsPropositions
                 onClick={onClick}
                 value={value}
