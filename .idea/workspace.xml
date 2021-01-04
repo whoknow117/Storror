@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/BasketWithPlusIcon/BasketWithPlusIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/Stickers/Stickers.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/Stickers/Stickers.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Delivery/Delivery.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/GoodsSlider/GoodsSlider.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/GoodsSlider/GoodsSlider.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/GoodsSlider/GoodsSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/GoodsSlider/GoodsSlider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/BreadCrumbs/BreadCrumbs.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/BreadCrumbs/BreadCrumbs.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/GoodCardTitle/GoodCardTitle.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/GoodCardTitle/GoodCardTitle.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/GoodCardTitle/GoodCardTitle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/GoodCardTitle/GoodCardTitle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/InformationBoard/InformationBoard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/InformationBoard/InformationBoard.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/InformationBoard/InformationBoard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/InformationBoard/InformationBoard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Bookmark/BookMark.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Bookmark/BookMark.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/MainInformation.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/MainInformation.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/MainInformation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/MainInformation.tsx" afterDir="false" />
     </list>
@@ -122,7 +111,8 @@
       <workItem from="1609699924064" duration="1661000" />
       <workItem from="1609744479003" duration="2702000" />
       <workItem from="1609752745522" duration="3869000" />
-      <workItem from="1609756651535" duration="4888000" />
+      <workItem from="1609756651535" duration="5171000" />
+      <workItem from="1609778598389" duration="2188000" />
     </task>
     <servers />
   </component>

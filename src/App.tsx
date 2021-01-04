@@ -146,7 +146,7 @@ const goods: Array<GoodsType> = [
         path: '/tovar/123146'
     }, {
         id: '115',
-        title: "ДРЕЛЬ MAKITA УДАРНАЯ HP1640 (HP1640)",
+        title: "Дрель Ударная MAKITA HP1640 (HP1640)",
         price: '2 630 ₴',
         img: 'https://brain.com.ua/static/images/prod_img/3/9/U0285239_big.jpg',
         group: 'electro-tools',
