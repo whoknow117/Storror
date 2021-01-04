@@ -3,6 +3,7 @@ import classes from './GoodCard.module.scss';
 import MainInformation from "./MainInformation/MainInformation";
 import AdditionalInformation from "./AdditionalInformation/AdditionalInformation";
 import {ValuesType} from "../../App";
+import GoodsSlider from "./GoodsSlider/GoodsSlider";
 
 
 export type GoodCardPropsType = {
@@ -21,8 +22,9 @@ const GoodCard:React.FC<GoodCardPropsType> = ({onClick,value, id,title,
                                                   price,img,
                                                   group,made,path}) => {
     return  <div className={classes.goodCard}>
-        <MainInformation onClick={onClick} value={value}/>
-        <AdditionalInformation/>
+
+        <GoodsSlider/>
+        {/*<MainInformation onClick={onClick} value={value}/>*/}
     </div>
 
 

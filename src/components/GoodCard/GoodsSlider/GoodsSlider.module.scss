@@ -1,0 +1,19 @@
+@import "src/variables/variables";
+
+
+
+.wrap {
+  flex-basis: 40%;
+  position: relative;
+  .goodImage {
+    width: 100%;
+    padding: 020px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .goodItems {
+
+  }
+}

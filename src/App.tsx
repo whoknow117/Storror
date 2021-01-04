@@ -95,7 +95,7 @@ const goods: Array<GoodsType> = [
         new: true,
         sale: false,
         hit: false,
-        path: '/tovar/123159'
+        path: '/tovar/123169'
     }, {
         id: '6',
         title: "Мойка высокого давления Karcher K 5 Full Control",
@@ -125,7 +125,7 @@ const goods2: Array<GoodsType> = [
     },
     {
         id: '2',
-        title: "Генератор Forte FGD6500E3 (30750)\n",
+        title: "Генератор Forte FGD6500E3 (30750)",
         price: '14 940 ₴',
         img: 'https://220volt.com.ua/uploads/gallery_photo/photo/0593/23.png',
         group: 'electro-tools',
@@ -168,7 +168,7 @@ const goods2: Array<GoodsType> = [
         new: false,
         sale: false,
         hit: true,
-        path: '/tovar/123159'
+        path: '/tovar/123131'
     }, {
         id: '6',
         title: "Мойка высокого давления Karcher K 5 Full Control",
@@ -179,7 +179,7 @@ const goods2: Array<GoodsType> = [
         new: false,
         sale: false,
         hit: true,
-        path: '/tovar/123159'
+        path: '/tovar/123112'
     },
 
 ]
@@ -241,7 +241,7 @@ const goods3: Array<GoodsType> = [
         new: false,
         sale: true,
         hit: true,
-        path: '/tovar/123159'
+        path: '/tovar/123143'
     }, {
         id: '6',
         title: "Мойка высокого давления Karcher K 5 Full Control",
@@ -252,7 +252,7 @@ const goods3: Array<GoodsType> = [
         new: false,
         sale: true,
         hit: false,
-        path: '/tovar/123159'
+        path: '/tovar/123141'
     },
 
 ]
@@ -333,7 +333,6 @@ function App(props: AppPropsType) {
                        {goods.map((good, idx) => {
                            return <Route key={idx} path={good.path}
                                          render={() => <GoodCard id={good.id}
-
                                                                  onClick={setValue}
                                                                  value={value}
                                                                  title={good.title}
