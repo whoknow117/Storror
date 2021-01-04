@@ -17,11 +17,29 @@ type ContentPropsType = {
     onClick: (value: ValuesType) => void
     value: ValuesType
     goods:Array<GoodsType>
-    goods2:Array<GoodsType>
-    goods3:Array<GoodsType>
+
 }
 
-const Content: React.FC<ContentPropsType> = ({value,onClick, content,collapsed, setCollapsedCallback, goods2,goods3,goods}) => {
+const Content: React.FC<ContentPropsType> = ({value,onClick, content,
+                                                 collapsed, setCollapsedCallback,
+                                             goods}) => {
+
+    const goodsSales = (goods:Array<GoodsType>):Array<GoodsType> => {
+
+        return goods.filter( g => g.sale )
+    }
+    const goodSalesCallback = goodsSales(goods)
+
+    const goodsHit = (goods:Array<GoodsType>): Array<GoodsType> => {
+        return goods.filter( g => g.hit)
+    }
+    const goodHitCallback = goodsHit(goods)
+
+    const goodsNew = (goods:Array<GoodsType>): Array<GoodsType> => {
+        return goods.filter( g => g.new)
+    }
+    const goodNewCallback = goodsNew(goods)
+
 
     return <div className={classes.content}>
         <div className={classes.slider}>
@@ -36,6 +54,17 @@ const Content: React.FC<ContentPropsType> = ({value,onClick, content,collapsed, 
             popular={content.popular}
         />
         <GoodsAssembly/>
+        <div className={classes.goodsWrap}>
+            <div className={classes.goodsTitle}>
+                <h3>Новинки</h3>
+            </div>
+            <GoodsPropositions
+                onClick={onClick}
+                value={value}
+                goods={goodNewCallback}
+
+            />
+        </div>
        <div className={classes.goodsWrap}>
            <div className={classes.goodsTitle}>
                <h3>Специально для Вас</h3>
@@ -43,30 +72,24 @@ const Content: React.FC<ContentPropsType> = ({value,onClick, content,collapsed, 
            <GoodsPropositions
                onClick={onClick}
                value={value}
-               goods={goods}
+               goods={goodSalesCallback}
 
            />
        </div>
         <div className={classes.goodsWrap}>
             <div className={classes.goodsTitle}>
-                <h3>Лучшие новинки</h3>
+                <h3>Успей купить</h3>
             </div>
             <GoodsPropositions
                 onClick={onClick}
                 value={value}
-                goods={goods2}
+                goods={goodHitCallback}
+
             />
         </div>
-        <div className={classes.goodsWrap}>
-            <div className={classes.goodsTitle}>
-                <h3> Успей купить</h3>
-            </div>
-            <GoodsPropositions
-                onClick={onClick}
-                value={value}
-                goods={goods3}
-            />
-        </div>
+
+
+
         <Footer/>
     </div>
 }

@@ -96,96 +96,9 @@ const goods: Array<GoodsType> = [
         sale: false,
         hit: false,
         path: '/tovar/123169'
-    }, {
+    },
+    {
         id: '6',
-        title: "Мойка высокого давления Karcher K 5 Full Control",
-        price: '1 630 ₴',
-        img: 'https://www.tradebox.dn.ua/img/catalog/o1528376236.jpg',
-        group: 'electro-tools',
-        made: 'Japan',
-        new: true,
-        sale: false,
-        hit: false,
-        path: '/tovar/123159'
-    },
-
-]
-const goods2: Array<GoodsType> = [
-    {
-        id: '1',
-        title: "Смеситель кухонный Grohe Auqa clear stick AB 1280",
-        price: '2 450 ₴',
-        img: 'https://stevian.com.ua/media/catalog/product/cache/1/image/650x650/1f39608415b261262179a2ad116c74b9/2/3/23739002.jpg',
-        group: 'electro-tools',
-        made: 'Japan',
-        new: false,
-        sale: false,
-        hit: true,
-        path: '/tovar/123151'
-    },
-    {
-        id: '2',
-        title: "Генератор Forte FGD6500E3 (30750)",
-        price: '14 940 ₴',
-        img: 'https://220volt.com.ua/uploads/gallery_photo/photo/0593/23.png',
-        group: 'electro-tools',
-        made: 'Japan',
-        new: false,
-        sale: false,
-        hit: true,
-        path: '/tovar/123152'
-    },
-    {
-        id: '3',
-        title: "Набор пилок DEWALT DT2163 (5 шт)",
-        price: '199 ₴',
-        img: 'https://i1.foxtrot.com.ua/product/MediumImages/6306110_0.jpg',
-        group: 'electro-tools',
-        made: 'Japan',
-        new: false,
-        sale: false,
-        hit: true,
-        path: '/tovar/123154'
-    },
-    {
-        id: '4',
-        title: "Стабилизатор напряжения FORTE TDR-2000VA (22650 ",
-        price: '1 440 ₴',
-        img: 'https://i1.foxtrot.com.ua/product/MediumImages/6134264_0.jpg',
-        group: 'electro-tools',
-        made: 'Japan',
-        new: false,
-        sale: false,
-        hit: true,
-        path: '/tovar/123156'
-    }, {
-        id: '5',
-        title: "Прожектор V-TAC SKU-5954 E-series 30W 6400К (3800157625470)",
-        price: '330 ₴',
-        img: 'https://i1.foxtrot.com.ua/product/MediumImages/6563996_0.jpg',
-        group: 'electro-tools',
-        made: 'Japan',
-        new: false,
-        sale: false,
-        hit: true,
-        path: '/tovar/123131'
-    }, {
-        id: '6',
-        title: "Мойка высокого давления Karcher K 5 Full Control",
-        price: '1 630 ₴',
-        img: 'https://www.tradebox.dn.ua/img/catalog/o1528376236.jpg',
-        group: 'electro-tools',
-        made: 'Japan',
-        new: false,
-        sale: false,
-        hit: true,
-        path: '/tovar/123112'
-    },
-
-]
-const goods3: Array<GoodsType> = [
-    {
-        id: '1',
         title: "Сетка рабица 40х40х120",
         price: '24 ₴',
         img: 'https://www.materik-m.ru/upload/iblock/e02/e028e2a423fe8436e0e48e045eeb53d8.jpg',
@@ -193,11 +106,11 @@ const goods3: Array<GoodsType> = [
         made: 'Japan',
         new: false,
         sale: true,
-        hit: true,
-        path: '/tovar/123151'
+        hit: false,
+        path: '/tovar/123115'
     },
     {
-        id: '2',
+        id: '7',
         title: "Колено канализация 50/90",
         price: '8 ₴',
         img: 'https://ostendorf.ru/storage/photo/resized/xy_800x600/f/athf0cg8z14vm0x_343282e4.jpg',
@@ -206,56 +119,107 @@ const goods3: Array<GoodsType> = [
         new: false,
         sale: true,
         hit: false,
-        path: '/tovar/123152'
+        path: '/tovar/123112'
     },
     {
-        id: '3',
+        id: '34',
         title: "Пистолет для полива Presto AB123-34",
         price: '130 ₴',
         img: 'https://s1.topchina.guru/item_image_plitka/ae01.alicdn.com/kf/HTB15OqtkfBNTKJjSszcq6zO2VXaE/8-Mutifunctional.jpg_640x640.jpg',
         group: 'electro-tools',
         made: 'Japan',
         new: false,
-        sale: true,
+        sale: false,
         hit: true,
-        path: '/tovar/123154'
+        path: '/tovar/123124'
     },
     {
-        id: '4',
+        id: '44',
         title: "Шланг Presto Euro Yellow 3/4",
         price: '1 250 ₴',
         img: 'https://vist.market/storage/uploads/thumbs/store/subproduct/453x453_72-724.jpg',
         group: 'electro-tools',
         made: 'Japan',
         new: false,
-        sale: true,
+        sale: false,
         hit: true,
-        path: '/tovar/123156'
+        path: '/tovar/123146'
     }, {
-        id: '5',
+        id: '115',
         title: "ДРЕЛЬ MAKITA УДАРНАЯ HP1640 (HP1640)",
         price: '2 630 ₴',
         img: 'https://brain.com.ua/static/images/prod_img/3/9/U0285239_big.jpg',
         group: 'electro-tools',
         made: 'Japan',
         new: false,
-        sale: true,
+        sale: false,
         hit: true,
-        path: '/tovar/123143'
-    }, {
-        id: '6',
-        title: "Мойка высокого давления Karcher K 5 Full Control",
-        price: '1 630 ₴',
-        img: 'https://www.tradebox.dn.ua/img/catalog/o1528376236.jpg',
+        path: '/tovar/123113'
+    },
+    {
+        id: '11',
+        title: "Смеситель кухонный Grohe Auqa clear stick AB 1280",
+        price: '2 450 ₴',
+        img: 'https://stevian.com.ua/media/catalog/product/cache/1/image/650x650/1f39608415b261262179a2ad116c74b9/2/3/23739002.jpg',
+        group: 'electro-toolse',
+        made: 'Japana',
+        new: false,
+        sale: false,
+        hit: true,
+        path: '/tovar/123543'
+    },
+    {
+        id: '12',
+        title: "Генератор Forte FGD6500E3 (30750)",
+        price: '14 940 ₴',
+        img: 'https://220volt.com.ua/uploads/gallery_photo/photo/0593/23.png',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: false,
+        sale: false,
+        hit: true,
+        path: '/tovar/123150'
+    },
+    {
+        id: '13',
+        title: "Набор пилок DEWALT DT2163 (5 шт)",
+        price: '199 ₴',
+        img: 'https://i1.foxtrot.com.ua/product/MediumImages/6306110_0.jpg',
         group: 'electro-tools',
         made: 'Japan',
         new: false,
         sale: true,
         hit: false,
-        path: '/tovar/123141'
+        path: '/tovar/123111'
+    },
+    {
+        id: '14',
+        title: "Стабилизатор напряжения FORTE TDR-2000VA (22650 ",
+        price: '1 440 ₴',
+        img: 'https://i1.foxtrot.com.ua/product/MediumImages/6134264_0.jpg',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: false,
+        sale: true,
+        hit: false,
+        path: '/tovar/123133'
+    }, {
+        id: '15',
+        title: "Прожектор V-TAC SKU-5954 E-series 30W 6400К (3800157625470)",
+        price: '330 ₴',
+        img: 'https://i1.foxtrot.com.ua/product/MediumImages/6563996_0.jpg',
+        group: 'electro-tools',
+        made: 'Japan',
+        new: false,
+        sale: true,
+        hit: false,
+        path: '/tovar/123131'
     },
 
 ]
+
+
+
 
 const sidebarIcons = [
     {id: '1', icon: <Drill/>},
@@ -327,8 +291,7 @@ function App(props: AppPropsType) {
                            value={value}
                            onClick={setValue}
                            goods={goods}
-                           goods2={goods2}
-                           goods3={goods3}
+
                        />}/>
                        {goods.map((good, idx) => {
                            return <Route key={idx} path={good.path}

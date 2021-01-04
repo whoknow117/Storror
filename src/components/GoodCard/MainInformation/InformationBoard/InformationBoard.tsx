@@ -11,7 +11,12 @@ export type InformationBoardType = {
 
 const InformationBoard: React.FC<InformationBoardType> = ({onClick, value}) => {
     return <div className={classes.wrap}>
-        <Rating value={value} onClick={onClick}/>
+        <div className={classes.art}>
+            Код товара:<span>123353</span>
+        </div>
+       <div className={classes.rating}>
+           <Rating value={value} onClick={onClick}/>
+       </div>
     </div>
 
 

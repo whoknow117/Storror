@@ -18,13 +18,29 @@ export type GoodCardPropsType = {
     value: ValuesType
 }
 
+export type GoodValuesType = {
+    id: string
+    title: string
+    price: string
+    img: string
+    made: string
+    path: string
+
+}
+
 const GoodCard:React.FC<GoodCardPropsType> = ({onClick,value, id,title,
                                                   price,img,
                                                   group,made,path}) => {
+
+
+    const values:GoodValuesType = {
+        id,title,price,img,made,path
+    }
+
     return  <div className={classes.goodCard}>
 
-        <GoodsSlider/>
-        {/*<MainInformation onClick={onClick} value={value}/>*/}
+        <GoodsSlider goodValues={values}/>
+        <MainInformation goodValues={values} onClick={onClick} value={value}/>
     </div>
 
 

@@ -23,9 +23,10 @@ const GoodsPropositions: React.FC<GoodsPropositionsPropsType> = ({onClick, value
         <div className={classes.goodsPropositions}>
 
 
+
             {goods.map(g => {
 
-               if (g.id <= '5') {
+               if (g) {
                    return <div   className={classes.goodsItem}>
                        <div className={classes.wrap}>
                           <div className={classes.separate}>
@@ -55,6 +56,7 @@ const GoodsPropositions: React.FC<GoodsPropositionsPropsType> = ({onClick, value
                        </div>
                    </div>
                 }
+               else return
 
             })}
 

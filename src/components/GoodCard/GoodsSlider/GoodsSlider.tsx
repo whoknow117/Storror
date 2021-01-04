@@ -1,13 +1,17 @@
 import React from 'react';
 import classes from './GoodsSlider.module.scss';
+import {GoodValuesType} from "../GoodCard";
 
-export type GoodsSliderType = {}
+export type GoodsSliderType = {
+    goodValues: GoodValuesType
+
+}
 
 
-const GoodsSlider: React.FC<GoodsSliderType> = () => {
+const GoodsSlider: React.FC<GoodsSliderType> = ({goodValues}) => {
     return <div className={classes.wrap}>
         <div className={classes.goodImage}>
-            <img src="https://s1.kaercher-media.com/products/11801500/main/1/d0.jpg" alt="#"/>
+            <img src={goodValues.img} alt="#"/>
         </div>
         <div className={classes.goodItems}></div>
     </div>

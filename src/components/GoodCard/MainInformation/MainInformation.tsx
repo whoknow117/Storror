@@ -5,18 +5,24 @@ import InformationBoard from "./InformationBoard/InformationBoard";
 import GoodCardTitle from "./GoodCardTitle/GoodCardTitle";
 
 import {ValuesType} from "../../../App";
+import {GoodValuesType} from "../GoodCard";
+import BasketWithPlusIcon from "../../../assets/BasketWithPlusIcon/BasketWithPlusIcon";
 
 export type MainInformationType = {
     onClick: (value: ValuesType) => void
     value: ValuesType
+    goodValues: GoodValuesType
 }
 
 
-const MainInformation: React.FC<MainInformationType> = ({onClick, value}) => {
+const MainInformation: React.FC<MainInformationType> = ({goodValues,onClick, value}) => {
     return <div className={classes.wrap}>
         <BreadCrumbs/>
+
         <InformationBoard onClick={onClick} value={value}/>
-        <GoodCardTitle/>
+        <GoodCardTitle title={goodValues.title}/>
+        <span className={classes.price}>{goodValues.price}</span>
+        <button className={classes.btn}><span className={classes.basket}><BasketWithPlusIcon/></span>В Корзину</button>
 
     </div>
 
