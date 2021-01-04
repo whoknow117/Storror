@@ -2,16 +2,22 @@
 
 
 .header {
-  width: $headerWidth;
+  width: 100%;
   position: fixed;
-  left: $sidebarWidth;
+
+
+  padding: 0 72px;
   top: 0;
-  height: 90px;
   background: $headerBackground;
-  border-bottom: 1px solid #e3e3e3;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  z-index: 1001;
-
+  z-index: 101;
+  @media (max-width: 800px) {
+    left: 0;
+    width: 100%;
+    height: 60px;
+    border-bottom: none;
+  }
 
 }

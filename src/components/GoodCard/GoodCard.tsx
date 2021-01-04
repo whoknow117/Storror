@@ -3,6 +3,7 @@ import classes from './GoodCard.module.scss';
 import MainInformation from "./MainInformation/MainInformation";
 import AdditionalInformation from "./AdditionalInformation/AdditionalInformation";
 import {ValuesType} from "../../App";
+import GoodsSlider from "./GoodsSlider/GoodsSlider";
 
 
 export type GoodCardPropsType = {
@@ -15,14 +16,33 @@ export type GoodCardPropsType = {
     path: string
     onClick: (value: ValuesType) => void
     value: ValuesType
+    images: Array<string>
 }
 
-const GoodCard:React.FC<GoodCardPropsType> = ({onClick,value, id,title,
+export type GoodValuesType = {
+    id: string
+    title: string
+    price: string
+    img: string
+    made: string
+    path: string
+    images: Array<string>
+
+}
+
+const GoodCard:React.FC<GoodCardPropsType> = ({images,onClick,value, id,title,
                                                   price,img,
                                                   group,made,path}) => {
+
+
+    const values:GoodValuesType = {
+        images,id,title,price,img,made,path
+    }
+
     return  <div className={classes.goodCard}>
-        <MainInformation onClick={onClick} value={value}/>
-        <AdditionalInformation/>
+
+        <GoodsSlider images={images} img={img}/>
+        <MainInformation goodValues={values} onClick={onClick} value={value}/>
     </div>
 
 

@@ -1,17 +1,44 @@
 @import "src/variables/variables";
 
 .content {
-
+  margin-top: 170px;
   width: 100%;
-  padding-top: 20px;
-  height: 200vh;
+  padding-top: 50px;
+  height: 100vh;
+  .slider {
+    width: 100%;
+    position: relative;
+    display: flex;
+
+    .propositions {
+      width: 269px;
+      height: 360px;
+      overflow: hidden;;
+      margin-left: 20px;
+
+      box-shadow: 0 2px 4px rgba(0,0,0,.1);
+      padding: 0;
+      transition: .2s ease-in-out;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        transition: .2s ease-in-out;
+        &:hover {
+          transition: .2s ease-in-out;
+          transform: scale(1.1);
+        }
+        object-fit: contain;
+      }
+    }
+  }
   .info {
-    margin-top: 40px  ;
+
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px 20px;
-
+    display: none;
     padding: 0 10px;
 
     .info__item {
@@ -28,9 +55,6 @@
 
         img {
           width: 90%;
-
-
-
 
         }
       }
@@ -59,3 +83,29 @@
 
 }
 
+@media (max-width: 1100px) {
+ .content   {
+   .info {
+     display: none;
+   }
+
+ }
+}
+
+
+
+
+.goodsWrap {
+  height: 360px;
+  margin-top: 20px;
+  display: flex;
+  .goodsTitle {
+    font-family: 'PT Root UI';
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 200px;
+    h3 {
+      margin-top: 20px;
+    }
+  }
+}

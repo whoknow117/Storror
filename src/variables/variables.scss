@@ -1,18 +1,28 @@
 //main
-$sidebarWidth: 240px;
+$sidebarWidth: 0;
 $sidebarHeight: 100vh;
 $sidebarBackgroundColor: #ffffff;
 
-$headerWidth: calc(100% - 240px);
+$headerWidth: 100%;
 $headerHeight: 50px;
-$headerBackground: #fff;
+$headerBackground: #ffffff;
 
+$dropDownLeft: 234px;
 
-$contentWidth: calc( 100% - 240px);
-$contentHeight: calc(100% - 90px);
+$contentWidth: 100%;
+$contentHeight: calc(100% - 160px);
 
-$mainFont: Montserrat, Arial, sans-serif;
+$mainFont: 'PT Root UI';
+$secondFont: Montserrat, Arial, sans-serif;
 
-$orangeBackgroundColor: rgb(250, 120, 33);
+$orangeBackgroundColor: rgb(255, 119, 28);
 
 $burgerColor: #8d8d8d;
+
+$boxShadowNeuroUp: -2px -2px 8px rgba(255,255,255,1),
+-2px -2px 12px rgba(255,255,255,0.5),
+inset 2px 2px 4px #ffffff1a,
+2px 2px 8px rgba(0,0,0,.15);
+
+
+$headerIconsColor: #323232;

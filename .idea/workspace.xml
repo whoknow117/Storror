@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/StarIcon/StarIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/AdditionalInformation/AdditionalInformation.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/AdditionalInformation/AdditionalInformation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/BreadCrumbs/BreadCrumbs.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/BreadCrumbs/BreadCrumbs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/GoodCardTitle/GoodCardTitle.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/GoodCardTitle/GoodCardTitle.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/GoodsSlider/GoodsSlider.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/GoodsSlider/GoodsSlider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/InformationBoard/InformationBoard.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/InformationBoard/InformationBoard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/MainInformation.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/MainInformation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Rating/Rating.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Rating/Rating.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Rating/Star/Star.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Rating/Star/Star.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/GoodsAssembly/GoodsAssembly.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodsAssembly/GoodsAssembly.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Popular/Popular.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Popular/Popular.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +27,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/GoodCard" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -61,6 +37,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\Magazine\storror\src\components\GoodCard" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\projects\Magazine\storror\src\components\GoodCard\MainInformation" />
     </key>
@@ -89,7 +68,46 @@
       <workItem from="1607889660108" duration="1688000" />
       <workItem from="1607969701310" duration="1427000" />
       <workItem from="1608051907138" duration="871000" />
-      <workItem from="1608449243265" duration="2173000" />
+      <workItem from="1608449243265" duration="4818000" />
+      <workItem from="1608455859470" duration="4589000" />
+      <workItem from="1608465606264" duration="4522000" />
+      <workItem from="1608472978408" duration="4000" />
+      <workItem from="1608476181482" duration="4850000" />
+      <workItem from="1608481292986" duration="1853000" />
+      <workItem from="1608569553753" duration="6570000" />
+      <workItem from="1608577226974" duration="107000" />
+      <workItem from="1608578122497" duration="2434000" />
+      <workItem from="1608581095977" duration="213000" />
+      <workItem from="1608655847261" duration="1278000" />
+      <workItem from="1608661991095" duration="760000" />
+      <workItem from="1608662984552" duration="3451000" />
+      <workItem from="1608739648226" duration="3013000" />
+      <workItem from="1608744080568" duration="5549000" />
+      <workItem from="1609149096194" duration="5917000" />
+      <workItem from="1609163125722" duration="14523000" />
+      <workItem from="1609181265313" duration="3292000" />
+      <workItem from="1609184851763" duration="830000" />
+      <workItem from="1609261331302" duration="7041000" />
+      <workItem from="1609272233001" duration="2528000" />
+      <workItem from="1609344451800" duration="6677000" />
+      <workItem from="1609352488566" duration="5097000" />
+      <workItem from="1609357624938" duration="772000" />
+      <workItem from="1609390907760" duration="689000" />
+      <workItem from="1609450114074" duration="1280000" />
+      <workItem from="1609487706838" duration="6826000" />
+      <workItem from="1609497416271" duration="11406000" />
+      <workItem from="1609524141506" duration="2447000" />
+      <workItem from="1609526784832" duration="924000" />
+      <workItem from="1609588626635" duration="7384000" />
+      <workItem from="1609602989537" duration="4665000" />
+      <workItem from="1609611084291" duration="1874000" />
+      <workItem from="1609686403117" duration="2584000" />
+      <workItem from="1609699924064" duration="1661000" />
+      <workItem from="1609744479003" duration="2702000" />
+      <workItem from="1609752745522" duration="3869000" />
+      <workItem from="1609756651535" duration="5171000" />
+      <workItem from="1609778598389" duration="2304000" />
+      <workItem from="1609788173692" duration="6043000" />
     </task>
     <servers />
   </component>

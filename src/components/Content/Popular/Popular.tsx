@@ -11,8 +11,8 @@ const Popular: React.FC<PopularPropsType> = ({popular}) => {
 
 
     return  (
-        <div>
-            <div className={classes.title}>Популярные категории</div>
+        <div className={classes.popularWrap}>
+            <div className={classes.blockTitle}>Популярные категории</div>
             <div className={classes.popular}>
 
                 {popular.map( p => {
@@ -23,6 +23,7 @@ const Popular: React.FC<PopularPropsType> = ({popular}) => {
                             </div>
                             <div className={classes.title}>
                                 {p.title}
+                                <span className={classes.span}></span>
                             </div>
                         </div>
                     )

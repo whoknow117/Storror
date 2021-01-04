@@ -6,70 +6,91 @@ import GoodsPropositions from "./GoodsPropositions/GoodsPropositions";
 import {ContentType} from "../../redux/store";
 import Popular from "./Popular/Popular";
 import GoodsAssembly from "./GoodsAssembly/GoodsAssembly";
+import {GoodsType, ValuesType} from "../../App";
+import k1 from '../../assets/right.jpg'
+import {Footer} from "../Footer/Footer";
 
 type ContentPropsType = {
     setCollapsedCallback: () => void
     collapsed: boolean
     content: ContentType
+    onClick: (value: ValuesType) => void
+    value: ValuesType
+    goods:Array<GoodsType>
+
 }
 
-const Content: React.FC<ContentPropsType> = ({content,collapsed, setCollapsedCallback}) => {
+const Content: React.FC<ContentPropsType> = ({value,onClick, content,
+                                                 collapsed, setCollapsedCallback,
+                                             goods}) => {
+
+    const goodsSales = (goods:Array<GoodsType>):Array<GoodsType> => {
+
+        return goods.filter( g => g.sale )
+    }
+    const goodSalesCallback = goodsSales(goods)
+
+    const goodsHit = (goods:Array<GoodsType>): Array<GoodsType> => {
+        return goods.filter( g => g.hit)
+    }
+    const goodHitCallback = goodsHit(goods)
+
+    const goodsNew = (goods:Array<GoodsType>): Array<GoodsType> => {
+        return goods.filter( g => g.new)
+    }
+    const goodNewCallback = goodsNew(goods)
+
 
     return <div className={classes.content}>
-        <SliderShow/>
-        <div className={classes.info}>
-            <div className={classes.info__item}>
-                <div className={classes.itemImg}>
-                    <img alt="#"
-                        src=" https://www.motortrend.com/uploads/sites/10/2015/11/2014-mercedes-benz-sprinter-passenger-van-angular-front.png?fit=around%7C875:492.1875"/>
-                </div>
-
-                <div className={classes.txt}>
-                    <span className={classes.text}>Быстрая доставка по всей области</span>
-                    <span className={classes.linkSpan}>Читать подробнее</span>
-                </div>
+        <div className={classes.slider}>
+            <SliderShow/>
+            <div className={classes.propositions}>
+                <img src={k1} alt=""/>
             </div>
-            <div className={classes.info__item}>
-                <div className={classes.itemImg}>
-                    <img alt="#" src="https://clipart-db.ru/file_content/rastr/alarm-clock_007.png"/>
-                </div>
-                <div className={classes.txt}>
-                    <span className={classes.text}>Актуальные режимы работы пунктов выдачи  </span>
-                    <span className={classes.linkSpan}>Подробнее о режиме работы</span>
-                </div>
-            </div>
-            <div className={classes.info__item}>
-
-                <div className={classes.itemImg}>
-                    <img  alt="#" src="https://pngimg.com/uploads/credit_card/credit_card_PNG207.png"/>
-                </div>
-                <div className={classes.txt}>
-                    <span className={classes.text}>Используйте безопасные методы оплаты  </span>
-                    <span className={classes.linkSpan}>Подробнее о методах оплаты</span>
-                </div>
-            </div>
-
-            <div className={classes.info__item}>
-                <div className={classes.itemImg}>
-                    <img  alt="#" src="https://www.pngmart.com/files/7/Mobile-Phone-PNG-Photos.png"/>
-
-                </div>
-                <div className={classes.txt}>
-                    <span className={classes.text}>Ответы на часто задаваемые вопросы  </span>
-                    <span className={classes.linkSpan}>Читать ответы</span>
-                </div>
-            </div>
-
         </div>
+
         <Proposal/>
         <Popular
             popular={content.popular}
         />
         <GoodsAssembly/>
-        <GoodsPropositions
+        <div className={classes.goodsWrap}>
+            <div className={classes.goodsTitle}>
+                <h3>Новинки</h3>
+            </div>
+            <GoodsPropositions
+                onClick={onClick}
+                value={value}
+                goods={goodNewCallback}
 
-        />
+            />
+        </div>
+       <div className={classes.goodsWrap}>
+           <div className={classes.goodsTitle}>
+               <h3>Специально для Вас</h3>
+           </div>
+           <GoodsPropositions
+               onClick={onClick}
+               value={value}
+               goods={goodSalesCallback}
 
+           />
+       </div>
+        <div className={classes.goodsWrap}>
+            <div className={classes.goodsTitle}>
+                <h3>Успей купить</h3>
+            </div>
+            <GoodsPropositions
+                onClick={onClick}
+                value={value}
+                goods={goodHitCallback}
+
+            />
+        </div>
+
+
+
+        <Footer/>
     </div>
 }
 export default Content;

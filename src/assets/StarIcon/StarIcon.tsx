@@ -5,8 +5,8 @@ const StarIcon = () => {
 
 
     const starStyles = {
-        width: '34px',
-        height: '34px'
+        width: '14px',
+        height: '14px'
     }
 
     return <div style={starStyles}>

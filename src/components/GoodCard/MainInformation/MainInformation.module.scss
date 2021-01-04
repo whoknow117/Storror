@@ -1,9 +1,111 @@
-
+@import "src/variables/variables";
 
 
 .wrap {
-  flex-basis: 70%;
+  flex-basis: 60%;
   width: 100%;
   height: 100%;
+
+  .btns {
+    display: flex;
+    align-items: center;
+
+    margin-top: 70px;
+    .bookMark {
+      border-radius: 50%;
+      width: 52px;
+      height: 52px;
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      cursor: pointer;
+      transition: .1s;
+      &:hover {
+        background: #fff;
+
+        svg {
+          fill: $orangeBackgroundColor;
+        }
+      }
+      svg {
+        width: 26px;
+
+        height: 26px;
+        fill: silver;
+      }
+    }
+    .btn {
+
+      display: flex;
+      align-items: center;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 20px;
+      background: $orangeBackgroundColor  ;
+      font-family: 'PT Root UI';
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: #fff;
+      cursor: pointer;
+      transition: .3s ease-in-out;
+      z-index: 1001;
+      &:hover {
+        background: orangered;
+      }
+      svg {
+        fill: #fff;
+        margin-right: 20px;
+        width: 30px;
+        height: 30px;
+      }
+
+      .basket {
+
+      }
+    }
+  }
+
+  .price {
+    display: block  ;
+    font-family: 'PT Root UI';
+    font-size:4rem;
+    margin-left: 6px;
+    margin-top: 24px;
+
+  }
+  .logistic {
+    margin-top: 30px;
+    margin-left: 6px;
+    .delivery {
+      display: flex;
+      align-items: center;
+      font-family: 'PT Root UI';
+      font-weight: 500;
+      color: #858585;
+      .icon {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+        svg {}
+      }
+      .spanDelivery {
+        margin-right: 10px;
+        font-family: 'PT Root UI';
+        font-weight: 500;
+        color: #3b3b3b;
+        border-bottom: 1px dashed rgba(0,0,0,.4);
+      }
+
+    }
+    .pickup {
+      margin-left: 40px;
+      margin-top: 8px;
+    }
+  }
 
 }

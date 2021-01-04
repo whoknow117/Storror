@@ -1,0 +1,60 @@
+@import "src/variables/variables";
+
+
+
+
+
+
+.footerBottom {
+  display: flex;
+
+  .footerContacts {
+    width: 30%;
+    .title {
+      font-family: 'PT Root UI';
+      font-weight: 500;
+      margin-top: 40px;
+      color: #323232;
+      font-size: 1.7rem;
+    }
+    .title2 {
+      font-family: 'PT Root UI';
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-top: 40px;
+      color: darkslategrey;
+    }
+    .contacts {
+      margin-top: 40px;
+      .phone {
+        font-family: 'PT Root UI';
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+      .city {
+        margin-left: 20px;
+        font-family: 'PT Root UI';
+        font-weight: 500;
+        font-size: 1rem
+      }
+    }
+    .btns {
+      margin-top: 40px;
+      .btn {
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 50px;
+        padding: 10px 20px;
+        font-family: 'PT Root UI';
+        margin-left: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .footerNavigation {
+
+    height: 200px;
+    width: 70%;
+
+  }
+}

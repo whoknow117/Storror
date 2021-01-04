@@ -1,0 +1,58 @@
+
+@font-face {
+  font-family: 'PT Root UI';
+  src: url('fonts/PTRootUI-Light.eot');
+  src: local('PT Root UI Light'), local('PTRootUI-Light'),
+  url('fonts/PTRootUI-Light.eot?#iefix') format('embedded-opentype'),
+  url('fonts/PTRootUI-Light.woff2') format('woff2'),
+  url('fonts/PTRootUI-Light.woff') format('woff'),
+  url('fonts/PTRootUI-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Root UI';
+  src: url('fonts/PTRootUI-Regular.eot');
+  src: local('PT Root UI'), local('PTRootUI-Regular'),
+  url('fonts/PTRootUI-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/PTRootUI-Regular.woff2') format('woff2'),
+  url('fonts/PTRootUI-Regular.woff') format('woff'),
+  url('fonts/PTRootUI-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.menuWrapper {
+
+  font-weight: 400;
+  width: 360px;
+  height: 100%;
+  position: fixed;
+  z-index: 99999 !important;
+  background: #fff;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+
+
+
+
+.menuWrapper::-webkit-scrollbar-thumb {
+  background: rgb(153, 153, 153);
+
+  border-radius: 10px;
+}
+.menuWrapper::-webkit-scrollbar {
+  position: absolute;
+  width: 3px;
+  background-color: rgba(226, 77, 0,.1);
+
+}
+
+.active {
+  background: #000;
+}
