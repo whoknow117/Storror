@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import {Route} from 'react-router-dom';
+import {Route, withRouter, RouteComponentProps,BrowserRouter as Router, Switch} from 'react-router-dom';
+import ScrollToTop from "./ScrollToTop";
 import './App.css';
 import classes from './App.module.scss';
 import Header from "./components/Header/Header";
@@ -81,11 +82,11 @@ const goods: Array<GoodsType> = [
         img: 'https://i1.foxtrot.com.ua/product/MediumImages/6377012_0.jpg',
         group: 'electro-tools',
         images: [
-            'https://www.motoblok.biz/uploads/01/ce/000003287_51243f76-6ed4-4fe9-98b0-e942a1b3ce01.jpg',
-            'https://brain.com.ua/static/images/prod_img/2/7/U0371027_big.jpg',
-            'https://img.mvideo.ru/Pdb/20031715b.jpg',
-            'https://www.motoblok.biz/uploads/10/60/000003287_489151bc-f833-42c6-a21d-11a84a106010.jpg',
-            'https://s1.kaercher-media.com/products/15209300/main/1/d3.jpg',
+            'https://i1.foxtrot.com.ua/product/MediumImages/6377012_0.jpg',
+            'https://www.atlanticgeyser.com.ua/images/data/dsc_4411.jpg',
+            'https://s.ek.ua/jpg_zoom1/79170.jpg',
+            'https://cdn.comfy.ua/media/catalog/product/cache/4/image/1440x1080/62defc7f46f3fbfc8afcd112227d1181/a/t/atlantic_opro_classic_vm_80_n4_3.jpg',
+            'https://hotline.ua/img/tx/251/2511892835.jpg',
         ],
         made: 'Japan',
         new: true,
@@ -95,13 +96,16 @@ const goods: Array<GoodsType> = [
     },
     {
         id: '4',
-        title: "Универсальный Насос LEO 3.0 776150 0.37кВт (APSm37AE)2 ",
-        price: '1 250 ₴',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHVDAh-57QKUoos97FAc8ivr17QjDyVDJ6tw&usqp=CAU',
+        title: "Универсальный Насос LEO 3.0 776150 0.37кВт (APSm37AE) 23470 Dongyn ",
+        price: '4 350 ₴',
+        img: 'https://sc02.alicdn.com/kf/H9358d3639f984d90a8dceddc0e89cd73x.jpg',
         group: 'electro-tools',
         images: [
-            'https://www.motoblok.biz/uploads/01/ce/000003287_51243f76-6ed4-4fe9-98b0-e942a1b3ce01.jpg',
-            'https://www.motoblok.biz/uploads/10/60/000003287_489151bc-f833-42c6-a21d-11a84a106010.jpg'
+            'https://sc02.alicdn.com/kf/H9358d3639f984d90a8dceddc0e89cd73x.jpg',
+            'https://ikarvon.uz/wp-content/uploads/2020/03/APSm25AE-1.png',
+            'https://mpr.in.ua/image/cache/catalog/products-images/075/776115_detail_1-600x315.jpeg',
+            'https://sc02.alicdn.com/kf/H9358d3639f984d90a8dceddc0e89cd73x.jpg',
+            'https://gw.alicdn.com/bao/uploaded/i3/50376588/TB24O7qgXuWBuNjSszbXXcS7FXa_!!50376588.jpg'
         ],
         made: 'Japan',
         new: true,
@@ -343,8 +347,13 @@ function App(props: AppPropsType) {
             setCollapsed(!collapsed)
 
     }
+
+
+
     console.log(collapsed);
     return (
+        <Router>
+            <ScrollToTop />
         <div className="App">
            <div className="container">
                <Header headerCollapsed={headerCollapsed} collapsed={collapsed} setCollapse={setCollapsedCallback}/>
@@ -360,39 +369,48 @@ function App(props: AppPropsType) {
 
 
                    <div className="content">
-                       <Route exact path='/storror' render={() => <Content
-                           collapsed={collapsed}
-                           content={content}
-                           setCollapsedCallback={setCollapsedCallback}
-                           value={value}
-                           onClick={setValue}
-                           goods={goods}
 
-                       />}/>
-                       {goods.map((good, idx) => {
-                           return <Route key={idx} path={good.path}
-                                         render={() => <GoodCard id={good.id}
-                                                                 onClick={setValue}
-                                                                 value={value}
-                                                                 title={good.title}
-                                                                 price={good.price}
-                                                                 img={good.img}
-                                                                 group={good.group}
-                                                                 made={good.made}
-                                                                 path={good.path}
-                                                                 images={good.images}
+                           <Route exact path='/storror' render={() => <Content
+                               collapsed={collapsed}
+                               content={content}
+                               setCollapsedCallback={setCollapsedCallback}
+                               value={value}
+                               onClick={setValue}
+                               goods={goods}
+
+                           />}/>
+                           {goods.map((good, idx) => {
+
+                               return (<div>
+
+                                       <Route key={idx} path={good.path}
+                                              render={() => <GoodCard id={good.id}
+                                                                      onClick={setValue}
+                                                                      value={value}
+                                                                      title={good.title}
+                                                                      price={good.price}
+                                                                      img={good.img}
+                                                                      group={good.group}
+                                                                      made={good.made}
+                                                                      path={good.path}
+                                                                      images={good.images}
 
 
-                                         />}
+                                              />}
 
-                           />
-                       })}
+                                       />
+                                   </div>
+                               )
+
+                           })}
+
 
 
                    </div>
                </div>
            </div>
         </div>
+        </Router>
     );
 }
 
