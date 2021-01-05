@@ -24,17 +24,20 @@ const GoodsSlider: React.FC<GoodsSliderType> = ({img, images}) => {
         <div className={classes.goodImage}>
             <img src={ images[imgIdx]} alt="#"/>
         </div>
-        <div className={classes.goodItems}>
+     <div className={classes.separate}>
+         <button className={`${classes.btn} ${classes.left}`}><ArrowLeft/></button>
+         <div className={classes.goodItems}>
 
-            {images.map((img,idx) =>
-                <div key={idx} onClick={()=>
-                {setIdx(idx)}} className={`${classes.image}
+             {images.map((img,idx) =>
+                 <div key={idx} onClick={()=>
+                 {setIdx(idx)}} className={`${classes.image}
                  ${idx === imgIdx ? classes.active : ""}`}><img src={img} alt="#"/></div>)}
-        </div>
-        <div className={classes.itemButtons}>
-            <button className={`${classes.btn} ${classes.left}`}><ArrowLeft/></button>
-            <button className={`${classes.btn} ${classes.right}`}><ArrowRight/></button>
-        </div>
+         </div>
+
+
+         <button className={`${classes.btn} ${classes.right}`}><ArrowRight/></button>
+     </div>
+
 
 
     </div>

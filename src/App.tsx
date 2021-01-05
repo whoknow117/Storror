@@ -62,11 +62,11 @@ const goods: Array<GoodsType> = [
         id: '2',
         title: "Змішувач для раковини F70A02100 AM.PM Spirit 2.0",
         price: '1 940 ₴',
-        img: 'https://ceramroom.com.ua/content/images/14/70764548561237.jpeg',
+        img: 'https://i2.rozetka.ua/goods/19293212/235932169_images_19293212389.jpg',
         group: 'electro-tools',
         images: [
-            'https://www.motoblok.biz/uploads/01/ce/000003287_51243f76-6ed4-4fe9-98b0-e942a1b3ce01.jpg',
-            'https://www.motoblok.biz/uploads/10/60/000003287_489151bc-f833-42c6-a21d-11a84a106010.jpg'
+            'https://i2.rozetka.ua/goods/19293212/235932169_images_19293212389.jpg',
+            'https://i2.rozetka.ua/goods/19293212/235932169_images_19293212389.jpg'
         ],
         new: true,
         sale: false,
