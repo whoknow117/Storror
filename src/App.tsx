@@ -134,12 +134,13 @@ const goods: Array<GoodsType> = [
     {
         id: '6',
         title: "Сетка рабица 40х40х120",
-        price: '24 ₴',
+        price: '24 ₴ м.п.',
         img: 'https://www.materik-m.ru/upload/iblock/e02/e028e2a423fe8436e0e48e045eeb53d8.jpg',
         group: 'electro-tools',
         images: [
-            'https://www.motoblok.biz/uploads/01/ce/000003287_51243f76-6ed4-4fe9-98b0-e942a1b3ce01.jpg',
-            'https://www.motoblok.biz/uploads/10/60/000003287_489151bc-f833-42c6-a21d-11a84a106010.jpg'
+            'https://www.materik-m.ru/upload/iblock/e02/e028e2a423fe8436e0e48e045eeb53d8.jpg',
+            'https://i1.rozetka.ua/goods/6582226/49056662_images_6582226422.jpg',
+            'https://images.izi.ua/2805803'
         ],
         made: 'Japan',
         new: false,
@@ -154,8 +155,9 @@ const goods: Array<GoodsType> = [
         img: 'https://ostendorf.ru/storage/photo/resized/xy_800x600/f/athf0cg8z14vm0x_343282e4.jpg',
         group: 'electro-tools',
         images: [
-            'https://www.motoblok.biz/uploads/01/ce/000003287_51243f76-6ed4-4fe9-98b0-e942a1b3ce01.jpg',
-            'https://www.motoblok.biz/uploads/10/60/000003287_489151bc-f833-42c6-a21d-11a84a106010.jpg'
+            'https://ostendorf.ru/storage/photo/resized/xy_800x600/f/athf0cg8z14vm0x_343282e4.jpg',
+            'https://atlant-shop.com.ua/image/cache/catalog/santehnika/kanalizacionnie_sistemi/vnutrennaya_kanalizacia/plastikovoe-koleno-svk-90-50-500x500.jpg',
+
         ],
         made: 'Japan',
         new: false,
@@ -167,11 +169,11 @@ const goods: Array<GoodsType> = [
         id: '34',
         title: "Пистолет для полива Presto AB123-34",
         price: '130 ₴',
-        img: 'https://s1.topchina.guru/item_image_plitka/ae01.alicdn.com/kf/HTB15OqtkfBNTKJjSszcq6zO2VXaE/8-Mutifunctional.jpg_640x640.jpg',
+        img: 'https://images.ua.prom.st/1746498013_pistolet-dlya-poliva.jpg',
         group: 'electro-tools',
         images: [
-            'https://www.motoblok.biz/uploads/01/ce/000003287_51243f76-6ed4-4fe9-98b0-e942a1b3ce01.jpg',
-            'https://www.motoblok.biz/uploads/10/60/000003287_489151bc-f833-42c6-a21d-11a84a106010.jpg'
+            'https://images.ua.prom.st/1746498013_pistolet-dlya-poliva.jpg',
+            'https://images.ua.prom.st/1746498014_w640_h640_1746498014.jpg'
         ],
         made: 'Japan',
         new: false,
@@ -181,13 +183,16 @@ const goods: Array<GoodsType> = [
     },
     {
         id: '44',
-        title: "Шланг Presto Euro Yellow 3/4",
+        title: "Шланг Presto-PS стрічка Silver Spray довжина 200 м, діаметр 40 мм (603008-5)",
         price: '1 250 ₴',
-        img: 'https://vist.market/storage/uploads/thumbs/store/subproduct/453x453_72-724.jpg',
+        img: 'https://i.allo.ua/media/catalog/product/cache/3/image/468x468/602f0fa2c1f0d1ba5e241f914e856ff9/6/0/603008-5-0302.jpg',
         group: 'electro-tools',
         images: [
-            'https://www.motoblok.biz/uploads/01/ce/000003287_51243f76-6ed4-4fe9-98b0-e942a1b3ce01.jpg',
-            'https://www.motoblok.biz/uploads/10/60/000003287_489151bc-f833-42c6-a21d-11a84a106010.jpg'
+            'https://i.allo.ua/media/catalog/product/cache/3/image/468x468/602f0fa2c1f0d1ba5e241f914e856ff9/6/0/603008-5-0302.jpg',
+            'https://i.allo.ua/media/catalog/product/cache/3/image/425x295/602f0fa2c1f0d1ba5e241f914e856ff9/6/0/603008-5-0302-1.jpg',
+            'https://i.allo.ua/media/catalog/product/cache/3/image/425x295/602f0fa2c1f0d1ba5e241f914e856ff9/6/0/603008-5-0302-2.jpg',
+            'https://i.allo.ua/media/catalog/product/cache/3/image/425x295/602f0fa2c1f0d1ba5e241f914e856ff9/7/0/703508-7-0302-4.jpg',
+            'https://i.allo.ua/media/catalog/product/cache/3/image/425x295/602f0fa2c1f0d1ba5e241f914e856ff9/7/0/703508-7-0302-9.jpg',
         ],
         made: 'Japan',
         new: false,
@@ -239,8 +244,11 @@ const goods: Array<GoodsType> = [
         img: 'https://220volt.com.ua/uploads/gallery_photo/photo/0593/23.png',
         group: 'electro-tools',
         images: [
-            'https://www.motoblok.biz/uploads/01/ce/000003287_51243f76-6ed4-4fe9-98b0-e942a1b3ce01.jpg',
-            'https://www.motoblok.biz/uploads/10/60/000003287_489151bc-f833-42c6-a21d-11a84a106010.jpg'
+            'https://220volt.com.ua/uploads/gallery_photo/photo/0593/23.png',
+            'https://ireland.apollo.olxcdn.com/v1/files/mptsjpcrgt2y1-UA/image',
+            'https://images.ua.prom.st/2047537434_w500_h500_generator-forte-fgd6500e3.jpg',
+            'https://images.ua.prom.st/2095691418_w640_h640_dizelnyj-generator-forte.jpg',
+            'https://generator.ua/5760-tm_thickbox_default/generator-forte-fgd6500e3.jpg',
         ],
         made: 'Japan',
         new: false,
@@ -255,7 +263,7 @@ const goods: Array<GoodsType> = [
         img: 'https://i1.foxtrot.com.ua/product/MediumImages/6306110_0.jpg',
         group: 'electro-tools',
         images: [
-            'https://www.motoblok.biz/uploads/01/ce/000003287_51243f76-6ed4-4fe9-98b0-e942a1b3ce01.jpg',
+            'https://i1.foxtrot.com.ua/product/MediumImages/6306110_0.jpg',
             'https://www.motoblok.biz/uploads/10/60/000003287_489151bc-f833-42c6-a21d-11a84a106010.jpg'
         ],
         made: 'Japan',
@@ -268,11 +276,12 @@ const goods: Array<GoodsType> = [
         id: '14',
         title: "Стабилизатор напряжения FORTE TDR-2000VA (22650 ",
         price: '1 440 ₴',
-        img: 'https://i1.foxtrot.com.ua/product/MediumImages/6134264_0.jpg',
+        img: 'https://vitaltechno.ua/38024-tm_large_default/stabilizator-forte-tvr-5000va.jpg',
         group: 'electro-tools',
         images: [
-            'https://www.motoblok.biz/uploads/01/ce/000003287_51243f76-6ed4-4fe9-98b0-e942a1b3ce01.jpg',
-            'https://www.motoblok.biz/uploads/10/60/000003287_489151bc-f833-42c6-a21d-11a84a106010.jpg'
+            'https://vitaltechno.ua/38024-tm_large_default/stabilizator-forte-tvr-5000va.jpg',
+            'https://i1.foxtrot.com.ua/product/MediumImages/6134264_0.jpg',
+            'https://vitaltechno.ua/38024-tm_large_default/stabilizator-forte-tvr-5000va.jpg',
         ],
         made: 'Japan',
         new: false,
@@ -286,7 +295,7 @@ const goods: Array<GoodsType> = [
         img: 'https://i1.foxtrot.com.ua/product/MediumImages/6563996_0.jpg',
         group: 'electro-tools',
         images: [
-            'https://www.motoblok.biz/uploads/01/ce/000003287_51243f76-6ed4-4fe9-98b0-e942a1b3ce01.jpg',
+            'https://i1.foxtrot.com.ua/product/MediumImages/6563996_0.jpg',
             'https://www.motoblok.biz/uploads/10/60/000003287_489151bc-f833-42c6-a21d-11a84a106010.jpg'
         ],
         made: 'Japan',

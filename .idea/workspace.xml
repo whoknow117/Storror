@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ScrollToTop.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/GoodsSlider/GoodsSlider.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/GoodsSlider/GoodsSlider.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/MainInformation.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/MainInformation.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Rating/Star/Star.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Rating/Star/Star.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +113,8 @@
       <workItem from="1609778598389" duration="2304000" />
       <workItem from="1609788173692" duration="6043000" />
       <workItem from="1609794444912" duration="326000" />
-      <workItem from="1609828407148" duration="8271000" />
+      <workItem from="1609828407148" duration="8770000" />
+      <workItem from="1609865169278" duration="1579000" />
     </task>
     <servers />
   </component>
