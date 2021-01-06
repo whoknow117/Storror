@@ -331,7 +331,7 @@ const store = {
                 {
                     id: '4',
                     title: 'Электроинструмент',
-                    img: 'https://e-altsest.com/image/cache/catalog/perf/boschgbh4-32dfr-500x500.jpeg'
+                    img: 'https://img.moyo.ua/img/products/888/86_600.jpg?1609055396'
                 },
                 {
                     id: '5',
@@ -350,18 +350,18 @@ const store = {
                 },
                 {
                     id: '8',
-                    title: 'Ручной инструмент',
-                    img: 'https://intertool.ua/catalog/avtoinstrument/nabori-instrumentov/intertool-et-8056-photo-1.jpg'
+                    title: 'Лопаты',
+                    img: 'https://ua-instrument.com/image/catalog/fotovkategorijah/fotokategorij/sadogorod/1249.jpg'
                 },
                 {
                     id: '9',
-                    title: 'Ручной инструмент',
-                    img: 'https://intertool.ua/catalog/avtoinstrument/nabori-instrumentov/intertool-et-8056-photo-1.jpg'
+                    title: 'Сетка',
+                    img: 'https://images.izi.ua/35362120'
                 },
                 {
                     id: '10',
-                    title: 'Ручной инструмент',
-                    img: 'https://intertool.ua/catalog/avtoinstrument/nabori-instrumentov/intertool-et-8056-photo-1.jpg'
+                    title: 'Тачки и тележки',
+                    img: 'https://sort-vinograd.com/wp-content/uploads/2015/08/koleso-dlya-sadovoy-tachki1.jpg'
                 },
 
             ],

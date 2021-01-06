@@ -40,13 +40,14 @@ const GoodCard:React.FC<GoodCardPropsType> = ({images,onClick,value, id,title,
         images,id,title,price,img,made,path
     }
 
-    return  <div>
-        <div className={classes.goodCard}>
+    return  <div className={classes.goodCard}>
+        <div className={classes.goodCardMain}>
 
             <GoodsSlider images={images} img={img}/>
             <MainInformation goodValues={values} onClick={onClick} value={value}/>
 
         </div>
+
         <div>
             <Footer/>
         </div>
