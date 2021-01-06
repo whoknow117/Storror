@@ -1,7 +1,6 @@
 export type SidebarType = Array<SidebarItemType>;
 
 export type SidebarItemType = {
-
     name: string
     id: string
     path: string
@@ -313,7 +312,7 @@ const store = {
                 {id: '2', img: 'https://www.ecosum.ru/wp-content/uploads/ejednevnie-promokody-24-august-2020.jpg',},
                 {id: '3', img: 'https://st.overclockers.ru/images/soft/2020/04/10/citi-ulet-sale.jpg',},
             ],
-            popular: [
+            popular:  [
                 {
                     id: '1',
                     title: 'Смесители',
@@ -366,6 +365,7 @@ const store = {
                 },
 
             ],
+
         },
 
     }

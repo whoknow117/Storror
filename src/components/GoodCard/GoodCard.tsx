@@ -4,6 +4,7 @@ import MainInformation from "./MainInformation/MainInformation";
 import AdditionalInformation from "./AdditionalInformation/AdditionalInformation";
 import {ValuesType} from "../../App";
 import GoodsSlider from "./GoodsSlider/GoodsSlider";
+import {Footer} from "../Footer/Footer";
 
 
 export type GoodCardPropsType = {
@@ -39,10 +40,16 @@ const GoodCard:React.FC<GoodCardPropsType> = ({images,onClick,value, id,title,
         images,id,title,price,img,made,path
     }
 
-    return  <div className={classes.goodCard}>
+    return  <div>
+        <div className={classes.goodCard}>
 
-        <GoodsSlider images={images} img={img}/>
-        <MainInformation goodValues={values} onClick={onClick} value={value}/>
+            <GoodsSlider images={images} img={img}/>
+            <MainInformation goodValues={values} onClick={onClick} value={value}/>
+
+        </div>
+        <div>
+            <Footer/>
+        </div>
     </div>
 
 

@@ -3,12 +3,14 @@
 
 
 .footer {
-  position: absolute;
-  left: 0;
+  position: relative;
+  left: -78px;
+  width: 98.8vw;
   padding: 0 80px;
-  width: 100%;
+
+
   margin-top: 90px;
-  height: 900px;
+  height: 400px;
   background: #eaeaea;
   .sharesAndDiscounts {
     height: 80px;

@@ -338,7 +338,7 @@ function App(props: AppPropsType) {
     const sidebar = props.state.sidebar;
     const content = props.state.content;
 
-    const [value, setValue] = useState<ValuesType>(0);
+    const [value, setValue] = useState<ValuesType>(5);
     const [collapsed, setCollapsed] = useState<boolean>(true);
 
     const [headerCollapsed, setHeaderCollapsed] = useState<boolean>(false);

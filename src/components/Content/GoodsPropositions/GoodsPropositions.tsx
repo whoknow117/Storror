@@ -7,6 +7,7 @@ import Basket from "../../../assets/Basket/Basket";
 
 
 
+
 type GoodsPropositionsPropsType = {
     onClick:(value: ValuesType) => void
     value: ValuesType
@@ -62,6 +63,7 @@ const GoodsPropositions: React.FC<GoodsPropositionsPropsType> = ({onClick, value
 
 
         </div>
+
     </div>
 }
 export default GoodsPropositions;
