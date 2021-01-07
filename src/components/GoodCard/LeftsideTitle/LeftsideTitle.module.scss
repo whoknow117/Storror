@@ -15,5 +15,58 @@
     color: $orangeBackgroundColor;
     margin-top: 10px;
     font-size: 1.2rem;
+    position: relative;
+    .arrow {
+      display: block;
+      width: 24px;
+      height: 1px;
+      position: absolute;
+      top: 54%;
+      right: -40px;
+      background: $orangeBackgroundColor;
+      transition: .2s ease-in-out;
+      visibility: visible ;
+      opacity: 1;
+      animation: arrow 3s ease-in-out infinite;
+      @keyframes arrow{
+        0%{
+          width: 10px;background: $orangeBackgroundColor;
+      }
+      50%{
+        width: 24px;background: $orangeBackgroundColor
+      }
+        70%{
+          width: 24px;background: $orangeBackgroundColor
+        }
+        100%{
+          width: 10px;background: $orangeBackgroundColor
+        }
+    }
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 1px;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        background: inherit;
+        transition: .2s ease-in-out;
+
+      }
+      &:before {
+        transform-origin: right;
+        transform:rotate(45deg);
+        animation: topArrow 3s ease-in-out infinite;
+      }
+
+      &:after {
+        transform-origin: right;
+        transform:rotate(-45deg);
+        animation: botArrow 3s ease-in-out infinite;
+      }
+
+    }
   }
 }

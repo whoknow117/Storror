@@ -37,7 +37,7 @@ const Content: React.FC<ContentPropsType> = ({value,onClick, content,
     const goodHitCallback = goodsHit(goods)
 
     const goodsNew = (goods:Array<GoodsType>): Array<GoodsType> => {
-        return goods.filter( g => g.new)
+        return goods.filter( (g, idx) => idx < 5 ? g : "")
     }
     const goodNewCallback = goodsNew(goods)
 

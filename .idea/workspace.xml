@@ -4,13 +4,10 @@
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/SimilarProducts/SimilarProducts.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/SimilarProducts/SimilarProducts.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/SimilarProducts/SimilarProducts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/SimilarProducts/SimilarProducts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/LeftsideTitle/LeftsideTitle.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/LeftsideTitle/LeftsideTitle.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/LeftsideTitle/LeftsideTitle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/LeftsideTitle/LeftsideTitle.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +121,9 @@
       <workItem from="1609943880853" duration="4933000" />
       <workItem from="1609962330454" duration="2140000" />
       <workItem from="1609998081164" duration="6217000" />
-      <workItem from="1610012169927" duration="12897000" />
+      <workItem from="1610012169927" duration="13025000" />
+      <workItem from="1610033026024" duration="763000" />
+      <workItem from="1610038403169" duration="3341000" />
     </task>
     <servers />
   </component>
