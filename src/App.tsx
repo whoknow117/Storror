@@ -37,6 +37,9 @@ export type GoodsType = {
     path: string
     hit: boolean
     images: Array<string>
+    description?: string
+    country?: string
+    power?: string
 
 }
 const goods: Array<GoodsType> = [
@@ -56,8 +59,13 @@ const goods: Array<GoodsType> = [
         new: true,
         sale: false,
         hit: false,
-        made: 'Japan',
-        path: '/tovar/123151'
+        made: 'Germany',
+        path: '/tovar/electro-tools/Shurupoverti/screwdriver',
+        description: 'lorem ipsum',
+        country: 'Japan',
+        power: "14A",
+
+
     },
     {
         id: '2',
@@ -403,7 +411,7 @@ function App(props: AppPropsType) {
                                                                       made={good.made}
                                                                       path={good.path}
                                                                       images={good.images}
-
+                                                                      good={good}
 
                                               />}
 

@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/LeftsideTitle/LeftsideTitle.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/LeftsideTitle/LeftsideTitle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainСharacteristics/MainСharacteristics.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/MainСharacteristics/MainСharacteristics.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/RecentlyWatched/RecentlyWatched.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/RecentlyWatched/RecentlyWatched.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/RowNavMenu/RowNavMenu.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/RowNavMenu/RowNavMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/SimilarProducts/SimilarProducts.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/SimilarProducts/SimilarProducts.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/TextDiscription/TextDiscription.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GoodCard/TextDiscription/TextDiscription.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +57,7 @@
       <recent name="C:\projects\Magazine\storror\src\components\GoodCard" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\Magazine\storror\src\components\" />
       <recent name="C:\projects\Magazine\storror\src\components\GoodCard\MainInformation" />
     </key>
   </component>
@@ -116,7 +128,9 @@
       <workItem from="1609794444912" duration="326000" />
       <workItem from="1609828407148" duration="8770000" />
       <workItem from="1609865169278" duration="2294000" />
-      <workItem from="1609943880853" duration="2947000" />
+      <workItem from="1609943880853" duration="4933000" />
+      <workItem from="1609962330454" duration="2140000" />
+      <workItem from="1609998081164" duration="5544000" />
     </task>
     <servers />
   </component>

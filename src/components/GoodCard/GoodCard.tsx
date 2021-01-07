@@ -1,10 +1,11 @@
 import React from 'react';
 import classes from './GoodCard.module.scss';
 import MainInformation from "./MainInformation/MainInformation";
-import AdditionalInformation from "./AdditionalInformation/AdditionalInformation";
-import {ValuesType} from "../../App";
+import {GoodsType, ValuesType} from "../../App";
 import GoodsSlider from "./GoodsSlider/GoodsSlider";
 import {Footer} from "../Footer/Footer";
+import RowNavMenu from "./RowNavMenu/RowNavMenu";
+import MainСharacteristics from "./MainСharacteristics/MainСharacteristics";
 
 
 export type GoodCardPropsType = {
@@ -18,6 +19,7 @@ export type GoodCardPropsType = {
     onClick: (value: ValuesType) => void
     value: ValuesType
     images: Array<string>
+    good: GoodsType
 }
 
 export type GoodValuesType = {
@@ -29,9 +31,10 @@ export type GoodValuesType = {
     path: string
     images: Array<string>
 
+
 }
 
-const GoodCard:React.FC<GoodCardPropsType> = ({images,onClick,value, id,title,
+const GoodCard:React.FC<GoodCardPropsType> = ({good,images,onClick,value, id,title,
                                                   price,img,
                                                   group,made,path}) => {
 
@@ -47,7 +50,8 @@ const GoodCard:React.FC<GoodCardPropsType> = ({images,onClick,value, id,title,
             <MainInformation goodValues={values} onClick={onClick} value={value}/>
 
         </div>
-
+        <RowNavMenu/>
+        <MainСharacteristics good={good} />
         <div>
             <Footer/>
         </div>

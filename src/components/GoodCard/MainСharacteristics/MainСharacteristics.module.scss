@@ -1,0 +1,53 @@
+@import "src/variables/variables";
+
+
+
+
+.wrap {
+  display: flex;
+  padding-top: 30px;
+
+  .description {
+    display: grid;
+    grid-template-columns: 340px 340px;
+    margin-left: 130px;
+    .left,
+    .right {
+
+      width: 100%;
+      font-family: 'PT Root UI';
+      &Span {
+      margin-bottom: 8px;
+    }
+
+
+    }
+    .left {
+
+
+
+
+
+
+      &Span {
+        display: block;
+        font-family: 'PT Root UI';
+        font-weight: 500;
+        font-size: 1.23rem;
+        color: #797979;
+
+      }
+    }
+    .right {
+
+
+      &Span {
+        display: block;
+        font-family: 'PT Root UI';
+        font-weight: 500;
+        font-size: 1.23rem;
+
+      }
+    }
+  }
+}
