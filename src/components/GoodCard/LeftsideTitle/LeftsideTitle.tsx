@@ -9,7 +9,7 @@ export type LeftsideTitleType = {
 const LeftSideTitle:React.FC<LeftsideTitleType> = ({children,title}) => {
     return  <div className={classes.wrap}>
         {(title ? <h4 className={classes.title}>{title}</h4> : "")}
-        <span className={classes.span}>Все характеристики</span>
+        {title === "Основное" ? <span className={classes.span}>Все характеристики</span> : ""}
     </div>
 
 

@@ -6,6 +6,7 @@ import GoodsSlider from "./GoodsSlider/GoodsSlider";
 import {Footer} from "../Footer/Footer";
 import RowNavMenu from "./RowNavMenu/RowNavMenu";
 import MainСharacteristics from "./MainСharacteristics/MainСharacteristics";
+import TextDescription from "./TextDescription/TextDescription";
 
 
 export type GoodCardPropsType = {
@@ -52,6 +53,7 @@ const GoodCard:React.FC<GoodCardPropsType> = ({good,images,onClick,value, id,tit
         </div>
         <RowNavMenu/>
         <MainСharacteristics good={good} />
+         <TextDescription/>
         <div>
             <Footer/>
         </div>

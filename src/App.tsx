@@ -40,8 +40,25 @@ export type GoodsType = {
     description?: string
     country?: string
     power?: string
+    inStock?: true
+    material?: string
+    numberOfModes?: string
+    batteryVoltage?: string
+    cartridgeType?: string
+    weight?: string
+    installationType?: string
+    dimensions?: string
+    controlType?: string
+    install?: string
+    heatElementType?: string
+    volume?: string
 
+    color?: string
+    warranty?: string
 }
+
+
+
 const goods: Array<GoodsType> = [
     {
         id: '1',
@@ -59,11 +76,17 @@ const goods: Array<GoodsType> = [
         new: true,
         sale: false,
         hit: false,
-        made: 'Germany',
+        made: 'Германия',
         path: '/tovar/electro-tools/Shurupoverti/screwdriver',
         description: 'lorem ipsum',
-        country: 'Japan',
+        country: 'Япония',
         power: "14A",
+        inStock: true,
+        material: 'пластик,резина,металл',
+        numberOfModes: '4',
+        batteryVoltage: '18 В',
+        cartridgeType: 'быстрозажимной',
+        weight: "1.6 кг"
 
 
     },
@@ -81,7 +104,14 @@ const goods: Array<GoodsType> = [
         sale: false,
         hit: false,
         made: 'Japan',
-        path: '/tovar/123152'
+        path: '/tovar/santehnika/smesiteli/123152',
+        power: "14A",
+        inStock: true,
+        material: 'пластик,резина,металл',
+        numberOfModes: '4',
+        batteryVoltage: '18 В',
+        cartridgeType: 'быстрозажимной',
+        weight: "1.6 кг"
     },
     {
         id: '3',
@@ -96,11 +126,26 @@ const goods: Array<GoodsType> = [
             'https://cdn.comfy.ua/media/catalog/product/cache/4/image/1440x1080/62defc7f46f3fbfc8afcd112227d1181/a/t/atlantic_opro_classic_vm_80_n4_3.jpg',
             'https://hotline.ua/img/tx/251/2511892835.jpg',
         ],
-        made: 'Japan',
+        made: 'Украина',
         new: true,
         sale: false,
         hit: false,
-        path: '/tovar/123154'
+        path: '/tovar/boilers&kotli/boilers/123154',
+        power: "1500 ВТ",
+        inStock: true,
+        material: 'пластик,резина,металл',
+        numberOfModes: '4',
+        weight: "21.5 кг",
+        installationType: 'вертикальная',
+        dimensions: "80.9 х 43.3 х 45.1 см",
+        controlType: 'механическое',
+        install: "настенный",
+        heatElementType: 'открытый "Мокрый"',
+        volume: '80 Л',
+        country: 'Франция',
+        color: 'белый',
+        warranty: "24 месяца",
+
     },
     {
         id: '4',

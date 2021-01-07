@@ -1,0 +1,15 @@
+@import "src/variables/variables";
+
+
+
+.wrap {
+  display: flex;
+  margin-top: 40px;
+  .text {
+
+    font-family: 'PT Root UI';
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-left: 150px;
+  }
+}
