@@ -6,6 +6,10 @@
   display: flex;
   width: 100%;
   align-items: center;
+  transition: .4s;
+
+
+
   .hiddenSearch {
     display: none;
     margin-left: 20px;
@@ -163,7 +167,4 @@
       }
     }
   }
-}
-.topActive {
-
 }

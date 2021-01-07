@@ -19,7 +19,7 @@ const HeaderTop: React.FC<HeaderTopPropsType> = ({setCollapse, collapsed,headerC
 
 
 
-    return <div className={`${classes.top}`}>
+    return <div className={`${classes.top}  `}>
         <button   className={classes.menuBtn}>
             <span className={`${classes.span} ${collapsed && classes.toggle}`}></span>
         </button>
