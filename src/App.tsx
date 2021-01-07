@@ -52,7 +52,7 @@ export type GoodsType = {
     install?: string
     heatElementType?: string
     volume?: string
-
+    category?: string
     color?: string
     warranty?: string
 }
@@ -66,6 +66,7 @@ const goods: Array<GoodsType> = [
         price: '2 350 ₴',
         img: 'https://maklta.com.ua/userfiles/image/catalog/6271dwpe1.jpg',
         group: 'electro-tools',
+        category: 'стабилизатор напряжения',
         images: [
             'https://maklta.com.ua/userfiles/image/catalog/6271dwpe1.jpg',
             'https://maklta.com.ua/userfiles/image/catalog/df333dwye_makita.jpg',
@@ -96,6 +97,7 @@ const goods: Array<GoodsType> = [
         price: '1 940 ₴',
         img: 'https://i2.rozetka.ua/goods/19293212/235932169_images_19293212389.jpg',
         group: 'electro-tools',
+        category: 'Смесители для раковин',
         images: [
             'https://i2.rozetka.ua/goods/19293212/235932169_images_19293212389.jpg',
             'https://i2.rozetka.ua/goods/19293212/235932169_images_19293212389.jpg'
@@ -119,6 +121,7 @@ const goods: Array<GoodsType> = [
         price: '2 199 ₴',
         img: 'https://i1.foxtrot.com.ua/product/MediumImages/6377012_0.jpg',
         group: 'electro-tools',
+        category: 'Водонагреватель',
         images: [
             'https://i1.foxtrot.com.ua/product/MediumImages/6377012_0.jpg',
             'https://www.atlanticgeyser.com.ua/images/data/dsc_4411.jpg',
@@ -153,6 +156,7 @@ const goods: Array<GoodsType> = [
         price: '4 350 ₴',
         img: 'https://sc02.alicdn.com/kf/H9358d3639f984d90a8dceddc0e89cd73x.jpg',
         group: 'electro-tools',
+        category: 'Насосная станция',
         images: [
             'https://sc02.alicdn.com/kf/H9358d3639f984d90a8dceddc0e89cd73x.jpg',
             'https://ikarvon.uz/wp-content/uploads/2020/03/APSm25AE-1.png',
@@ -182,10 +186,11 @@ const goods: Array<GoodsType> = [
         id: '5',
         title: "Мойка высокого давления Karcher K 5 Full Control",
         price: '1 630 ₴',
-        img: 'https://karchershop-ac.com/image/cache/catalog/k-3/kupit-mojku-karcher-k-3-16018120-0-900x900.jpg',
+        img: 'https://cdn.comfy.ua/media/catalog/product/k/a/karcher_k_5_compact.jpg',
         group: 'electro-tools',
+        category: 'минимойки',
         images: [
-            'https://karchershop-ac.com/image/cache/catalog/k-3/kupit-mojku-karcher-k-3-16018120-0-900x900.jpg',
+            'https://cdn.comfy.ua/media/catalog/product/k/a/karcher_k_5_compact.jpg',
             'https://brain.com.ua/static/images/prod_img/2/7/U0371027_big.jpg',
             'https://img.mvideo.ru/Pdb/20031715b.jpg',
             'https://www.motoblok.biz/uploads/10/60/000003287_489151bc-f833-42c6-a21d-11a84a106010.jpg',
@@ -217,6 +222,7 @@ const goods: Array<GoodsType> = [
         price: '24 ₴ м.п.',
         img: 'https://www.materik-m.ru/upload/iblock/e02/e028e2a423fe8436e0e48e045eeb53d8.jpg',
         group: 'electro-tools',
+        category: 'сетка-рабица',
         images: [
             'https://www.materik-m.ru/upload/iblock/e02/e028e2a423fe8436e0e48e045eeb53d8.jpg',
             'https://i1.rozetka.ua/goods/6582226/49056662_images_6582226422.jpg',
@@ -247,6 +253,7 @@ const goods: Array<GoodsType> = [
         price: '8 ₴',
         img: 'https://ostendorf.ru/storage/photo/resized/xy_800x600/f/athf0cg8z14vm0x_343282e4.jpg',
         group: 'electro-tools',
+        category: 'Колено канализационное',
         images: [
             'https://ostendorf.ru/storage/photo/resized/xy_800x600/f/athf0cg8z14vm0x_343282e4.jpg',
             'https://atlant-shop.com.ua/image/cache/catalog/santehnika/kanalizacionnie_sistemi/vnutrennaya_kanalizacia/plastikovoe-koleno-svk-90-50-500x500.jpg',
@@ -277,6 +284,7 @@ const goods: Array<GoodsType> = [
         price: '130 ₴',
         img: 'https://images.ua.prom.st/1746498013_pistolet-dlya-poliva.jpg',
         group: 'electro-tools',
+        category: 'Пистолеты поливочные',
         images: [
             'https://images.ua.prom.st/1746498013_pistolet-dlya-poliva.jpg',
             'https://images.ua.prom.st/1746498014_w640_h640_1746498014.jpg'
@@ -306,6 +314,7 @@ const goods: Array<GoodsType> = [
         price: '1 250 ₴',
         img: 'https://i.allo.ua/media/catalog/product/cache/3/image/468x468/602f0fa2c1f0d1ba5e241f914e856ff9/6/0/603008-5-0302.jpg',
         group: 'electro-tools',
+        category: 'Шланги поливочные',
         images: [
             'https://i.allo.ua/media/catalog/product/cache/3/image/468x468/602f0fa2c1f0d1ba5e241f914e856ff9/6/0/603008-5-0302.jpg',
             'https://i.allo.ua/media/catalog/product/cache/3/image/425x295/602f0fa2c1f0d1ba5e241f914e856ff9/6/0/603008-5-0302-1.jpg',
@@ -337,6 +346,7 @@ const goods: Array<GoodsType> = [
         price: '2 630 ₴',
         img: 'https://brain.com.ua/static/images/prod_img/3/9/U0285239_big.jpg',
         group: 'electro-tools',
+        category: 'Дрели',
         images: [
             'https://brain.com.ua/static/images/prod_img/3/9/U0285239_big.jpg',
             'https://www.motoblok.biz/uploads/e1/c4/dd1680360f24ab252ef1495acbffc4e1.jpg',
@@ -369,6 +379,7 @@ const goods: Array<GoodsType> = [
         price: '2 450 ₴',
         img: 'https://stevian.com.ua/media/catalog/product/cache/1/image/650x650/1f39608415b261262179a2ad116c74b9/2/3/23739002.jpg',
         group: 'electro-toolse',
+        category: 'Смесители для раковин',
         images: [
             'https://stevian.com.ua/media/catalog/product/cache/1/image/650x650/1f39608415b261262179a2ad116c74b9/2/3/23739002.jpg',
             'https://royalclimate.com.ua/image/cache/catalog/grohe/8/app_default-media-eshop-smesiteli-dlya-kuhni-_cache-18187-1_523_458_5-1000x1000.jpg',
@@ -402,6 +413,7 @@ const goods: Array<GoodsType> = [
         price: '14 940 ₴',
         img: 'https://220volt.com.ua/uploads/gallery_photo/photo/0593/23.png',
         group: 'electro-tools',
+        category: 'генераторы ',
         images: [
             'https://220volt.com.ua/uploads/gallery_photo/photo/0593/23.png',
             'https://ireland.apollo.olxcdn.com/v1/files/mptsjpcrgt2y1-UA/image',
@@ -435,6 +447,7 @@ const goods: Array<GoodsType> = [
         price: '199 ₴',
         img: 'https://i1.foxtrot.com.ua/product/MediumImages/6306110_0.jpg',
         group: 'electro-tools',
+        category: 'пилки для электролобзика',
         images: [
             'https://i1.foxtrot.com.ua/product/MediumImages/6306110_0.jpg',
             'https://www.motoblok.biz/uploads/10/60/000003287_489151bc-f833-42c6-a21d-11a84a106010.jpg'
@@ -465,6 +478,7 @@ const goods: Array<GoodsType> = [
         price: '1 440 ₴',
         img: 'https://vitaltechno.ua/38024-tm_large_default/stabilizator-forte-tvr-5000va.jpg',
         group: 'electro-tools',
+        category: 'стабилизатор напряжения',
         images: [
             'https://vitaltechno.ua/38024-tm_large_default/stabilizator-forte-tvr-5000va.jpg',
             'https://i1.foxtrot.com.ua/product/MediumImages/6134264_0.jpg',
@@ -474,13 +488,125 @@ const goods: Array<GoodsType> = [
         new: false,
         sale: true,
         hit: false,
-        path: '/tovar/123133'
-    }, {
+        path: '/tovar/123133',
+        power: "1500 ВТ",
+        inStock: true,
+        material: 'пластик,резина,металл',
+        numberOfModes: '4',
+        weight: "11.5 кг",
+        installationType: 'вертикальная',
+        dimensions: "80.9 х 43.3 х 45.1 см",
+        controlType: 'механическое',
+        install: "настенный",
+        heatElementType: 'открытый "Мокрый"',
+        volume: '80 Л',
+        country: 'Франция',
+        color: 'белый',
+        warranty: "24 месяца",
+    },
+    {
+        id: '132',
+        title: "Стабилизатор напряжения FORTE TDR-2000VA (22650 ",
+        price: '2 440 ₴',
+        img: 'https://i1.foxtrot.com.ua/product/MediumImages/6244098_0.jpg',
+        group: 'electro-tools',
+        category: 'стабилизатор напряжения',
+        images: [
+            'https://i1.foxtrot.com.ua/product/MediumImages/6244098_0.jpg',
+            'https://i1.foxtrot.com.ua/product/MediumImages/6134264_0.jpg',
+            'https://vitaltechno.ua/38024-tm_large_default/stabilizator-forte-tvr-5000va.jpg',
+        ],
+        made: 'Japan',
+        new: false,
+        sale: true,
+        hit: false,
+        path: '/tovar/123134',
+        power: "2500 ВТ",
+        inStock: true,
+        material: 'пластик,резина,металл',
+        numberOfModes: '4',
+        weight: "21.5 кг",
+        installationType: 'вертикальная',
+        dimensions: "80.9 х 43.3 х 45.1 см",
+        controlType: 'механическое',
+        install: "настенный",
+        heatElementType: 'открытый "Мокрый"',
+        volume: '80 Л',
+        country: 'Франция',
+        color: 'белый',
+        warranty: "24 месяца",
+    },
+    {
+        id: '24',
+        title: "Стабилизатор напряжения FORTE TDR-1000VA (22655 ",
+        price: '1 440 ₴',
+        img: 'https://i1.foxtrot.com.ua/product/MediumImages/6183202_0.jpg',
+        group: 'electro-tools',
+        category: 'стабилизатор напряжения',
+        images: [
+            'https://i1.foxtrot.com.ua/product/MediumImages/6183202_0.jpg',
+            'https://i1.foxtrot.com.ua/product/MediumImages/6134264_0.jpg',
+            'https://vitaltechno.ua/38024-tm_large_default/stabilizator-forte-tvr-5000va.jpg',
+        ],
+        made: 'Japan',
+        new: false,
+        sale: true,
+        hit: false,
+        path: '/tovar/123135',
+        power: "1000 ВТ",
+        inStock: true,
+        material: 'пластик,резина,металл',
+        numberOfModes: '4',
+        weight: "3.5 кг",
+        installationType: 'вертикальная',
+        dimensions: "80.9 х 43.3 х 45.1 см",
+        controlType: 'механическое',
+        install: "настенный",
+        heatElementType: 'открытый "Мокрый"',
+        volume: '80 Л',
+        country: 'Франция',
+        color: 'белый',
+        warranty: "24 месяца",
+    },
+    {
+        id: '44',
+        title: "Стабилизатор напряжения FORTE TDR-5040VA (22652 ",
+        price: '2 440 ₴',
+        img: 'https://vitaltechno.ua/38024-tm_large_default/stabilizator-forte-tvr-5000va.jpg',
+        group: 'electro-tools',
+        category: 'стабилизатор напряжения',
+        images: [
+            'https://vitaltechno.ua/38024-tm_large_default/stabilizator-forte-tvr-5000va.jpg',
+            'https://i1.foxtrot.com.ua/product/MediumImages/6134264_0.jpg',
+            'https://vitaltechno.ua/38024-tm_large_default/stabilizator-forte-tvr-5000va.jpg',
+        ],
+        made: 'Japan',
+        new: false,
+        sale: true,
+        hit: false,
+        path: '/tovar/123233',
+        power: "5000 ВТ",
+        inStock: true,
+        material: 'пластик,резина,металл',
+        numberOfModes: '4',
+        weight: "21.5 кг",
+        installationType: 'вертикальная',
+        dimensions: "80.9 х 43.3 х 45.1 см",
+        controlType: 'механическое',
+        install: "настенный",
+        heatElementType: 'открытый "Мокрый"',
+        volume: '80 Л',
+        country: 'Франция',
+        color: 'белый',
+        warranty: "24 месяца",
+    },
+    {
         id: '15',
         title: "Прожектор V-TAC SKU-5954 E-series 30W 6400К (3800157625470)",
         price: '330 ₴',
         img: 'https://i1.foxtrot.com.ua/product/MediumImages/6563996_0.jpg',
         group: 'electro-tools',
+        category: 'светодиодные прожектора',
         images: [
             'https://i1.foxtrot.com.ua/product/MediumImages/6563996_0.jpg',
             'https://www.motoblok.biz/uploads/10/60/000003287_489151bc-f833-42c6-a21d-11a84a106010.jpg'
@@ -490,7 +616,7 @@ const goods: Array<GoodsType> = [
         sale: true,
         hit: false,
         path: '/tovar/123131',
-         power: "1500 ВТ",
+        power: "1500 ВТ",
         inStock: true,
         material: 'пластик,резина,металл',
         numberOfModes: '4',
@@ -550,8 +676,6 @@ function App(props: AppPropsType) {
 
         })
 
-
-
     const setCollapsedCallback = () => {
 
             setCollapsed(!collapsed)
@@ -605,6 +729,7 @@ function App(props: AppPropsType) {
                                                                       path={good.path}
                                                                       images={good.images}
                                                                       good={good}
+                                                                      goods={goods}
 
                                               />}
 

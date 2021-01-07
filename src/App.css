@@ -30,17 +30,17 @@
 
 }
 
-/*.App .wrapper .content::-webkit-scrollbar-thumb {*/
-/*      background: rgba(65,122,145,.3);*/
-/*      opacity: .4;*/
-/*      border-radius: 10px;*/
-/*  }*/
-/*.App .wrapper .content::-webkit-scrollbar {*/
-/*     position: absolute;*/
-/*     width: 4px;*/
-/*     background-color: rgba(0,0,0,.1);*/
+.App .wrapper .content::-webkit-scrollbar-thumb {
+      background: rgba(65,122,145,.3);
+      opacity: .4;
+      border-radius: 10px;
+  }
+.App .wrapper .content::-webkit-scrollbar {
+     position: absolute;
+     width: 4px;
+     background-color: rgba(0,0,0,.1);
 
-/* }*/
+ }
 
  
 

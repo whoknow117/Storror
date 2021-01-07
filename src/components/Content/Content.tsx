@@ -26,12 +26,13 @@ const Content: React.FC<ContentPropsType> = ({value,onClick, content,
 
     const goodsSales = (goods:Array<GoodsType>):Array<GoodsType> => {
 
-        return goods.filter( g => g.sale )
+        return goods.filter( (g, idx) => g.sale ).filter( (good, idx) => idx < 5 ? good : "")
     }
     const goodSalesCallback = goodsSales(goods)
 
     const goodsHit = (goods:Array<GoodsType>): Array<GoodsType> => {
-        return goods.filter( g => g.hit)
+        let filterGoods = goods.filter( (g, idx) => g.hit)
+        return filterGoods.filter( (el, idx) => idx < 5 ? el : "")
     }
     const goodHitCallback = goodsHit(goods)
 

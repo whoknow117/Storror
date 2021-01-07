@@ -12,3 +12,29 @@
 
   }
 }
+.similarProducts {
+  margin-top: 70px;
+  display: flex;
+
+  .productItems {
+    display: flex;
+    overflo-x: scroll;
+    overflow-y: hidden;
+    &::-webkit-scrollbar-thumb {
+      background: rgba(236, 150, 45,.4);
+      opacity: .4;
+      border-radius: 10px;
+      height: 3px;
+      position: absolute;
+      bottom: -40px;
+    }
+    &::-webkit-scrollbar {
+      position: absolute;
+      width: 2px;
+      top: 40px;
+      height: 5px;
+      background-color: transparent;
+
+    }
+  }
+}
