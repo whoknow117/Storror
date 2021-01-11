@@ -11,7 +11,7 @@ export type MainCharType = {
 const MainChar:React.FC<MainCharType> = ({good} ) => {
     return  <div className={classes.wrap}>
         <LeftSideTitle title={"Основное"}>Все характеристики</LeftSideTitle>
-        <div  className={classes.description}>
+        <div   className={classes.description}>
             <div className={classes.left}>
                 {(good.country ? <span className={classes.leftSpan}> Страна </span> : "")}
                 {(good.power ? <span className={classes.leftSpan}> Мощность </span> : "")}

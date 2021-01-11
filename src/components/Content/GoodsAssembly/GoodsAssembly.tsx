@@ -4,8 +4,7 @@ import House from "../../../assets/House/House";
 import Place from "../../../assets/Place/Place";
 import Ventilation from "../../../assets/Ventilation/Ventilation";
 import Hose from "../../../assets/Hose/Hose";
-import "aos/dist/aos.css";
-import Aos from "aos";
+
 
 
 type GoodsAssemblyPropsType = {
@@ -15,9 +14,7 @@ type GoodsAssemblyPropsType = {
 
 const GoodsAssembly: React.FC<GoodsAssemblyPropsType> = () => {
 
-    useEffect(()=>{
-        Aos.init({duration: 500})
-    })
+
 
     return  (
         <div data-aos-mirror="true" data-aos="fade-right" className={classes.goodsAssembly}>

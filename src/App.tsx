@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import {Route, withRouter, RouteComponentProps,BrowserRouter as Router, Switch} from 'react-router-dom';
 import ScrollToTop from "./ScrollToTop";
 import './App.css';
+import "aos/dist/aos.css";
+import Aos from 'aos';
 import classes from './App.module.scss';
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
@@ -21,6 +23,7 @@ import Carts from "./assets/Carts/Carts";
 import Fasteners from "./assets/Fasteners/Fasteners";
 import Sale from "./assets/Sale/Sale";
 import Discount from "./assets/Discount/Discount.";
+
 
 
 export type ValuesType = 0 | 1 | 2 | 3 | 4 | 5
@@ -763,6 +766,10 @@ type AppPropsType = {
 
 
 function App(props: AppPropsType) {
+
+    useEffect(()=>{
+        Aos.init({duration: 500})
+    })
 
     const sidebar = props.state.sidebar;
     const content = props.state.content;

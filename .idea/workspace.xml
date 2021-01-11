@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Products/Products.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Products/Products.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/GoodsAssembly/GoodsAssembly.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodsAssembly/GoodsAssembly.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/GoodsPropositions/GoodsPropositions.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Proposal/Proposal.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Proposal/Proposal.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GoodCard/MainСharacteristics/MainСharacteristics.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/MainСharacteristics/MainСharacteristics.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GoodCard/RowNavMenu/RowNavMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/RowNavMenu/RowNavMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +129,7 @@
       <workItem from="1610085938112" duration="2022000" />
       <workItem from="1610118727429" duration="450000" />
       <workItem from="1610122293904" duration="101000" />
-      <workItem from="1610383914174" duration="1631000" />
+      <workItem from="1610383914174" duration="2277000" />
     </task>
     <servers />
   </component>
