@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/Storror/static/css/main.f110b25e.chunk.css",
-    "main.js": "/Storror/static/js/main.62c2ab9d.chunk.js",
-    "main.js.map": "/Storror/static/js/main.62c2ab9d.chunk.js.map",
-    "runtime-main.js": "/Storror/static/js/runtime-main.c1f6552c.js",
-    "runtime-main.js.map": "/Storror/static/js/runtime-main.c1f6552c.js.map",
-    "static/js/2.3d806d2a.chunk.js": "/Storror/static/js/2.3d806d2a.chunk.js",
-    "static/js/2.3d806d2a.chunk.js.map": "/Storror/static/js/2.3d806d2a.chunk.js.map",
-    "static/js/3.0fa59e77.chunk.js": "/Storror/static/js/3.0fa59e77.chunk.js",
-    "static/js/3.0fa59e77.chunk.js.map": "/Storror/static/js/3.0fa59e77.chunk.js.map",
+    "main.css": "/Storror/static/css/main.0acd2889.chunk.css",
+    "main.js": "/Storror/static/js/main.89eb211e.chunk.js",
+    "main.js.map": "/Storror/static/js/main.89eb211e.chunk.js.map",
+    "runtime-main.js": "/Storror/static/js/runtime-main.a8f50e92.js",
+    "runtime-main.js.map": "/Storror/static/js/runtime-main.a8f50e92.js.map",
+    "static/css/2.ec02d681.chunk.css": "/Storror/static/css/2.ec02d681.chunk.css",
+    "static/js/2.d6192490.chunk.js": "/Storror/static/js/2.d6192490.chunk.js",
+    "static/js/2.d6192490.chunk.js.map": "/Storror/static/js/2.d6192490.chunk.js.map",
+    "static/js/3.ba084eb8.chunk.js": "/Storror/static/js/3.ba084eb8.chunk.js",
+    "static/js/3.ba084eb8.chunk.js.map": "/Storror/static/js/3.ba084eb8.chunk.js.map",
     "index.html": "/Storror/index.html",
-    "static/css/main.f110b25e.chunk.css.map": "/Storror/static/css/main.f110b25e.chunk.css.map",
-    "static/js/2.3d806d2a.chunk.js.LICENSE.txt": "/Storror/static/js/2.3d806d2a.chunk.js.LICENSE.txt",
+    "static/css/2.ec02d681.chunk.css.map": "/Storror/static/css/2.ec02d681.chunk.css.map",
+    "static/css/main.0acd2889.chunk.css.map": "/Storror/static/css/main.0acd2889.chunk.css.map",
+    "static/js/2.d6192490.chunk.js.LICENSE.txt": "/Storror/static/js/2.d6192490.chunk.js.LICENSE.txt",
     "static/media/Sidebar.module.scss": "/Storror/static/media/PTRootUI-Regular.b9ad6ba7.eot",
     "static/media/k1.92294cdf.jpg": "/Storror/static/media/k1.92294cdf.jpg",
     "static/media/k2.db388523.jpg": "/Storror/static/media/k2.db388523.jpg",
@@ -22,9 +24,10 @@
     "static/media/right.251ced64.jpg": "/Storror/static/media/right.251ced64.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c1f6552c.js",
-    "static/js/2.3d806d2a.chunk.js",
-    "static/css/main.f110b25e.chunk.css",
-    "static/js/main.62c2ab9d.chunk.js"
+    "static/js/runtime-main.a8f50e92.js",
+    "static/css/2.ec02d681.chunk.css",
+    "static/js/2.d6192490.chunk.js",
+    "static/css/main.0acd2889.chunk.css",
+    "static/js/main.89eb211e.chunk.js"
   ]
 }
