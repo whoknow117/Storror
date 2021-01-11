@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './Content.module.scss';
 import SliderShow from "./SliderShow/SliderShow";
-import Proposal from "./Proposal/Proposal";
 import GoodsPropositions from "./GoodsPropositions/GoodsPropositions";
 import {ContentType} from "../../redux/store";
 import Popular from "./Popular/Popular";
@@ -50,7 +49,7 @@ const Content: React.FC<ContentPropsType> = ({value,onClick, content,
             </div>
         </div>
 
-        <Proposal/>
+
         <Popular
             popular={content.popular}
         />

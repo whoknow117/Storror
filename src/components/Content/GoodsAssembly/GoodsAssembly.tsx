@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import classes from './GoodsAssembly.module.scss';
 import House from "../../../assets/House/House";
 import Place from "../../../assets/Place/Place";
-import GasAssembly from "../../../assets/GasAssembly/GasAssembly";
 import Ventilation from "../../../assets/Ventilation/Ventilation";
 import Hose from "../../../assets/Hose/Hose";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 
 type GoodsAssemblyPropsType = {
@@ -14,9 +15,12 @@ type GoodsAssemblyPropsType = {
 
 const GoodsAssembly: React.FC<GoodsAssemblyPropsType> = () => {
 
+    useEffect(()=>{
+        Aos.init({duration: 500})
+    })
 
     return  (
-        <div className={classes.goodsAssembly}>
+        <div data-aos-mirror="true" data-aos="fade-right" className={classes.goodsAssembly}>
             <div className={classes.title}>Готовые сборки</div>
             <ul className={classes.list}>
                 <li className={classes.item}>

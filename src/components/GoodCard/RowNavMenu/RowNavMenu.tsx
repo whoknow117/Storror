@@ -7,7 +7,7 @@ export type RowNavMenuType = {
 
 
 const RowNavMenu:React.FC<RowNavMenuType> = ( ) => {
-    return  <div className={classes.wrap}>
+    return  <div   className={classes.wrap}>
                 <ul className={classes.list}>
                     <li className={classes.item}>О товаре</li>
                     <li className={classes.item}>Характеристики</li>

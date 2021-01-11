@@ -19,7 +19,7 @@ const GoodsPropositions: React.FC<GoodsPropositionsPropsType> = ({onClick, value
 
 
 
-    return <div className={classes.list}>
+    return <div data-aos="fade-left" className={classes.list}>
 
         <div className={classes.goodsPropositions}>
 
