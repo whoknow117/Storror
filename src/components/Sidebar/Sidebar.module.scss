@@ -86,6 +86,16 @@
     cursor: pointer;
     padding-right: 10px;
     &:hover {
+      .hidden {
+        display: block;
+        width: 300px;
+        top: 0;
+        height: 100vh;
+        position: absolute;
+        left: 320px;
+
+        background:silver;
+      }
       .icon {}
       .name {
         color: $orangeBackgroundColor;
@@ -149,4 +159,7 @@
   height: 100vh;
 
   left: 320px
+}
+.hidden {
+  display: none;
 }

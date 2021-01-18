@@ -85,7 +85,7 @@ const Sidebar: React.FC<SidebarPropsType> = ({state,sidebar,setCollapsedCallback
                         </div>
 
 
-
+                        <div className={classes.hidden}>asda</div>
                     </div>
 
                 )

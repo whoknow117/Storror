@@ -4,6 +4,7 @@ export type SidebarItemType = {
     name: string
     id: string
     path: string
+    dropdown: boolean
 }
 
 export type NavbarType = Array<NavbarItemType>
@@ -87,43 +88,43 @@ const store = {
         sidebar: [
 
             {
-                name: 'Сантехника, Смесители и Трубы', id: '1', path: '/santehnika',
+                name: 'Сантехника, Смесители и Трубы', id: '1', path: '/santehnika',dropdown: false,
             },
             {
-                name: 'Электрика и Освещение', id: '2', path: '/',
+                name: 'Электрика и Освещение', id: '2', path: '/',dropdown: false,
             },
             {
-                name: 'Крепеж, Гвозди, Саморезы и Хамуты', id: '3', path: '/asd',
+                name: 'Крепеж, Гвозди, Саморезы и Хамуты', id: '3', path: '/asd',dropdown: false,
             },
             {
-                name: 'Лопаты, Сетка и Нитка ', id: '4', path: '/assd',
+                name: 'Лопаты, Сетка и Нитка ', id: '4', path: '/assd',dropdown: false,
             },
             {
-                name: 'Насосы, Реле и Датчики', id: '5', path: '/nasosy',
+                name: 'Насосы, Реле и Датчики', id: '5', path: '/nasosy',dropdown: false,
             },
             {
-                name: 'Электроинструмент и Бензоинструмент', id: '6', path: '/tovar',
+                name: 'Электроинструмент и Бензоинструмент', id: '6', path: '/tovar',dropdown: false,
             },
             {
-                name: 'Инструмент, Отвертки и Биты', id: '7', path: '/ss',
+                name: 'Инструмент, Отвертки и Биты', id: '7', path: '/ss',dropdown: false,
             },
             {
-                name: 'Газовые балоны, горелки, электроды', id: '8', path: '/sdas',
+                name: 'Газовые балоны, горелки, электроды', id: '8', path: '/sdas',dropdown: false,
             },
             {
-                name: 'Бойлеры, газовые колонки', id: '9', path: '/ssasd',
+                name: 'Бойлеры, газовые колонки', id: '9', path: '/ssasd',dropdown: false,
             },
             {
-                name: 'Короба, Вентиляция', id: '10', path: '/s',
+                name: 'Короба, Вентиляция', id: '10', path: '/s',dropdown: false,
             },
             {
-                name: 'Сад-огород, Штуцера, Фитинги', id: '11', path: '/adaadss',
+                name: 'Сад-огород, Штуцера, Фитинги', id: '11', path: '/adaadss',dropdown: false,
             },
             {
-                name: 'Акции', id: '12', path: '/adaadss',
+                name: 'Акции', id: '12', path: '/adaadss',dropdown: false,
             },
             {
-                name: 'Распродажа', id: '13', path: '/adaadss',
+                name: 'Распродажа', id: '13', path: '/adaadss',dropdown: false,
             },
 
 
