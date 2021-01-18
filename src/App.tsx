@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Route, withRouter, RouteComponentProps,BrowserRouter as Router, Switch} from 'react-router-dom';
+import {Route, withRouter, RouteComponentProps, BrowserRouter as Router, Switch} from 'react-router-dom';
 import ScrollToTop from "./ScrollToTop";
 import './App.css';
 import "aos/dist/aos.css";
@@ -23,7 +23,6 @@ import Carts from "./assets/Carts/Carts";
 import Fasteners from "./assets/Fasteners/Fasteners";
 import Sale from "./assets/Sale/Sale";
 import Discount from "./assets/Discount/Discount.";
-
 
 
 export type ValuesType = 0 | 1 | 2 | 3 | 4 | 5
@@ -61,7 +60,6 @@ export type GoodsType = {
 }
 
 
-
 const goods: Array<GoodsType> = [
     {
         id: '1',
@@ -76,7 +74,7 @@ const goods: Array<GoodsType> = [
             'https://maklta.com.ua/userfiles/image/catalog/ddf484rx4_makita.jpg',
             'https://stock-stroy.com/content/images/18/akkumulyatornaya-drel-shurupovert-makita-df330dwe-57796304208823.jpg',
             'https://japan-ukraine.com/product/159218/main.jpg',
-                    ],
+        ],
         new: true,
         sale: false,
         hit: false,
@@ -497,7 +495,7 @@ const goods: Array<GoodsType> = [
         sale: false,
         hit: true,
         path: '/tovar/123543',
-         power: "1500 ВТ",
+        power: "1500 ВТ",
         inStock: true,
         material: 'пластик,резина,металл',
         numberOfModes: '4',
@@ -531,7 +529,7 @@ const goods: Array<GoodsType> = [
         sale: false,
         hit: true,
         path: '/tovar/123150',
-         power: "1500 ВТ",
+        power: "1500 ВТ",
         inStock: true,
         material: 'пластик,резина,металл',
         numberOfModes: '4',
@@ -562,7 +560,7 @@ const goods: Array<GoodsType> = [
         sale: true,
         hit: false,
         path: '/tovar/123111',
-         power: "1500 ВТ",
+        power: "1500 ВТ",
         inStock: true,
         material: 'пластик,резина,металл',
         numberOfModes: '4',
@@ -740,8 +738,6 @@ const goods: Array<GoodsType> = [
 ]
 
 
-
-
 const sidebarIcons = [
     {id: '1', icon: <Drill/>},
     {id: '2', icon: <Boiler/>},
@@ -767,8 +763,8 @@ type AppPropsType = {
 
 function App(props: AppPropsType) {
 
-    useEffect(()=>{
-        Aos.init({duration: 500})
+    useEffect(() => {
+        Aos.init({duration: 400})
     })
 
     const sidebar = props.state.sidebar;
@@ -780,80 +776,77 @@ function App(props: AppPropsType) {
     const [headerCollapsed, setHeaderCollapsed] = useState<boolean>(false);
 
 
-        window.addEventListener('scroll',(event) => {
-            (window.pageYOffset >= 100 ? setHeaderCollapsed(true) : setHeaderCollapsed(false))
+    window.addEventListener('scroll', (event) => {
+        (window.pageYOffset >= 100 ? setHeaderCollapsed(true) : setHeaderCollapsed(false))
 
-        })
+    })
 
     const setCollapsedCallback = () => {
 
-            setCollapsed(!collapsed)
+        setCollapsed(!collapsed)
 
     }
-
 
 
     console.log(collapsed);
     return (
         <Router>
-            <ScrollToTop />
-        <div className="App">
-           <div className="container">
-               <Header headerCollapsed={headerCollapsed} collapsed={collapsed} setCollapse={setCollapsedCallback}/>
-               <div className="wrapper">
+            <ScrollToTop/>
+            <div className="App">
+                <div className="container">
+                    <Header headerCollapsed={headerCollapsed} collapsed={collapsed} setCollapse={setCollapsedCallback}/>
+                    <div className="wrapper">
 
                         <Sidebar
                             collapsed={collapsed}
                             setCollapsedCallback={setCollapsedCallback}
                             sidebar={sidebar}
                             state={props.state}
-/>
+                        />
 
 
+                        <div className="content">
 
-                   <div className="content">
+                            <Route exact path='/storror' render={() => <Content
+                                collapsed={collapsed}
+                                content={content}
+                                setCollapsedCallback={setCollapsedCallback}
+                                value={value}
+                                onClick={setValue}
+                                goods={goods}
 
-                           <Route exact path='/storror' render={() => <Content
-                               collapsed={collapsed}
-                               content={content}
-                               setCollapsedCallback={setCollapsedCallback}
-                               value={value}
-                               onClick={setValue}
-                               goods={goods}
+                            />}/>
+                            {goods.map((good, idx) => {
 
-                           />}/>
-                           {goods.map((good, idx) => {
+                                return (<div>
 
-                               return (<div>
+                                        <Route key={idx} path={good.path}
+                                               render={() => <GoodCard id={good.id}
+                                                                       onClick={setValue}
+                                                                       value={value}
+                                                                       title={good.title}
+                                                                       price={good.price}
+                                                                       img={good.img}
+                                                                       group={good.group}
+                                                                       made={good.made}
+                                                                       path={good.path}
+                                                                       images={good.images}
+                                                                       good={good}
+                                                                       goods={goods}
 
-                                       <Route key={idx} path={good.path}
-                                              render={() => <GoodCard id={good.id}
-                                                                      onClick={setValue}
-                                                                      value={value}
-                                                                      title={good.title}
-                                                                      price={good.price}
-                                                                      img={good.img}
-                                                                      group={good.group}
-                                                                      made={good.made}
-                                                                      path={good.path}
-                                                                      images={good.images}
-                                                                      good={good}
-                                                                      goods={goods}
+                                               />}
 
-                                              />}
+                                        />
+                                    </div>
+                                )
 
-                                       />
-                                   </div>
-                               )
-
-                           })}
-
+                            })}
 
 
-                   </div>
-               </div>
-           </div>
-        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </Router>
     );
 }

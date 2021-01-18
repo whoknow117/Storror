@@ -84,13 +84,7 @@ const Sidebar: React.FC<SidebarPropsType> = ({state,sidebar,setCollapsedCallback
 
                         </div>
 
-                        {/*<div onMouseEnter={dropOn} onMouseLeave={dropOff}  className={drop ? classes.drop : ''}>*/}
-                        {/*    {state.dropDown[item.id].map(el => {*/}
-                        {/*        return <div>*/}
-                        {/*            <div>{el.head}</div>*/}
-                        {/*        </div>*/}
-                        {/*    })}*/}
-                        {/*</div>*/}
+
 
                     </div>
 
