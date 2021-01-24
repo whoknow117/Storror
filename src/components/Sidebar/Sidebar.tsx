@@ -45,9 +45,10 @@ type SidebarPropsType = {
     setCollapsedCallback: () => void
     collapsed: boolean
     state: RootStateType
+
 }
 
-const Sidebar: React.FC<SidebarPropsType> = ({state,sidebar,setCollapsedCallback,collapsed}) => {
+const Sidebar: React.FC<SidebarPropsType> = ({ state,sidebar,setCollapsedCallback,collapsed}) => {
         const [drop, setDrop] = useState<boolean>(false)
 
 
@@ -84,8 +85,19 @@ const Sidebar: React.FC<SidebarPropsType> = ({state,sidebar,setCollapsedCallback
 
                         </div>
 
+                        <div className={`${classes.hidden} ${classes.visibleDrop}`}>
+                            { item.menu.map( m => {
 
-                        <div className={classes.hidden}>asda</div>
+                                return <div  >
+                                    <h6>{m.title}</h6>
+                                    {m.items.map(el => <div>{el.title}</div>)}
+                                </div>
+
+                            })}
+                        </div>
+
+
+
                     </div>
 
                 )

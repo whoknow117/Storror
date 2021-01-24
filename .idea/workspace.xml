@@ -4,6 +4,7 @@
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
@@ -129,7 +130,12 @@
       <workItem from="1610122293904" duration="101000" />
       <workItem from="1610383914174" duration="2846000" />
       <workItem from="1610998380017" duration="1334000" />
-      <workItem from="1611000488454" duration="1666000" />
+      <workItem from="1611000488454" duration="4753000" />
+      <workItem from="1611231646975" duration="1294000" />
+      <workItem from="1611250520077" duration="565000" />
+      <workItem from="1611407499228" duration="906000" />
+      <workItem from="1611415848096" duration="326000" />
+      <workItem from="1611464024708" duration="2786000" />
     </task>
     <servers />
   </component>

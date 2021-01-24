@@ -5,6 +5,7 @@ export type SidebarItemType = {
     id: string
     path: string
     dropdown: boolean
+    menu: Array<MenuType>
 }
 
 export type NavbarType = Array<NavbarItemType>
@@ -13,11 +14,19 @@ export type NavbarItemType = {
     id: string
     title: string
     path: string
+
+
+}
+
+export type MenuType = {
+    id: string
+    title: string
+    items: Array<MenuItemType>
+
 }
 export type ItemsType = {
     title: string
 }
-
 export type HeaderType = {
     logoName: string
     city: string
@@ -28,18 +37,15 @@ export type SliderType = {
     id: string
     img: string
 }
-
 export type ContentType = {
     slider: Array<SliderType>
     popular: Array<PopularType>
 }
-
 export type PopularType = {
     id: string
     title: string
     img: string
 }
-
 export type DropDownMenuType = {
     items: Array<ItemsType>
     head: string
@@ -49,19 +55,23 @@ export type DropDownMenuType = {
 export type DropDownType = {
     [key: string]: Array<DropDownMenuType>
 }
-
 export type RootStateType = {
     header: HeaderType
     sidebar: SidebarType
     content: ContentType
     dropDown: DropDownType
 }
-
-
 export type StoreType = {
     getState: () => void
     _state: RootStateType
 }
+export type MenuItemType = {
+    id: string
+    title: string
+    path: string
+}
+
+
 
 
 const store = {
@@ -76,11 +86,11 @@ const store = {
             city: "Северодонецк",
             phone: "+38(099)777-77-77",
             navbar: [
-                {id: '1', title: "Акции", path: '/'},
-                {id: '2', title: "Информация", path: '/'},
-                {id: '3', title: "Самовывоз", path: '/'},
-                {id: '4', title: "Контакты", path: '/'},
-                {id: '5', title: "Организациям", path: '/'},
+                {id: '121', title: "Акции", path: '/'},
+                {id: '2321', title: "Информация", path: '/'},
+                {id: '312', title: "Самовывоз", path: '/'},
+                {id: '4123', title: "Контакты", path: '/'},
+                {id: '5123', title: "Организациям", path: '/'},
             ],
 
 
@@ -88,43 +98,113 @@ const store = {
         sidebar: [
 
             {
-                name: 'Сантехника, Смесители и Трубы', id: '1', path: '/santehnika',dropdown: false,
+                name: 'Сантехника, Смесители и Трубы', id: '1', path: '/santehnika',dropdown: false,menu:[
+                    {id:'1',title: 'smeseteli', items: [
+                            {id:'1',title:'kran',path:'/'},
+                            {id:'2',title:'kran',path:'/'},
+                        ]},
+                    {id:'2',title: 'smeseteli', items: [
+                            {id:'1',title:'voda',path:'/'},
+                            {id:'2',title:'kran',path:'/'},
+                        ]}
+                ]
             },
             {
-                name: 'Электрика и Освещение', id: '2', path: '/',dropdown: false,
+                name: 'Электрика и Освещение', id: '2', path: '/',dropdown: false,menu:[
+                    {id:'11',title: 'smeseteli', items: [
+                            {id:'1',title:'kran',path:'/'},
+                            {id:'2',title:'kran',path:'/'},
+                        ]}
+                ]
             },
             {
-                name: 'Крепеж, Гвозди, Саморезы и Хамуты', id: '3', path: '/asd',dropdown: false,
+                name: 'Крепеж, Гвозди, Саморезы и Хамуты', id: '3', path: '/asd',dropdown: false,menu:[
+                    {id:'10',title: 'smeseteli', items: [
+                            {id:'1',title:'kran',path:'/'},
+                            {id:'2',title:'kran',path:'/'},
+                        ]}
+                ]
             },
             {
-                name: 'Лопаты, Сетка и Нитка ', id: '4', path: '/assd',dropdown: false,
+                name: 'Лопаты, Сетка и Нитка ', id: '4', path: '/assd',dropdown: false,menu:[
+                    {id:'15',title: 'smeseteli', items: [
+                            {id:'1',title:'kran',path:'/'},
+                            {id:'2',title:'kran',path:'/'},
+                        ],
+                    },
+                ]
             },
             {
-                name: 'Насосы, Реле и Датчики', id: '5', path: '/nasosy',dropdown: false,
+                name: 'Насосы, Реле и Датчики', id: '5', path: '/nasosy',dropdown: false,menu:[
+                    {id:'1',title: 'smeseteli', items: [
+                            {id:'1',title:'kran',path:'/'},
+                            {id:'2',title:'kran',path:'/'},
+                        ]}
+                ]
             },
             {
-                name: 'Электроинструмент и Бензоинструмент', id: '6', path: '/tovar',dropdown: false,
+                name: 'Электроинструмент и Бензоинструмент', id: '6', path: '/tovar',dropdown: false,menu:[
+                    {id:'2',title: 'smeseteli', items: [
+                            {id:'1',title:'kran',path:'/'},
+                            {id:'2',title:'kran',path:'/'},
+                        ]}
+                ]
             },
             {
-                name: 'Инструмент, Отвертки и Биты', id: '7', path: '/ss',dropdown: false,
+                name: 'Инструмент, Отвертки и Биты', id: '7', path: '/ss',dropdown: false,menu:[
+                    {id:'3',title: 'smeseteli', items: [
+                            {id:'1',title:'kran',path:'/'},
+                            {id:'2',title:'kran',path:'/'},
+                        ]}
+                ]
             },
             {
-                name: 'Газовые балоны, горелки, электроды', id: '8', path: '/sdas',dropdown: false,
+                name: 'Газовые балоны, горелки, электроды', id: '8', path: '/sdas',dropdown: false,menu:[
+                    {id:'4',title: 'smeseteli', items: [
+                            {id:'1',title:'kran',path:'/'},
+                            {id:'2',title:'kran',path:'/'},
+                        ]}
+                ]
             },
             {
-                name: 'Бойлеры, газовые колонки', id: '9', path: '/ssasd',dropdown: false,
+                name: 'Бойлеры, газовые колонки', id: '9', path: '/ssasd',dropdown: false,menu:[
+                    {id:'5',title: 'smeseteli', items: [
+                            {id:'1',title:'kran',path:'/'},
+                            {id:'2',title:'kran',path:'/'},
+                        ]}
+                ]
             },
             {
-                name: 'Короба, Вентиляция', id: '10', path: '/s',dropdown: false,
+                name: 'Короба, Вентиляция', id: '10', path: '/s',dropdown: false,menu:[
+                    {id:'6',title: 'smeseteli', items: [
+                            {id:'1',title:'kran',path:'/'},
+                            {id:'2',title:'kran',path:'/'},
+                        ]}
+                ]
             },
             {
-                name: 'Сад-огород, Штуцера, Фитинги', id: '11', path: '/adaadss',dropdown: false,
+                name: 'Сад-огород, Штуцера, Фитинги', id: '11', path: '/adaadss',dropdown: false,menu:[
+                    {id:'7',title: 'smeseteli', items: [
+                            {id:'1',title:'kran',path:'/'},
+                            {id:'2',title:'kran',path:'/'},
+                        ]}
+                ]
             },
             {
-                name: 'Акции', id: '12', path: '/adaadss',dropdown: false,
+                name: 'Акции', id: '12', path: '/adaadss',dropdown: false,menu:[
+                    {id:'8',title: 'smeseteli', items: [
+                            {id:'1',title:'kran',path:'/'},
+                            {id:'2',title:'kran',path:'/'},
+                        ]}
+                ]
             },
             {
-                name: 'Распродажа', id: '13', path: '/adaadss',dropdown: false,
+                name: 'Распродажа', id: '13', path: '/adaadss',dropdown: false,menu:[
+                    {id:'9',title: 'smeseteli', items: [
+                            {id:'1',title:'kran',path:'/'},
+                            {id:'2',title:'kran',path:'/'},
+                        ]}
+                ]
             },
 
 
@@ -135,7 +215,7 @@ const store = {
                     head: 'Смесители',
                     path: '/santehnika',
                     items: [
-                        {title: 'Смесители для ванной'},
+                        {title: 'трубы'},
                         {title: 'Смесители для ванной'},
                         {title: 'Смесители для ванной'},
                     ]
