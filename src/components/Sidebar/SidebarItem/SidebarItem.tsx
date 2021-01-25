@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import classes from './SidebarItem.module.scss'
 import {DropDownMenuType, SidebarItemType} from "../../../types/types";
 import Drill from "../../../assets/Drill/Drill";
