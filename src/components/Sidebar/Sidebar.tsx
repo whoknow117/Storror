@@ -29,11 +29,11 @@ const Sidebar: React.FC<SidebarPropsType> = ({ state,sidebar,setCollapsedCallbac
 
     return (
 
-        <div className={classes.sidebar}>
+        <div className={`${classes.sidebar} ${collapsed ? classes.sidebarCollapsed : ""}`}>
             <div className={classes.logo}>
                 <SidebarLogo/>
             </div>
-            <span className={classes.span}></span>
+            <span onClick={setCollapsedCallback} className={classes.span}></span>
             <h4 className={classes.title}>Каталог</h4>
             {sidebar.map(el => {
 
