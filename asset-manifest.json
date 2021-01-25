@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Storror/static/css/main.3cc60986.chunk.css",
+    "main.css": "/Storror/static/css/main.66c21eb1.chunk.css",
     "main.js": "/Storror/static/js/main.2b3e7aaf.chunk.js",
     "main.js.map": "/Storror/static/js/main.2b3e7aaf.chunk.js.map",
     "runtime-main.js": "/Storror/static/js/runtime-main.1ba350a5.js",
@@ -12,7 +12,7 @@
     "static/js/3.dc719b8f.chunk.js.map": "/Storror/static/js/3.dc719b8f.chunk.js.map",
     "index.html": "/Storror/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/Storror/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.3cc60986.chunk.css.map": "/Storror/static/css/main.3cc60986.chunk.css.map",
+    "static/css/main.66c21eb1.chunk.css.map": "/Storror/static/css/main.66c21eb1.chunk.css.map",
     "static/js/2.8fec8d2e.chunk.js.LICENSE.txt": "/Storror/static/js/2.8fec8d2e.chunk.js.LICENSE.txt",
     "static/media/Sidebar.module.scss": "/Storror/static/media/PTRootUI-Regular.b9ad6ba7.eot",
     "static/media/k1.92294cdf.jpg": "/Storror/static/media/k1.92294cdf.jpg",
@@ -27,7 +27,7 @@
     "static/js/runtime-main.1ba350a5.js",
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.8fec8d2e.chunk.js",
-    "static/css/main.3cc60986.chunk.css",
+    "static/css/main.66c21eb1.chunk.css",
     "static/js/main.2b3e7aaf.chunk.js"
   ]
 }
