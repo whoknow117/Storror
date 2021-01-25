@@ -50,19 +50,21 @@
 .hidden {
   position: absolute;
   left: 320px;
-  height: 100%;
-  min-width: 600px;
+  height: 100vh;
+  min-width: 800px;
   padding-top: 20px;
-  background: #efeeee;
+  background: #fcfbfb;
   opacity: 0;
   visibility: hidden;
   display: flex;
   overflow-y: auto;
-
+  border-right: 1px solid #eeeeee;
+  flex-direction: column;
   flex-wrap:  wrap;
   top: 0;
   transition: .1s top, .2s opacity, .2s visibility;
-  transition-delay: .3s;
+  transition-delay: .2s;
+
 }
 
 .visible {
