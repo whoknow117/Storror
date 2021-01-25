@@ -34,143 +34,38 @@
   background: #fff;
   left: 0;
   top: 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,.2);
-  transition: .2s  ;
-  transition-timing-function: cubic-bezier(1.7,1.7,.77,.33) ;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  transition: .2s;
+  transition-timing-function: cubic-bezier(1.7, 1.7, .77, .33);
 
   font-weight: 300;
-  .itemWrapper {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    left: 300px;
-    .item {}
-  }
-  .logo {
-    margin-left: 40px;
-  }
-
-  .navTitle {
-    margin: 12px 20px 20px 65px;
-    color: #222222;
-    font-size: 1.3rem;
-    font-weight: 500;
-  }
-
-  .close {
-    width: 12px;
-    height: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 17px;
-    outline: none;
-    top: 27px;
-    cursor: pointer;
-    border: none;
-    background: transparent;
-    transition: all .3s ease-in-out 0s;
-    &:hover {
-      transform: rotate(360deg) ;
-    }
-    img {
-      width: 100%;
-
-    }
-  }
-  .wrapper {
-    display: flex;
-    height: 46px;
-    align-items: center;
-    cursor: pointer;
-    padding-right: 10px;
-    &:hover {
-
-      .icon {}
-      .name {
-        color: $orangeBackgroundColor;
-      }
-    }
-    .icon {
-      width: 40px;
-      height: 40px;
-      left: 14px;
-      position: absolute;
+  .separate {
+    .item {
       display: flex;
+      height: 46px;
       align-items: center;
-      justify-content: center;
-      &:hover {
-        .drop {
-          display: block;
+      position: relative;
+      .icon {
+        width: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 46px;
+
+        position: absolute;
+        svg {
+          fill: orangered;
         }
       }
-      
-      svg {
-        width: 27px;
-        height: 27px;
-        fill:$orangeBackgroundColor
+      .name {
+        margin-left:68px;
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 100%;
+
       }
-    }
-    .name {
-      display: block;
-      color: #000;
-      margin-left: 65px;
-      font-size: 0.92rem;
-        font-weight: 500;
-      line-height: 1.4rem;
-      font-family: 'PT Root UI';
-
-    }
-  }
-}
-.sidebar::-webkit-scrollbar-thumb {
-
-
-  border-radius: 10px;
-}
-.sidebar::-webkit-scrollbar {
-  position: absolute;
-  width: 0px;
-  background-color: rgba(59, 59, 59, 0.5);
-
-}
-.active {
-  position: absolute;
-  left: -360px;
-
-}
-.drop {
-  width: 600px;
-  height: 400px;
-  background: #fff;
-  position: absolute;
-
-  top: 0;
-  height: 100vh;
-
-  left: 320px
-}
-.hidden {
-  opacity: 0;
-  position: absolute;
-  width: 300px;
-  height: 100vh;
-  transition: .3s;
-  display: none;
-
-}
-
-.wrapper {
-  &:hover {
-    .visibleDrop {
-      opacity: 1;
-      display: block;
-
-      width: 300px;
-      left: 320px;
-      top: 0;
-      height: 100vh;
     }
   }
 }

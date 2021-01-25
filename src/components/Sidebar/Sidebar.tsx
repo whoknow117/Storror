@@ -16,27 +16,10 @@ import {RootStateType, SidebarType} from "../../redux/store";
 import SidebarLogo from "./SidebarLogo/SidebarLogo";
 import Sale from "../../assets/Sale/Sale";
 import Discount from "../../assets/Discount/Discount.";
+import {spawn} from "child_process";
+import SidebarItem from "./SidebarItem/SidebarItem";
 
-export type SideBarIconsType = {
-    id: string
-    icon: JSX.Element
-}
 
-const sidebarIcons = [
-    {id: '1', icon: <Drill/>},
-    {id: '2', icon: <Boiler/>},
-    {id: '3', icon: <Electric/>},
-    {id: '4', icon: <Garden/>},
-    {id: '5', icon: <Gas/>},
-    {id: '6', icon: <Hose/>},
-    {id: '7', icon: <Pump/>},
-    {id: '8', icon: <Shovel/>},
-    {id: '9', icon: <Ventilation/>},
-    {id: '10', icon: <Carts/>},
-    {id: '11', icon: <Fasteners/>},
-    {id: '12', icon: <Sale/>},
-    {id: '13', icon: <Discount/>},
-]
 
 // надо сделать так чтоб данные выгружилась корректные
 
@@ -49,62 +32,46 @@ type SidebarPropsType = {
 }
 
 const Sidebar: React.FC<SidebarPropsType> = ({ state,sidebar,setCollapsedCallback,collapsed}) => {
-        const [drop, setDrop] = useState<boolean>(false)
 
 
 
 
 
-    const dropOn = () => {
-        setDrop(true)
-    }
 
-    const dropOff = () => {
-        setDrop(false)
-    }
+
+
+
 
 
     return (
 
-        <div className={`${classes.sidebar} ${collapsed ? classes.active : ""}`}>
+        <div className={classes.sidebar}>
             <div className={classes.logo}>
-                <SidebarLogo  />
+                LOGO
             </div>
-            <button onClick={setCollapsedCallback} className={classes.close}>
-                <img src="https://www.flaticon.com/svg/static/icons/svg/61/61155.svg" alt=""/>
-            </button>
-            <h3 className={classes.navTitle}>Каталог</h3>
-            {sidebar.map(item => {
+            {sidebar.map(el => {
+
+                let drop = state.dropDown[el.id];
+
                 return (
-
-                    <div onMouseEnter={dropOn} onMouseLeave={dropOff} key={item.id} className={ classes.wrapper }>
-                        {sidebarIcons.map(icon => icon.id === item.id ?
-                            <div key={icon.id} className={classes.icon}>{icon.icon}</div> : ""
-                        )}
-                        <div className={classes.name}>{item.name}
-
-                        </div>
-
-                        <div className={`${classes.hidden} ${classes.visibleDrop}`}>
-                            { item.menu.map( m => {
-
-                                return <div  >
-                                    <h6>{m.title}</h6>
-                                    {m.items.map(el => <div>{el.title}</div>)}
-                                </div>
-
-                            })}
-                        </div>
+                    <SidebarItem
 
 
+                        key={el.id}
+                        navID={el.id}
+                        item={el}
+                        drop={drop}
 
-                    </div>
 
+                    />
                 )
             })}
 
+
         </div>
+
     )
+
 }
 
 export default Sidebar;
@@ -121,3 +88,16 @@ export default Sidebar;
 {/*        </div>*/}
 {/*    })}*/}
 {/*</div>*/}
+
+
+
+// <div className={`${classes.hidden} ${classes.visibleDrop}`}>
+//     { item.menu.map( m => {
+//
+//         return <div  >
+//             <h6>{m.title}</h6>
+//             {m.items.map(el => <div>{el.title}</div>)}
+//         </div>
+//
+//     })}
+// </div>

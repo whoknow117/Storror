@@ -1,0 +1,96 @@
+
+
+
+.itemWrapper {
+
+  height: 48px;
+  width: 100%;
+  font-family: Arial;
+
+  .separate {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      .title {
+        color: orangered;
+      }
+    }
+    .icon {
+      position: absolute;
+      height: 46px;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 66px;
+      svg {
+        fill : orangered;
+        width: 24px;
+        height: 24px;
+      }
+
+    }
+    .title {
+      margin-left: 64px;
+      color: #000;
+      font-family: 'PT Root UI';
+      font-weight: 500;
+      font-size: 1rem;
+
+    }
+  }
+
+}
+
+
+.hidden {
+  position: absolute;
+  left: 320px;
+  width: 320px;
+  height: 100vh;
+  background: #efeeee;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  top: -400px;
+  transition: .3s;
+
+}
+
+.visible {
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropWrapper {
+
+  width: 200px;
+  height: auto;
+
+
+
+
+  .dropTitle {
+    margin: 20px 0;
+    background: silver;
+    cursor: pointer;
+    &:hover {
+      color: orangered;
+    }
+
+  }
+  .dropItems {
+    display: flex;
+    flex-direction: column;
+    .item {
+      cursor: pointer;
+      &:hover {
+        color: orangered;
+      }
+    }
+
+  }
+}
