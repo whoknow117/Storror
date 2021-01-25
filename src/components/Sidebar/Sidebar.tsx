@@ -1,27 +1,11 @@
 import React, {HTMLAttributes, RefObject, useState} from 'react';
 import classes from './Sidebar.module.scss';
-import {NavLink} from "react-router-dom";
-import Boiler from "../../assets/Boiler/Boiler";
-import Electric from "../../assets/Electric/Electric";
-import Garden from "../../assets/Garden/Garden";
-import Gas from "../../assets/Gas/Gas";
-import Hose from "../../assets/Hose/Hose";
-import Pump from "../../assets/Pump/Pump";
-import Shovel from "../../assets/Shovel/Shovel";
-import Ventilation from "../../assets/Ventilation/Ventilation";
-import Carts from "../../assets/Carts/Carts";
-import Drill from "../../assets/Drill/Drill";
-import Fasteners from "../../assets/Fasteners/Fasteners";
 import {RootStateType, SidebarType} from "../../redux/store";
 import SidebarLogo from "./SidebarLogo/SidebarLogo";
-import Sale from "../../assets/Sale/Sale";
-import Discount from "../../assets/Discount/Discount.";
-import {spawn} from "child_process";
 import SidebarItem from "./SidebarItem/SidebarItem";
 
 
 
-// надо сделать так чтоб данные выгружилась корректные
 
 type SidebarPropsType = {
     sidebar: SidebarType
@@ -47,8 +31,10 @@ const Sidebar: React.FC<SidebarPropsType> = ({ state,sidebar,setCollapsedCallbac
 
         <div className={classes.sidebar}>
             <div className={classes.logo}>
-                LOGO
+                <SidebarLogo/>
             </div>
+            <span className={classes.span}></span>
+            <h4 className={classes.title}>Каталог</h4>
             {sidebar.map(el => {
 
                 let drop = state.dropDown[el.id];

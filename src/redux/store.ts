@@ -21,6 +21,8 @@ export type NavbarItemType = {
 
 export type ItemsType = {
     title: string
+    path: string
+
 }
 export type HeaderType = {
     logoName: string
@@ -60,11 +62,7 @@ export type StoreType = {
     getState: () => void
     _state: RootStateType
 }
-export type MenuItemType = {
-    id: string
-    title: string
-    path: string
-}
+
 
 
 
@@ -114,23 +112,14 @@ const store = {
                 name: 'Инструмент, Отвертки и Биты', id: '7', path: '/ss',dropdown: false,
             },
             {
-                name: 'Газовые балоны, горелки, электроды', id: '8', path: '/sdas',dropdown: false,menu:[
-                    {id:'4',title: 'smeseteli', items: [
-                            {id:'1',title:'kran',path:'/'},
-                            {id:'2',title:'kran',path:'/'},
-                        ]}
-                ]
+                name: 'Газовые балоны, горелки, электроды', id: '8', path: '/sdas',dropdown: false
+
             },
             {
                 name: 'Бойлеры, газовые колонки', id: '9', path: '/ssasd',dropdown: false
             },
             {
-                name: 'Короба, Вентиляция', id: '10', path: '/s',dropdown: false,menu:[
-                    {id:'6',title: 'smeseteli', items: [
-                            {id:'1',title:'kran',path:'/'},
-                            {id:'2',title:'kran',path:'/'},
-                        ]}
-                ]
+                name: 'Короба, Вентиляция', id: '10', path: '/s',dropdown: false,
             },
             {
                 name: 'Сад-огород, Штуцера, Фитинги', id: '11', path: '/adaadss',dropdown: false
@@ -150,9 +139,10 @@ const store = {
                     head: 'Смесители',
                     path: '/santehnika',
                     items: [
-                        {title: 'трубы'},
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
+                        {title: 'Смесители для раковин',path:'/'},
+                        {title: 'Смесители для раковин',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
                     ]
 
                 },
@@ -160,12 +150,92 @@ const store = {
                     head: 'Трубы',
                     path: '/santehnika',
                     items: [
-                        {title: 'Трубы'},
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
+                        {title: 'Трубы',path: '/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
                     ]
 
                 },
+                {
+                    head: 'Трубы',
+                    path: '/santehnika',
+                    items: [
+                        {title: 'Трубы',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                    ]
+
+                },
+                {
+                    head: 'Трубы',
+                    path: '/santehnika',
+                    items: [
+                        {title: 'Трубы',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                    ]
+
+                },
+                {
+                    head: 'Трубы',
+                    path: '/santehnika',
+                    items: [
+                        {title: 'Трубы',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                    ]
+
+                },
+                {
+                    head: 'Трубы',
+                    path: '/santehnika',
+                    items: [
+                        {title: 'Трубы',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                    ]
+
+                },
+                {
+                    head: 'Трубы',
+                    path: '/santehnika',
+                    items: [
+                        {title: 'Трубы',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                    ]
+
+                },
+                {
+                    head: 'Трубы',
+                    path: '/santehnika',
+                    items: [
+                        {title: 'Трубы',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                    ]
+
+                },
+                {
+                    head: 'Трубы',
+                    path: '/santehnika',
+                    items: [
+                        {title: 'Трубы',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                    ]
+
+                },{
+                    head: 'Трубы',
+                    path: '/santehnika',
+                    items: [
+                        {title: 'Трубы',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                    ]
+
+                },
+
 
 
             ],
@@ -174,9 +244,9 @@ const store = {
                     head: 'Смесители',
                     path: '/santehnika',
                     items: [
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
                     ]
 
                 },
@@ -188,9 +258,9 @@ const store = {
                     head: 'Смесители',
                     path: '/santehnika',
                     items: [
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
                     ]
 
                 },
@@ -201,9 +271,9 @@ const store = {
                     head: 'Смесители',
                     path: '/santehnika',
                     items: [
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
                     ]
 
                 },
@@ -214,9 +284,9 @@ const store = {
                     head: 'Смесители',
                     path: '/santehnika',
                     items: [
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
                     ]
 
                 },
@@ -226,9 +296,9 @@ const store = {
                     head: 'Смесители',
                     path: '/santehnika',
                     items: [
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
                     ]
 
                 },
@@ -239,9 +309,9 @@ const store = {
                     head: 'Смесители',
                     path: '/santehnika',
                     items: [
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
                     ]
 
                 },
@@ -251,9 +321,9 @@ const store = {
                     head: 'Смесители',
                     path: '/santehnika',
                     items: [
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
                     ]
 
                 },
@@ -263,9 +333,9 @@ const store = {
                     head: 'Смесители',
                     path: '/santehnika',
                     items: [
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
                     ]
 
                 },
@@ -275,9 +345,9 @@ const store = {
                     head: 'Смесители',
                     path: '/santehnika',
                     items: [
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
                     ]
 
                 },
@@ -287,9 +357,9 @@ const store = {
                     head: 'Смесители',
                     path: '/santehnika',
                     items: [
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
                     ]
 
                 },
@@ -299,9 +369,9 @@ const store = {
                     head: 'Смесители',
                     path: '/santehnika',
                     items: [
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
                     ]
 
                 },
@@ -311,9 +381,9 @@ const store = {
                     head: 'Смесители',
                     path: '/santehnika',
                     items: [
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
-                        {title: 'Смесители для ванной'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
+                        {title: 'Смесители для ванной',path:'/'},
                     ]
 
                 },

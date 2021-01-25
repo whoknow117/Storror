@@ -37,7 +37,8 @@
       color: #000;
       font-family: 'PT Root UI';
       font-weight: 500;
-      font-size: 1rem;
+      font-size: 0.95rem;
+      padding-right: 20px;
 
     }
   }
@@ -48,14 +49,15 @@
 .hidden {
   position: absolute;
   left: 320px;
-  width: 320px;
+  min-width: 650px;
   height: 100vh;
   background: #efeeee;
-  display: block;
   opacity: 0;
   visibility: hidden;
-  top: -400px;
-  transition: .3s;
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  transition: .1s top, .2s opacity, .2s visibility;
   transition-delay: .3s;
 }
 
@@ -67,15 +69,16 @@
 
 .dropWrapper {
 
-  width: 200px;
+  margin: 0 20px;
   height: auto;
 
 
 
 
   .dropTitle {
-    margin: 20px 0;
-    background: silver;
+    margin: 10px 0;
+
+    font-weight: 700;
     cursor: pointer;
     &:hover {
       color: orangered;
@@ -87,6 +90,7 @@
     flex-direction: column;
     .item {
       cursor: pointer;
+      margin: 2px 0;
       &:hover {
         color: orangered;
       }
