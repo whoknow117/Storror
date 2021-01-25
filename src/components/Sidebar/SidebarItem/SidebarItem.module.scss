@@ -6,7 +6,8 @@
   height: 48px;
   width: 100%;
   font-family: Arial;
-
+  display: flex;
+  flex-direction: column;
   .separate {
     height: 100%;
     display: flex;
@@ -49,13 +50,16 @@
 .hidden {
   position: absolute;
   left: 320px;
-  min-width: 650px;
-  height: 100vh;
+  height: 100%;
+  min-width: 600px;
+  padding-top: 20px;
   background: #efeeee;
   opacity: 0;
   visibility: hidden;
   display: flex;
-  flex-wrap: wrap;
+  overflow-y: auto;
+
+  flex-wrap:  wrap;
   top: 0;
   transition: .1s top, .2s opacity, .2s visibility;
   transition-delay: .3s;
@@ -65,13 +69,15 @@
   top: 0;
   visibility: visible;
   opacity: 1;
+
+
 }
 
 .dropWrapper {
 
   margin: 0 20px;
   height: auto;
-
+  width: 200px;
 
 
 
