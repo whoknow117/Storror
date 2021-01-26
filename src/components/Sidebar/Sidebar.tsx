@@ -64,26 +64,3 @@ export default Sidebar;
 
 
 
-{/*<div className={classes.itemWrapper}>*/}
-{/*    {state.dropDown[item.id].map(drop => {*/}
-{/*        return  <div className={classes.item}>*/}
-{/*            <div>{drop.head}</div>*/}
-{/*            {drop.items.map( el => {*/}
-{/*                return <div>{el.title}</div>*/}
-{/*            })}*/}
-{/*        </div>*/}
-{/*    })}*/}
-{/*</div>*/}
-
-
-
-// <div className={`${classes.hidden} ${classes.visibleDrop}`}>
-//     { item.menu.map( m => {
-//
-//         return <div  >
-//             <h6>{m.title}</h6>
-//             {m.items.map(el => <div>{el.title}</div>)}
-//         </div>
-//
-//     })}
-// </div>

@@ -61,3 +61,10 @@ export type StoreType = {
     getState: () => void
     _state: RootStateType
 }
+
+// DROPBAR TYPE
+
+export type DropBarPropsType = {
+    item: DropDownMenuType
+
+}

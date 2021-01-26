@@ -14,6 +14,8 @@ import Carts from "../../../assets/Carts/Carts";
 import Fasteners from "../../../assets/Fasteners/Fasteners";
 import Sale from "../../../assets/Sale/Sale";
 import Discount from "../../../assets/Discount/Discount.";
+import SearchIcon from "../../../assets/SearchIcon/SearchIcon";
+import DropBar from "./DropBar/DropBar";
 
 
 export type SideBarIconsType = {
@@ -58,19 +60,33 @@ const SidebarItem: React.FC<SidebarItemPropsType> = ({drop,navID, item} ) => {
 
 
     return <div onMouseEnter={setOn} onMouseLeave={setOff} className={classes.itemWrapper}>
+
         <div className={classes.separate}>
             <div className={classes.icon}>{sidebarIcons.map(el => el.id === navID ? el.icon : "")}</div>
             <div className={classes.title}>{item.name}</div>
         </div>
         <div className={`${ classes.hidden} ${mode ? classes.visible : ""}`}>
-            {drop.map(el => {
-                return <div className={classes.dropWrapper}>
-                    <div className={classes.dropTitle}>{el.head}</div>
-                    <div className={classes.dropItems}>
-                        {el.items.map( e => <div className={classes.item}>{e.title}</div>)}
-                    </div>
+            <div className={classes.search}>
+                <input type="text"/>
+            </div>
+
+               {/*{drop.map(el => {*/}
+               {/*    return <div className={classes.dropWrapper}>*/}
+               {/*        <div className={classes.dropTitle}>{el.head}</div>*/}
+               {/*        <div className={classes.dropItems}>*/}
+               {/*            {el.items.map( e => <div className={classes.item}>{e.title}</div>)}*/}
+               {/*        </div>*/}
+               {/*    </div>*/}
+               {/*})}*/}
+                <div className={classes.scrollBlock}>
+                    {drop.map((el,idx) => {
+                        return <DropBar
+                            item={el}
+                            key={idx}
+
+                        />
+                    })}
                 </div>
-            })}
         </div>
     </div>
 
