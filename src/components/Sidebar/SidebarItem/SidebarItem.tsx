@@ -67,22 +67,19 @@ const SidebarItem: React.FC<SidebarItemPropsType> = ({drop,navID, item} ) => {
         </div>
         <div className={`${ classes.hidden} ${mode ? classes.visible : ""}`}>
             <div className={classes.search}>
-                <input type="text"/>
+                <input type="text" placeholder={"Напишите, что хотите найти "}/>
+                <button className={classes.searchBtn}>
+                    <SearchIcon/>
+                </button>
             </div>
 
-               {/*{drop.map(el => {*/}
-               {/*    return <div className={classes.dropWrapper}>*/}
-               {/*        <div className={classes.dropTitle}>{el.head}</div>*/}
-               {/*        <div className={classes.dropItems}>*/}
-               {/*            {el.items.map( e => <div className={classes.item}>{e.title}</div>)}*/}
-               {/*        </div>*/}
-               {/*    </div>*/}
-               {/*})}*/}
+                <h5 className={classes.groupName}>{item.name}</h5>
                 <div className={classes.scrollBlock}>
                     {drop.map((el,idx) => {
                         return <DropBar
                             item={el}
                             key={idx}
+                            mode={mode}
 
                         />
                     })}

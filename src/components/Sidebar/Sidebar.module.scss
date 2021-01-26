@@ -30,7 +30,7 @@
   width: 320px;
   height: 100vh;
   position: fixed;
-  z-index: 99999 !important;
+  z-index: 1001 !important;
   background: #fff;
   left: 0;
   top: 0;
@@ -48,8 +48,9 @@
     align-items: flex-start;
     justify-content: left;
     padding-left: 60px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin: 20px 0;
+    font-weight: 500;
   }
   .separate {
     .item {
@@ -76,7 +77,8 @@
         display: flex;
         align-items: center;
         height: 100%;
-
+        font-weight: 500;
+        z-index: 1001;
       }
     }
   }

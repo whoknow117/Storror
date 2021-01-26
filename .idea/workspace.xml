@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/DropBar/DropBar.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/DropBar/DropBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/DropBar/DropBar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/DropBar/DropBar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/DropBar/DropBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/DropBar/DropBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/SidebarItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/SidebarItem.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/SidebarItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/SidebarItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
@@ -143,7 +143,7 @@
       <workItem from="1611569946886" duration="6582000" />
       <workItem from="1611584432699" duration="1519000" />
       <workItem from="1611603328218" duration="2409000" />
-      <workItem from="1611643291875" duration="4388000" />
+      <workItem from="1611643291875" duration="7634000" />
     </task>
     <servers />
   </component>

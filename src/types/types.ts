@@ -66,5 +66,6 @@ export type StoreType = {
 
 export type DropBarPropsType = {
     item: DropDownMenuType
+    mode: boolean
 
 }

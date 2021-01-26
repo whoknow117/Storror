@@ -5,7 +5,7 @@ import {DropBarPropsType} from "../../../../types/types";
 
 
 
-const DropBar:React.FC<DropBarPropsType> = ({item,}) => {
+const DropBar:React.FC<DropBarPropsType> = ({mode,item,}) => {
     return <div className={classes.wrapper}>
 
         <h6>{item.head}</h6>
@@ -14,6 +14,7 @@ const DropBar:React.FC<DropBarPropsType> = ({item,}) => {
                 return <li key={idx}>{l.title}</li>
             })}
         </ul>
+        {mode ? <div className={classes.modal}></div> : ""}
     </div>
 }
 export default DropBar;
