@@ -42,7 +42,7 @@ const Sidebar: React.FC<SidebarPropsType> = ({ state,sidebar,setCollapsedCallbac
                 return (
                     <SidebarItem
 
-
+                        setCollapsed={setCollapsedCallback}
                         key={el.id}
                         navID={el.id}
                         item={el}

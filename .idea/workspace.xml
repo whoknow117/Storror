@@ -4,9 +4,11 @@
     <list default="true" id="467f83a5-15db-409a-8bc7-04c6240beabe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/DropBar/DropBar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/DropBar/DropBar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/DropBar/DropBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/DropBar/DropBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/GoodCard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/MainInformation.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoodCard/MainInformation/MainInformation.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottom.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderBottom/HeaderBottom.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/SidebarItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/SidebarItem.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/SidebarItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/SidebarItem.tsx" afterDir="false" />
     </list>
@@ -143,7 +145,7 @@
       <workItem from="1611584432699" duration="1519000" />
       <workItem from="1611603328218" duration="2409000" />
       <workItem from="1611643291875" duration="8373000" />
-      <workItem from="1611666129030" duration="854000" />
+      <workItem from="1611666129030" duration="3226000" />
     </task>
     <servers />
   </component>

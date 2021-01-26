@@ -44,11 +44,11 @@ type SidebarItemPropsType = {
     drop:  DropDownMenuType[]
     navID: string
     item: SidebarItemType
-
+    setCollapsed: () => void
 
 }
 
-const SidebarItem: React.FC<SidebarItemPropsType> = ({drop,navID, item} ) => {
+const SidebarItem: React.FC<SidebarItemPropsType> = ({setCollapsed,drop,navID, item} ) => {
 
 
     const [mode, setMode] = useState<boolean>(false);
@@ -57,10 +57,14 @@ const SidebarItem: React.FC<SidebarItemPropsType> = ({drop,navID, item} ) => {
     const setOn = () => {setMode(true)}
     const setOff = () => {setMode(false)}
 
+    const collapsed = () => {
+        setCollapsed()
+        setOff()
+    }
 
 
     return <div onMouseEnter={setOn} onMouseLeave={setOff} className={classes.itemWrapper}>
-         <div className={`${classes.modal} ${mode ? classes.visibleModal : ""}`}></div>
+         <div onClick={collapsed} className={`${classes.modal} ${mode ? classes.visibleModal : ""}`}></div>
         <div className={classes.separate}>
             <div className={classes.icon}>{sidebarIcons.map(el => el.id === navID ? el.icon : "")}</div>
             <div className={classes.title}>{item.name}</div>

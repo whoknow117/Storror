@@ -797,19 +797,18 @@ function App(props: AppPropsType) {
                     <Header headerCollapsed={headerCollapsed} collapsed={collapsed} setCollapse={setCollapsedCallback}/>
                     <div className="wrapper">
 
-                       <div>
+                        <div>
 
 
+                            <Sidebar
 
-                                   <Sidebar
+                                collapsed={collapsed}
+                                setCollapsedCallback={setCollapsedCallback}
+                                sidebar={sidebar}
+                                state={props.state}
+                            />
 
-                                       collapsed={collapsed}
-                                       setCollapsedCallback={setCollapsedCallback}
-                                       sidebar={sidebar}
-                                       state={props.state}
-                                   />
-
-                       </div>
+                        </div>
 
 
                         <div className="content">

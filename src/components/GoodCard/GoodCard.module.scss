@@ -2,6 +2,8 @@
 
 
 .goodCard {
+  position: relative;
+  z-index: 1;
   &Main {
     position: relative;
     width: 100%;
