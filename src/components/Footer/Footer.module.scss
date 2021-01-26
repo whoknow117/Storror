@@ -7,20 +7,20 @@
   left: -78px;
   width: 98.8vw;
   padding: 0 80px;
-
-
   margin-top: 90px;
   height: 400px;
-  background: #eaeaea;
+  background: linear-gradient(240deg, rgba(253,255,227,1) 0%, rgba(250,255,210,1) 100%);
   .sharesAndDiscounts {
     height: 80px;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid #fff;
     display: flex;
+    color: #000;
     align-items: center;
     .title {
       font-family: 'PT Root UI';
       font-weight: 700;
       font-size: 1.3rem;
+      color: #000;
     }
     .input {
       margin-left: auto;
@@ -32,14 +32,14 @@
         border-radius: 3px;
         &::placeholder {
           padding-left: 10px;
-          color: #acacac;
+          color: #ffffff;
         }
       }
     }
     .btn {
       margin: 0 160px 0 30px;
       font-family: 'PT Root UI';
-      background: transparent;
+      background: #fff;
       border: 1px solid rgba(0,0,0,.1);
       border-radius: 40px;
       padding: 10px 20px;
