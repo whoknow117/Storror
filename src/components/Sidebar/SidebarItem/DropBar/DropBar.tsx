@@ -14,7 +14,7 @@ const DropBar:React.FC<DropBarPropsType> = ({mode,item,}) => {
                 return <li key={idx}>{l.title}</li>
             })}
         </ul>
-        {mode ? <div className={classes.modal}></div> : ""}
+
     </div>
 }
 export default DropBar;

@@ -60,7 +60,7 @@ const SidebarItem: React.FC<SidebarItemPropsType> = ({drop,navID, item} ) => {
 
 
     return <div onMouseEnter={setOn} onMouseLeave={setOff} className={classes.itemWrapper}>
-
+         <div className={`${classes.modal} ${mode ? classes.visibleModal : ""}`}></div>
         <div className={classes.separate}>
             <div className={classes.icon}>{sidebarIcons.map(el => el.id === navID ? el.icon : "")}</div>
             <div className={classes.title}>{item.name}</div>
@@ -71,6 +71,7 @@ const SidebarItem: React.FC<SidebarItemPropsType> = ({drop,navID, item} ) => {
                 <button className={classes.searchBtn}>
                     <SearchIcon/>
                 </button>
+
             </div>
 
                 <h5 className={classes.groupName}>{item.name}</h5>

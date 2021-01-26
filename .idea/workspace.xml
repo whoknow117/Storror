@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/DropBar/DropBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/DropBar/DropBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/SidebarItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/SidebarItem.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/SidebarItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SidebarItem/SidebarItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +142,8 @@
       <workItem from="1611569946886" duration="6582000" />
       <workItem from="1611584432699" duration="1519000" />
       <workItem from="1611603328218" duration="2409000" />
-      <workItem from="1611643291875" duration="7634000" />
+      <workItem from="1611643291875" duration="8373000" />
+      <workItem from="1611666129030" duration="854000" />
     </task>
     <servers />
   </component>
