@@ -67,7 +67,8 @@ const SidebarItem: React.FC<SidebarItemPropsType> = ({setCollapsed,drop,navID, i
          <div onClick={collapsed} className={`${classes.modal} ${mode ? classes.visibleModal : ""}`}></div>
         <div className={classes.separate}>
             <div className={classes.icon}>{sidebarIcons.map(el => el.id === navID ? el.icon : "")}</div>
-            <div className={classes.title}>{item.name}</div>
+            <div className={`${classes.title} ${mode ? classes.active : ""}`}>{item.name}</div>
+            <span className={classes.span}></span>
         </div>
         <div className={`${ classes.hidden} ${mode ? classes.visible : ""}`}>
             <div className={classes.search}>

@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+
     &:hover {
       .title {
         color: orangered;
@@ -42,6 +43,19 @@
       padding-right: 20px;
 
     }
+    .active {
+      font-weight: 700;
+
+    }
+    //.span {
+    //  display: block;
+    //
+    //  width: 10px;
+    //  height: 1px;
+    //  border: 1px solid silver;
+    //  background: #000;
+    //
+    //}
   }
 
 }
@@ -152,7 +166,7 @@
   padding: 0 20px;
   height: 80%;
   display: grid;
-  margin-top: 28px;
+  margin-top: 33px;
   flex-wrap: wrap;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
@@ -191,4 +205,8 @@
 .visibleModal {
   opacity: 1;
   visibility: visible;
+}
+.active {
+  font-weight: 700;
+  color: silver;
 }
