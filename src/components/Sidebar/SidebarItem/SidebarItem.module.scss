@@ -17,7 +17,13 @@
     &:hover {
       .title {
         color: orangered;
+
+        .span {
+          visibility: visible;
+          opacity: 1;
+        }
       }
+
     }
     .icon {
       position: absolute;
@@ -35,13 +41,58 @@
 
     }
     .title {
+      width: auto;
       margin-left: 64px;
       color: #000;
       font-family: 'PT Root UI';
       font-weight: 500;
       font-size: 0.95rem;
       padding-right: 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      .span {
+        display: block;
+        background: #000;
+        position: relative;
+        width: 10px;
+        height: 1px;
+        background: #000;
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+        margin-left: 7px;
+        animation: arrow 1.2s linear infinite;
+        &:before,
+        &:after {
+          content: '';
+          display: block;
+          width: 6px;
+          height: 1px;
+          position: absolute;
+          top: 50%;
+          right: 0px;
+          background: inherit;
+          transition: .2s ease-in-out;
 
+        }
+
+        &:before {
+          transform-origin: right;
+          transform:rotate(45deg);
+        }
+        &:after {
+          transform-origin: right;
+          transform:rotate(-45deg);
+        }
+      }
+
+    }
+    @keyframes arrow {
+      0% { transform: translateX(0px) }
+      50% { transform: translateX(10px)}
+      100% { transform: translateX(0px)}
     }
     .active {
       font-weight: 700;
@@ -63,7 +114,7 @@
 
 .hidden {
   position: absolute;
-  left: 320px;
+  left: 330px;
   width: 100%;
   height: 100vh;
   min-width: 800px;
