@@ -6,6 +6,8 @@ import slider3Img from '../../../assets/k3.jpg';
 import slider4Img from '../../../assets/k4.jpg';
 import slider5Img from '../../../assets/k5.jpg';
 import slider6Img from '../../../assets/k6.jpg';
+import slider7Img from '../../../assets/k7.jpg';
+import slider8Img from '../../../assets/k8.jpg';
 import ArrowLeft from "../../../assets/ArrowLeftIcon/ArrowLeftIcon";
 import ArrowRight from "../../../assets/ArrowRightIcon/ArrowRightIcon";
 
@@ -16,13 +18,15 @@ type ImageStateType = {
 }
 const imageState: Array<ImageStateType> = [
 
-
+    {id: 8, img: slider8Img,},
     {id: 1, img: slider1Img,},
     {id: 2, img: slider2Img,},
     {id: 3, img: slider3Img,},
     {id: 4, img: slider4Img,},
     {id: 5, img: slider5Img,},
     {id: 6, img: slider6Img,},
+    {id: 7, img: slider7Img,},
+
 ]
 
 const SliderShow: React.FC<SliderShowPropsType> = () => {
@@ -59,7 +63,7 @@ const SliderShow: React.FC<SliderShowPropsType> = () => {
     }, [])
 
     const spanStyle = {
-        width: `${slide * 25 + '%'}`,
+        width: `${slide * 15 + '%'}`,
         display: 'block',
         height: '2px',
         background: '#ff7002',
@@ -81,7 +85,7 @@ const SliderShow: React.FC<SliderShowPropsType> = () => {
                 <ArrowLeft/>
             </button>
             <div className={classes.spanWrapper}>
-                <span className={classes.span}>{slide}/</span>
+                <span className={classes.span}>{slide + 1}/</span>
                 <span className={classes.span}>{imageState.length}</span>
             </div>
             <div className={classes.sliderLength}>

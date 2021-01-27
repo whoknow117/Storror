@@ -122,11 +122,12 @@
   background: #fcfbfb;
   opacity: 0;
   visibility: hidden;
-  display: flex;
-  flex-direction: column;
+
+
   flex-wrap: wrap;
   border-right: 1px solid #eeeeee;
   top: 0;
+  white-space: normal;
   //transition: .1s top, .2s opacity, .2s visibility;
   transition-delay: .2s;
   z-index: 9999 !important;
@@ -188,7 +189,7 @@
   border: 1px solid silver;
   display: flex;
   flex-direction: column;
-
+  white-space: nowrap;
   break-inside: avoid;
   .dropTitle {
     margin: 10px 0;
@@ -216,13 +217,18 @@
 .scrollBlock {
   padding: 0 20px;
   height: 80%;
+  position: relative;
+  max-width: 100%;
+  min-height: 0%;
   display: grid;
   margin-top: 33px;
-  flex-wrap: wrap;
+  vertical-align: initial;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   overflow-x: hidden;
   overflow-y: scroll;
+  column-count: 3;
+
   &::-webkit-scrollbar-thumb {
     background: rgba(49, 70, 79, 0.3);
     opacity: .4;

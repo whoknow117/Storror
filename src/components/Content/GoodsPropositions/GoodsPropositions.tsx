@@ -31,9 +31,9 @@ const GoodsPropositions: React.FC<GoodsPropositionsPropsType> = ({onClick, value
                    return <div   className={classes.goodsItem}>
                        <div className={classes.wrap}>
                           <div className={classes.separate}>
-                              {g.new === true ? <span className={classes.stickerNew}>Новинка</span> : ""}
-                              {g.sale === true ? <span className={classes.stickerSale}>Распродажа</span> : ""}
-                              {g.hit === true ? <span className={classes.stickerHit}>Хит</span> : ""}
+                              {g.new  ? <span className={classes.stickerNew}>Новинка</span> : ""}
+                              {g.sale  ? <span className={classes.stickerSale}>Распродажа</span> : ""}
+                              {g.hit  ? <span className={classes.stickerHit}>Хит</span> : ""}
                               <div className={classes.rating}>
                                   <Rating value={value} onClick={onClick}/>
                               </div>
