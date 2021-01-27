@@ -94,41 +94,41 @@ const store = {
                 name: 'Сантехника, Смесители и Трубы', id: '1', path: '/santehnika',dropdown: false,
             },
             {
-                name: 'Электрика и Освещение', id: '2', path: '/',dropdown: false
+                name: 'Электрика и Освещение', id: '2', path: '/electrica',dropdown: false
             },
             {
-                name: 'Крепеж, Гвозди, Саморезы и Хамуты', id: '3', path: '/asd',dropdown: false
+                name: 'Крепеж, Гвозди, Саморезы и Хамуты', id: '3', path: '/crepej',dropdown: false
             },
             {
-                name: 'Лопаты, Сетка и Нитка ', id: '4', path: '/assd',dropdown: false
+                name: 'Лопаты, Сетка и Нитка ', id: '4', path: '/lopati',dropdown: false
             },
             {
                 name: 'Насосы, Реле и Датчики', id: '5', path: '/nasosy',dropdown: false,
             },
             {
-                name: 'Электроинструмент и Бензоинструмент', id: '6', path: '/tovar',dropdown: false,
+                name: 'Электроинструмент и Бензоинструмент', id: '6', path: '/electroinstrument',dropdown: false,
             },
             {
-                name: 'Инструмент, Отвертки и Биты', id: '7', path: '/ss',dropdown: false,
+                name: 'Инструмент, Отвертки и Биты', id: '7', path: '/instrument',dropdown: false,
             },
             {
-                name: 'Газовые балоны, горелки, электроды', id: '8', path: '/sdas',dropdown: false
+                name: 'Газовые балоны, горелки, электроды', id: '8', path: '/gas',dropdown: false
 
             },
             {
-                name: 'Бойлеры, газовые колонки', id: '9', path: '/ssasd',dropdown: false
+                name: 'Бойлеры, газовые колонки', id: '9', path: '/boyleri',dropdown: false
             },
             {
-                name: 'Короба, Вентиляция', id: '10', path: '/s',dropdown: false,
+                name: 'Короба, Вентиляция', id: '10', path: '/ventilaciya',dropdown: false,
             },
             {
-                name: 'Сад-огород, Штуцера, Фитинги', id: '11', path: '/adaadss',dropdown: false
+                name: 'Сад-огород, Штуцера, Фитинги', id: '11', path: '/ogorod',dropdown: false
             },
             {
-                name: 'Акции', id: '12', path: '/adaadss',dropdown: false
+                name: 'Акции', id: '12', path: '/sale',dropdown: false
             },
             {
-                name: 'Распродажа', id: '13', path: '/adaadss',dropdown: false
+                name: 'Распродажа', id: '13', path: '/stocks',dropdown: false
             },
 
 
@@ -490,6 +490,9 @@ const store = {
             ],
 
         },
+
+
+
 
     }
 

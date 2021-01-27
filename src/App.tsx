@@ -822,6 +822,8 @@ function App(props: AppPropsType) {
                                 goods={goods}
 
                             />}/>
+
+
                             {goods.map((good, idx) => {
 
                                 return (<div>
