@@ -231,6 +231,8 @@
   max-width: 100%;
   min-height: 0%;
   display: grid;
+
+  flex-wrap: wrap;
   margin-top: 33px;
   vertical-align: initial;
   grid-template-columns: 1fr 1fr 1fr;
